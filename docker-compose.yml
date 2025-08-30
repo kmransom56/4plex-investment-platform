@@ -1,0 +1,7 @@
+# Main Docker Compose file for 4-Plex Investment Platform
+# This file includes the complete integrated system
+
+include:
+  - infrastructure/docker/docker-compose.yml
+
+# Override any settings for production deployment here

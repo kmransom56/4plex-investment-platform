@@ -1,0 +1,317 @@
+version: '3.8'
+
+services:
+  # Foreclosure Research System
+  foreclosure_research:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: foreclosure_research_system
+    environment:
+      - DATABASE_URL=postgresql://unified_user:unified_pass@postgres:5432/unified_db
+      - NEO4J_URL=bolt://neo4j:7687
+      - NEO4J_USERNAME=neo4j
+      - NEO4J_PASSWORD=unified_neo4j_pass
+      - REDIS_URL=redis://:unified_redis_pass@redis:6379/0
+      - VLLM_GATEWAY_URL=http://host.docker.internal:9000
+      - AI_STACK_API_KEY=vllm-key
+      - VALUATION_API_URL=http://valuation_app:3000
+      - LOG_LEVEL=INFO
+    ports:
+      - "11050:11050"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+      neo4j:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - integrated_network
+    restart: unless-stopped
+
+  # Multifamily Valuation Application
+  valuation_app:
+    build:
+      context: ../mutlifamily-ai-valuation
+      dockerfile: Dockerfile
+    container_name: multifamily_valuation_app
+    environment:
+      - DATABASE_URL=postgresql://unified_user:unified_pass@postgres:5432/unified_db
+      - NEXTAUTH_URL=http://localhost:3000
+      - NEXTAUTH_SECRET=your-secure-32-character-secret-key
+      - REDIS_URL=redis://:unified_redis_pass@redis:6379/1
+      - FORECLOSURE_API_URL=http://foreclosure_research:11050
+      - NODE_ENV=production
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../mutlifamily-ai-valuation/uploads:/app/uploads
+      - ../mutlifamily-ai-valuation/outputs:/app/outputs
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - integrated_network
+    restart: unless-stopped
+
+  # Integration Service
+  integration_service:
+    build:
+      context: .
+      dockerfile: Dockerfile.integration
+    container_name: unified_integration_service
+    environment:
+      - DATABASE_URL=postgresql://unified_user:unified_pass@postgres:5432/unified_db
+      - NEO4J_URL=bolt://neo4j:7687
+      - NEO4J_USERNAME=neo4j
+      - NEO4J_PASSWORD=unified_neo4j_pass
+      - REDIS_URL=redis://:unified_redis_pass@redis:6379/2
+      - FORECLOSURE_API_URL=http://foreclosure_research:11050
+      - VALUATION_API_URL=http://valuation_app:3000
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - LOG_LEVEL=INFO
+    ports:
+      - "11060:11060"
+    depends_on:
+      - foreclosure_research
+      - valuation_app
+      - postgres
+      - neo4j
+      - redis
+    networks:
+      - integrated_network
+    restart: unless-stopped
+
+  # Shared PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: unified_postgres_db
+    environment:
+      POSTGRES_DB: unified_db
+      POSTGRES_USER: unified_user
+      POSTGRES_PASSWORD: unified_pass
+    volumes:
+      - postgres_unified_data:/var/lib/postgresql/data
+      - ./integration/sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5433:5432"  # Different port to avoid conflicts
+    networks:
+      - integrated_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U unified_user -d unified_db"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+
+  # Shared Neo4j Graph Database
+  neo4j:
+    image: neo4j:5.15-community
+    container_name: unified_neo4j_db
+    environment:
+      NEO4J_AUTH: neo4j/unified_neo4j_pass
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_apoc_export_file_enabled: "true"
+      NEO4J_apoc_import_file_enabled: "true"
+      NEO4J_dbms_security_procedures_unrestricted: apoc.*
+      NEO4J_dbms_default_database: unified_properties
+    volumes:
+      - neo4j_unified_data:/data
+      - neo4j_unified_logs:/logs
+      - neo4j_unified_import:/var/lib/neo4j/import
+      - neo4j_unified_plugins:/plugins
+    ports:
+      - "7475:7474"  # Different port to avoid conflicts
+      - "7688:7687"  # Different port to avoid conflicts
+    networks:
+      - integrated_network
+    healthcheck:
+      test: ["CMD", "cypher-shell", "-u", "neo4j", "-p", "unified_neo4j_pass", "RETURN 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+
+  # Shared Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: unified_redis_cache
+    command: redis-server --appendonly yes --requirepass unified_redis_pass
+    volumes:
+      - redis_unified_data:/data
+    ports:
+      - "6380:6379"  # Different port to avoid conflicts
+    networks:
+      - integrated_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+
+  # Unified Web Dashboard
+  unified_dashboard:
+    build:
+      context: ./web
+      dockerfile: Dockerfile.unified
+    container_name: unified_property_dashboard
+    environment:
+      - REACT_APP_FORECLOSURE_API=http://localhost:11050
+      - REACT_APP_VALUATION_API=http://localhost:3000
+      - REACT_APP_INTEGRATION_API=http://localhost:11060
+      - REACT_APP_NEO4J_URL=http://localhost:7475
+      - NODE_ENV=production
+      - GENERATE_SOURCEMAP=false
+    ports:
+      - "11061:3000"
+    volumes:
+      - ./web/build:/app/build:ro
+    depends_on:
+      integration_service:
+        condition: service_started
+      foreclosure_research:
+        condition: service_started  
+      valuation_app:
+        condition: service_started
+    networks:
+      - integrated_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # Enhanced Grafana for Monitoring
+  grafana:
+    image: grafana/grafana:latest
+    container_name: unified_grafana_monitoring
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=unified_admin_pass
+      - GF_INSTALL_PLUGINS=neo4j-datasource
+    volumes:
+      - grafana_unified_data:/var/lib/grafana
+      - ./config/grafana/integrated:/etc/grafana/provisioning
+      - ./config/grafana/dashboards/integrated:/var/lib/grafana/dashboards
+    ports:
+      - "11062:3000"
+    networks:
+      - integrated_network
+    restart: unless-stopped
+
+  # Enhanced Prometheus for Metrics
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: unified_prometheus_metrics
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--web.enable-lifecycle'
+    volumes:
+      - ./config/prometheus/integrated.yml:/etc/prometheus/prometheus.yml
+      - prometheus_unified_data:/prometheus
+    ports:
+      - "11063:9090"
+    networks:
+      - integrated_network
+    restart: unless-stopped
+
+  # Nginx Reverse Proxy for Unified Access
+  nginx:
+    image: nginx:alpine
+    container_name: unified_nginx_proxy
+    volumes:
+      - ./config/nginx/integrated.conf:/etc/nginx/nginx.conf
+      - ./config/nginx/ssl:/etc/nginx/ssl
+    ports:
+      - "11070:80"
+      - "11071:443"
+    depends_on:
+      - foreclosure_research
+      - valuation_app
+      - integration_service
+      - unified_dashboard
+    networks:
+      - integrated_network
+    restart: unless-stopped
+
+  # Background Job Processor
+  celery_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.integration
+    container_name: unified_celery_worker
+    command: celery -A integration.celery_app worker --loglevel=info --concurrency=4
+    environment:
+      - DATABASE_URL=postgresql://unified_user:unified_pass@postgres:5432/unified_db
+      - REDIS_URL=redis://:unified_redis_pass@redis:6379/3
+      - CELERY_BROKER_URL=redis://:unified_redis_pass@redis:6379/3
+      - CELERY_RESULT_BACKEND=redis://:unified_redis_pass@redis:6379/4
+      - FORECLOSURE_API_URL=http://foreclosure_research:11050
+      - VALUATION_API_URL=http://valuation_app:3000
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      - postgres
+      - redis
+      - foreclosure_research
+      - valuation_app
+    networks:
+      - integrated_network
+    restart: unless-stopped
+
+  # Celery Beat Scheduler
+  celery_beat:
+    build:
+      context: .
+      dockerfile: Dockerfile.integration
+    container_name: unified_celery_scheduler
+    command: celery -A integration.celery_app beat --loglevel=info
+    environment:
+      - CELERY_BROKER_URL=redis://:unified_redis_pass@redis:6379/3
+      - CELERY_RESULT_BACKEND=redis://:unified_redis_pass@redis:6379/4
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      - redis
+    networks:
+      - integrated_network
+    restart: unless-stopped
+
+volumes:
+  postgres_unified_data:
+    driver: local
+  neo4j_unified_data:
+    driver: local
+  neo4j_unified_logs:
+    driver: local
+  neo4j_unified_import:
+    driver: local
+  neo4j_unified_plugins:
+    driver: local
+  redis_unified_data:
+    driver: local
+  grafana_unified_data:
+    driver: local
+  prometheus_unified_data:
+    driver: local
+
+networks:
+  integrated_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/16
