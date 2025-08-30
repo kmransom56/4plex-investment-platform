@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Plex Investment Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: 'rgb(239 246 255)',
+                            100: 'rgb(219 234 254)', 
+                            500: 'rgb(59 130 246)',
+                            600: 'rgb(37 99 235)',
+                            700: 'rgb(29 78 216)'
+                        },
+                        background: 'rgb(255 255 255)',
+                        foreground: 'rgb(15 23 42)',
+                        muted: {
+                            DEFAULT: 'rgb(248 250 252)',
+                            foreground: 'rgb(100 116 139)'
+                        },
+                        border: 'rgb(226 232 240)',
+                        card: {
+                            DEFAULT: 'rgb(255 255 255)',
+                            foreground: 'rgb(15 23 42)'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom CSS matching multifamily app patterns */
+        .metric-card-hover {
+            transition: all 0.2s ease-in-out;
+        }
+        .metric-card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .status-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, rgb(59 130 246) 0%, rgb(37 99 235) 100%);
+        }
+        
+        /* Animation for loading states */
+        .animate-pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="h-full bg-background font-sans antialiased">
+    <!-- Header matching multifamily app -->
+    <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div class="container flex h-16 items-center mx-auto px-4">
+            <div class="mr-4 flex items-center space-x-2">
+                <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">4P</span>
+                </div>
+                <span class="text-xl font-semibold text-foreground">4-Plex Investment Platform</span>
+            </div>
+            <nav class="flex items-center space-x-6 text-sm font-medium ml-auto">
+                <a href="#dashboard" class="transition-colors hover:text-foreground/80 text-foreground">Dashboard</a>
+                <a href="#properties" class="transition-colors hover:text-foreground/80 text-foreground/60">Properties</a>
+                <a href="#analysis" class="transition-colors hover:text-foreground/80 text-foreground/60">Analysis</a>
+                <a href="#reports" class="transition-colors hover:text-foreground/80 text-foreground/60">Reports</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <div class="container mx-auto px-4 py-12">
+            <!-- Status Banner -->
+            <div class="mb-8 rounded-lg border bg-green-50 border-green-200 p-4">
+                <div class="flex items-center">
+                    <div class="status-dot bg-green-500"></div>
+                    <div class="ml-3">
+                        <h3 class="text-sm font-medium text-green-800">Platform Successfully Deployed</h3>
+                        <p class="text-sm text-green-700">Repository migrated • Databases started • Integration complete</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KPI Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Properties Analyzed Card -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm metric-card-hover">
+                    <div class="flex flex-row items-center justify-between space-y-0 p-6 pb-2">
+                        <h3 class="tracking-tight text-sm font-medium">Properties Analyzed</h3>
+                        <svg class="h-4 w-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="text-2xl font-bold" id="propertiesCount">247</div>
+                        <p class="text-xs text-muted-foreground">
+                            <span class="text-green-600 font-medium">+23</span> since last week
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Investment Opportunities Card -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm metric-card-hover">
+                    <div class="flex flex-row items-center justify-between space-y-0 p-6 pb-2">
+                        <h3 class="tracking-tight text-sm font-medium">Investment Opportunities</h3>
+                        <svg class="h-4 w-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="text-2xl font-bold" id="opportunitiesCount">43</div>
+                        <p class="text-xs text-muted-foreground">
+                            <span class="text-green-600 font-medium">+12%</span> this month
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Average ROI Card -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm metric-card-hover">
+                    <div class="flex flex-row items-center justify-between space-y-0 p-6 pb-2">
+                        <h3 class="tracking-tight text-sm font-medium">Average ROI</h3>
+                        <svg class="h-4 w-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="text-2xl font-bold" id="avgROI">18.2%</div>
+                        <p class="text-xs text-muted-foreground">
+                            <span class="text-green-600 font-medium">+2.1%</span> improvement
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Counties Active Card -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm metric-card-hover">
+                    <div class="flex flex-row items-center justify-between space-y-0 p-6 pb-2">
+                        <h3 class="tracking-tight text-sm font-medium">Georgia Counties</h3>
+                        <svg class="h-4 w-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="text-2xl font-bold" id="countiesActive">12</div>
+                        <p class="text-xs text-muted-foreground">Full coverage active</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                <!-- Quick Actions Card -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="text-2xl font-semibold leading-none tracking-tight">Quick Actions</h3>
+                        <p class="text-sm text-muted-foreground">Launch foreclosure discovery and analysis workflows</p>
+                    </div>
+                    <div class="p-6 pt-0 space-y-4">
+                        <button onclick="startForeclosureDiscovery()" class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
+                            <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                            Discover Properties
+                        </button>
+                        
+                        <button onclick="analyzeProperty()" class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                            <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                            Analyze Investment
+                        </button>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <button onclick="generateReport()" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                                </svg>
+                                Reports
+                            </button>
+                            
+                            <button onclick="viewPortfolio()" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                                <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                                </svg>
+                                Portfolio
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Status Card -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <h3 class="text-2xl font-semibold leading-none tracking-tight">System Status</h3>
+                        <p class="text-sm text-muted-foreground">Platform services and integration health</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="space-y-4">
+                            <!-- Database Services -->
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <span class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 border border-green-200">
+                                        <span class="status-dot bg-green-500"></span>
+                                        Database Services
+                                    </span>
+                                </div>
+                                <span class="text-sm text-muted-foreground">PostgreSQL • Redis • Neo4j</span>
+                            </div>
+
+                            <!-- API Services -->
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <span class="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800 border border-blue-200">
+                                        <span class="status-dot bg-blue-500"></span>
+                                        API Services
+                                    </span>
+                                </div>
+                                <span class="text-sm text-muted-foreground">Integration • Foreclosure • Valuation</span>
+                            </div>
+
+                            <!-- AI Stack -->
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <span class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 border border-green-200">
+                                        <span class="status-dot bg-green-500"></span>
+                                        AI Stack
+                                    </span>
+                                </div>
+                                <span class="text-sm text-muted-foreground">vLLM • CrewAI • Analysis</span>
+                            </div>
+
+                            <!-- Repository -->
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <span class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 border border-green-200">
+                                        <span class="status-dot bg-green-500"></span>
+                                        Repository
+                                    </span>
+                                </div>
+                                <span class="text-sm text-muted-foreground">Migration Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity Section -->
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div class="flex flex-col space-y-1.5 p-6">
+                    <h3 class="text-2xl font-semibold leading-none tracking-tight">Recent Activity</h3>
+                    <p class="text-sm text-muted-foreground">Latest foreclosure discoveries and investment analyses</p>
+                </div>
+                <div class="p-6 pt-0">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                            <div class="flex-1 space-y-1">
+                                <p class="text-sm font-medium">New foreclosure properties discovered in Fulton County</p>
+                                <p class="text-sm text-muted-foreground">23 new properties added to pipeline • 2 minutes ago</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <div class="flex-1 space-y-1">
+                                <p class="text-sm font-medium">Investment analysis completed for 4-plex in DeKalb County</p>
+                                <p class="text-sm text-muted-foreground">ROI: 22.4% • Cap Rate: 8.2% • 15 minutes ago</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <div class="flex-1 space-y-1">
+                                <p class="text-sm font-medium">Platform migration successfully completed</p>
+                                <p class="text-sm text-muted-foreground">All services integrated • Professional repository created • 1 hour ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t bg-background">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <p class="text-sm text-muted-foreground">© 2025 4-Plex Investment Platform. Professional foreclosure discovery and investment analysis.</p>
+                <div class="flex items-center space-x-4">
+                    <span class="text-sm text-muted-foreground">Repository: <code class="bg-muted px-1.5 py-0.5 rounded text-xs">/home/keith/chat-copilot/4plex-investment-platform/</code></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Business logic matching multifamily app patterns
+        function formatCurrency(amount, compact = false) {
+            if (compact && amount >= 1000000) {
+                return `$${(amount / 1000000).toFixed(1)}M`;
+            }
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0
+            }).format(amount);
+        }
+
+        function formatPercentage(value) {
+            return `${(value * 100).toFixed(1)}%`;
+        }
+
+        // Simulated real-time updates matching multifamily app
+        function updateMetrics() {
+            const properties = document.getElementById('propertiesCount');
+            const opportunities = document.getElementById('opportunitiesCount');
+            
+            setInterval(() => {
+                const currentProperties = parseInt(properties.textContent);
+                if (Math.random() > 0.9) {
+                    properties.textContent = currentProperties + Math.floor(Math.random() * 2) + 1;
+                }
+                
+                const currentOpportunities = parseInt(opportunities.textContent);
+                if (Math.random() > 0.95) {
+                    opportunities.textContent = currentOpportunities + 1;
+                }
+            }, 8000);
+        }
+
+        // Action handlers matching multifamily app functionality
+        function startForeclosureDiscovery() {
+            alert('🔍 Foreclosure Discovery System\n\nStarting multi-agent search across Georgia counties...\n\n• ForeclosureDataAgent: Scanning court records\n• CodeViolationAgent: Checking violation databases\n• TaxLienAgent: Analyzing tax records\n\nResults will appear in the dashboard within 5-10 minutes.');
+        }
+        
+        function analyzeProperty() {
+            alert('📊 Property Investment Analysis\n\nLaunching AI-powered analysis workflow...\n\n• Financial modeling with 10-year projections\n• Market comparison analysis (CMA)\n• Risk assessment scoring\n• ROI and cap rate calculations\n\nAnalysis will be complete in 2-3 minutes.');
+        }
+        
+        function generateReport() {
+            alert('📈 Investment Report Generation\n\nCreating comprehensive analysis report...\n\n• Executive summary with key findings\n• Detailed financial projections\n• Market analysis and comparables\n• Investment recommendations\n\nReport will be available for download in 1-2 minutes.');
+        }
+        
+        function viewPortfolio() {
+            alert('💼 Investment Portfolio\n\nAccessing your property portfolio dashboard...\n\n• 247 properties analyzed\n• 43 active investment opportunities\n• Performance tracking and metrics\n• ROI monitoring and alerts\n\nLoading portfolio dashboard...');
+        }
+
+        // Initialize real-time updates
+        updateMetrics();
+    </script>
+</body>
+</html>

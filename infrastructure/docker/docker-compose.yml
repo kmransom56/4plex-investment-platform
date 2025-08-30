@@ -36,7 +36,7 @@ services:
   # Multifamily Valuation Application
   valuation_app:
     build:
-      context: ../mutlifamily-ai-valuation
+      context: ../../../mutlifamily-ai-valuation
       dockerfile: Dockerfile
     container_name: multifamily_valuation_app
     environment:
@@ -50,8 +50,8 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ../mutlifamily-ai-valuation/uploads:/app/uploads
-      - ../mutlifamily-ai-valuation/outputs:/app/outputs
+      - ../../../mutlifamily-ai-valuation/uploads:/app/uploads
+      - ../../../mutlifamily-ai-valuation/outputs:/app/outputs
     depends_on:
       postgres:
         condition: service_healthy
