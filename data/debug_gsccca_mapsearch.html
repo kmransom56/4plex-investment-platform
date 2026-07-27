@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><title>
+	GSCCCA.org - PT-61 Premium Search
+</title>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    
+    <script type="text/javascript" src="Scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/site.jquery.js"></script>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/FavIcons/favicon.ico"><link rel="apple-touch-icon" href="images/FavIcons/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="72x72" href="images/FavIcons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="images/FavIcons/apple-touch-icon-114x114.png">
+<link href="App_Themes/MainCMSTheme/Common.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/DailyGridView.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/DashboardView.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/Final.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/Header.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/MapSearch.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/QuickView.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/SalesGridView.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/SearchPages.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/skeleton.css" type="text/css" rel="stylesheet"><link href="/PT61Premium/WebResource.axd?d=jQ17044ihLDJUX5wWWFQNdYsUJ7eQZIWO5KjSJlugyW3LeHiW7P4rtqNb_TYZpNB0pnDHcNn8me64sQ7A2b5SKc0VYUY5XIRd2LvTOaKOVntVTrDh1oFHYxb_ZE3jxmBlW3lag2&amp;t=634837363800000000" type="text/css" rel="stylesheet"></head>
+<body>
+	<!-- ==========================  Header	================================================== -->
+	<div id="head" class="row">
+		<header class="container-twelve">
+			<p id="logo" class="six columns alpha"><a id="lnkSiteMainHeader" href="https://www.gsccca.org/">The Clerks Authority</a></p>
+			<ul class="six columns omega">
+				<li><a id="lnkAlert" href="https://account.gsccca.org/Alerts.asp?Reset" style="display:inline-block; border:none; background:none; cursor:pointer;"><div id="alertBell" class="icon hide-element" style="display: inline-block;">
+						<img src="/images/notification_icon.png" height="22" width="22" alt="Alerts">
+						<div id="alert_count" class="txt" style="display: inline-block;">4</div>
+					</div></a></li>
+				<li><button id="searchbtn" name="search">Search</button></li>
+				<li>
+					<form action="#search" method="post">
+						<input id="search" placeholder="search" type="text" name="search">
+					</form>
+				</li>
+				<li><a id="lnkContactHeader" href="https://www.gsccca.org/contact-us">contact</a></li>
+				<li><a id="lnkLogin" href="https://apps.gsccca.org/logout.asp">logout</a></li>
+				<li><a id="lnkServicesHeader" href="https://www.gsccca.org/services">services</a></li>
+			</ul>	    
+		</header>
+		
+	</div><!--head-->
+	<div id="fullpage">
+		<center>
+		<nav>
+			<div class="container-twelve">
+				<a id="lnkMenuFile" href="https://www.gsccca.org/file">File</a>
+				<a id="lnkMenuSearch" href="https://www.gsccca.org/search">Search</a>
+				<a id="lnkMenuLearn" href="https://www.gsccca.org/learn">Learn</a>
+				<a id="lnkMenuManage" href="https://www.gsccca.org/manage">Manage</a>
+				<a id="lnkMenuFinesFees" href="https://www.gsccca.org/fines-and-fees">Fines &amp; Fees</a>
+				<a id="lnkMenuClerks" href="https://www.gsccca.org/clerks">Clerks</a>
+				<a id="lnkMenuNotary" href="https://www.gsccca.org/notary-and-apostilles">Notary &amp; Apostilles</a>
+			</div>
+		</nav>
+		<ul id="subnav">
+			<div class="container-twelve">
+				<li class="firstLevel"><a href="/CarbonRegistry/default.asp">Carbon Registry Index<span class="arrow-down"></span></a>
+					
+					<ul>
+						<li><a href="/CarbonRegistry/countysearch.asp">County Search</a></li>
+					</ul>
+				</li>
+				<li class="firstLevel"><a href="/Lien/lienindex.asp">Lien Index<span class="arrow-down"></span></a>
+					
+					<ul>
+						<li><a href="/Lien/namesearch.asp">Name Search</a></li>
+						<li><a href="/Lien/bookpagesearch.asp">Book Page Search</a></li>
+						<li class="TwoLine"><a href="/liensearch/StateTaxLienSearch.aspx">State Revenue Dept.<br>Pending Lien Search</a></li>
+					</ul>
+				</li>
+				
+				<li class="firstLevel"><a href="/notary/">Notary Index<span class="arrow-down"></span></a>
+					
+					<ul>
+						<li><a href="/notary/search.asp">Notary Index Search</a></li>
+					</ul>
+				</li>
+				
+				
+				<li class="firstLevel"><a href="/plat/platindex.asp">Plat Index<span class="arrow-down"></span></a>
+					<ul>
+						<li><a href="/plat/namesearch.asp">Name Search</a></li>
+						<li><a href="/plat/bookpagesearch.asp">Book Page Search</a></li>
+					</ul>
+				</li>
+				<li class="firstLevel"><a href="/pt61/default.asp">PT-61 Index<span class="arrow-down"></span></a>
+				
+					<ul>
+						<li><a href="/pt61/namesearch.asp">Name Search</a></li>
+						<li><a href="/pt61/docnumsearch.asp">Document Search</a></li>
+						<li class="premium"><a id="lnkMenuAddressSearch" href="AddressSearch.aspx"><span>PREMIUM</span><br>Address Search</a></li>
+						<li class="premium"><a id="lnkMenuDailySearch" href="DailySearch.aspx"><span>PREMIUM</span><br>Daily Search</a></li>
+						<li class="premium"><a id="lnkMenuMapSearch" href="MapSearch.aspx"><span>PREMIUM</span><br>Map Search</a></li>
+					</ul>
+				</li>
+				<li class="firstLevel"><a href="/RealEstate/deedindex.asp">Real Estate Index<span class="arrow-down"></span></a>
+					<ul>
+						<li><a href="/RealEstate/namesearch.asp">Name Search</a></li>
+						<li><a href="/RealEstate/bookpagesearch.asp">Book Page Search</a></li>
+						<li><a href="/RealEstate/propertysearch.asp">Property Search</a></li>
+						<li class="premium"><a href="/RealEstatePremium/InstrumentTypeSearch.aspx"><span>PREMIUM</span><br>Instrument Type Search</a></li>
+					</ul>
+				</li>
+				<li class="firstLevel"><a href="/UCC_Search/default.asp">UCC Index<span class="arrow-down"></span></a>
+					<ul>
+						<li><a href="/UCC_Search/search.asp?searchtype=Article9">Basic Name Search</a></li>
+						<li><a href="/UCC_Search/search.asp?searchtype=FileNumber">File Number Search</a></li>
+						<li><a href="/UCC_Search/search.asp?searchtype=Daily">Daily Search</a></li>
+						<li><a href="/UCC_Search/search.asp?searchtype=SecuredParty">Secured Party Search</a></li>
+						<li><a href="/UCC_Search/certified.asp?Searchtype=Certified">Certified Search</a></li>
+					</ul>
+				</li>
+			</div>
+		</ul>
+	</center></div>
+	<!-- ==========================  End Header	================================================== -->
+	<form method="post" action="./MapSearch.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1" style="border:1px solid white;">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="YvoErBmuRwW4EuN+/vOcFfzFiPCwLPjlSg/3aPxmf4fAG2B2eZ1TxcLU+sGnPM8spGvqczHgp0/1VOhYN9ZElz9VRtAmzDriIUBSmvEvy0i+NXjzzVRZPQso8SaRxnd5zL6C/Nt62o7duxcnZGU4LO+marQ2zOVE8FE5z7BLjb5Qs7e9DynSskOIlkQeq+lJU7+lWUKOZy6wC8XxSuT+7DeZyxhXxQ75jKIU5bGVYGXXuL4122WYZE43O45T4+CvtEsz7wllrv3JWfAjmpGfuWSaXswoEmZuYmN4lY/NKsjDrSH0P9y0fI+Jbq8oHJxBk3KEsTNyAEL4+sKXGcY74Qo4ixwN7PD8JRgRBGYvCoSYcQUFl3oNzqvhL8yBy8M2T+Nrs6FDSDhEFPB/x9qnK7PloBGmMfQ/oqk+jj5ENVtMvuxkq1Zyve5GfTkdtvfL/n38MXjUUfRU+HvFiaW+z/cAXLXKq04n4nd9x67hIxngBv91nbBfJOLquXMjUlret0UqiNBT7/SFxaG0Sa/Raaot5SeRGbusmVP/qMEGz4emn0zhYn/vI+saqDSa/fYBFvDGQ78F5UPx/cw9+uAkugpyS4vCbXE5uhE4cM3iur0PA+Z51tBtJ7mzTl/liOdcGwjf2CA1HlJSeBgSo+JCiEhxBmhieAlPOWTkWVAsUvoeaJEyOfmyJztOcX6H+HzO2QYNtlwsvZJmEgKQh10+Oy7oiRYOoQuAEkIdKB5c7kutb4qe+lNNRgxJXcGHkTi3ysbNDVCGrjeqEjcO97x9q9u6m9KpEFsJstCxc+TSgvhA3xC1UkPSWvR7J0YLPQE20yICQao2zziPzKH3Vq72RDtzF1AUq/vL5UnClkcrTghCxb5e5BX8N+3zbA0pUUvwChKEX7W86xNP7GGyfrfxGneQBCBNNZE9dHmek5nVbR6yfHjjU0QV/l80xd/78UhJwxPPOoSv4chSeukmowWu6jP+IWzgDCNX9FfcR2Uqi6mdIRnKegxITmPmENIcc+8ZGrVvuy36qrDkR9nawiQS0omgqMO851V2JCVGzZcambfRunWpQSLpk0/Dg/Lq0ZCXnPiT18L2P02aPP+Gr7p10oo3zTU++P86LpYZhT/8vApUorKNMaUX9n68CjPjrAMLyU++8kYS8FYi/xlFvwUt5l7vCzHYXqWhyKHx2ITQqdKFeImAIlMD2be1TAPIp8AwE6zfxzaTFkzVXfXpO6e+eK97pWZLuh8qe458ZhOWsJDp1F6i3GfI8oawVOkeN7aI8iGTxW8/L+r2RpMCg7oiHSeHZZ1p/mlxv2aR5f36VB8/lhVDW7jIxCZoIzywTAWJ8WF7uDZEwIXF6kBy+n2ifag/8CO5ij5hyQcklumpLQkfLrY01zf2zqKmRVCX6X/iewisOd4+K4AJV5pIqeKZNXmZndBpLZ1lPnA6gAzoiBh85GUgx59cnYruTWsOLWVhpwPIdEZjPIbYYnVj">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/PT61Premium/WebResource.axd?d=EkmsCw97duRXxdGrHYhmvaVgA6FHrCry1QrEcBSbxSHu1s99c35YTi36J_zXKvuZdgFQjfuQs3xg_xAPenyy3YVtn_w1&amp;t=638901397900000000" type="text/javascript"></script>
+
+
+<script src="/PT61Premium/ScriptResource.axd?d=i9maDftGYvXSIgaUCxIjuDAHM0MVze16Gf3lhnClhU40yHzKlTDXPKT49TuRi1ifiUwL171D2F0IRjYJaPLSojHjZGOlJIpcEBv6vuU-a_yVEm-UYcjPiJwPm7pCceFn0QRa364f0OTl8JGCOn2jOAHpoKU1&amp;t=7f7f23e2" type="text/javascript"></script>
+<script src="/PT61Premium/ScriptResource.axd?d=rU_h4zbveiOKzwwMdJrYAljEdr19S3NvLKfJGZ55ZzhlRKGkvUbi7kvQBTofghBFEM2Rqsv30ndhA2YmZHzT-ijd6bx-MJbmavduT3nkAnP2vQCVXBNs1aQYl9lO1qaFHX7CtA2&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/PT61Premium/ScriptResource.axd?d=gXpxd5Lbyj5OeeWrqlbDQ1o_ZTsCLQxZA7Lt_mmzWaHQf8pgA9zoE0lVGPq2LUdv-gFJjfmqSZnrm0s45BkLLl1QcdHIGo6Qhwmi14jJa9AzFST5_y2BwQlWXT8T8vc3TdyK4A2&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="/PT61Premium/ScriptResource.axd?d=6cCITwwJV6N-HJTjYO0Hyw6rSUf5l-YOqRojEgqpMrTnRKDad1IyXfdac3kgwH0Tri9AHzOgeKWsSa8skSPD6pXXUxFkwy-hSiXNFO6yo8l_UzP3dcplxFK7TutJaHwi2KTJ3A2&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="/PT61Premium/ScriptResource.axd?d=7OkmE-6VZqG_7JsjpJ1VbTp19SdQP27idwkl9gxaMdFbvtZsFRRrLTHbpmGDTOzhwxzqHhw-P1D-o-FBtZ2xm6lLB0SxenSPRwe4Gg2i92QlpCHCW3Vq0z1WXSc2tof20zTVUg2&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="/PT61Premium/ScriptResource.axd?d=-Fb2aJrL-nTV_6gBCDo8AV8YXKDdUUdwEgo143PDmXVnltUx14JTcRvTVhFoeI-hv_HYqUoZ6QpLvg2a5FIQtJeF2z1E5Jg_8yM2FnhtjnQvIrglg2IHOnJCS4bccX27yV1ItA2&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="/PT61Premium/ScriptResource.axd?d=J4ulMpBwnA17KFKkVIeP2TjlxVxm2AQFZ5bOmGnie94Em44RBQareXzwr3AWl5YDCQViKEg8PP7HahQ-b2rh2IPMYWmjuMe7UNLYSbWQ1aDHQ-w6D3hzkUlynYnR3CmZlIHIjw2&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="/PT61Premium/ScriptResource.axd?d=JEZ-wp97wIZahv585FVp2y1MlAezxC6Klc0IafdK_8B-1RZvYP1u0vxQMAuYIQKBC5jhCmeQscG7jjxtY95d6klgyeSdJnxf8m_G91MrkmQSLbhbx_ODIkh3hPSG7rbB0_mqaw2&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="/PT61Premium/ScriptResource.axd?d=EaUDfE81OsaOVqpn5hPjAAZKBlJpFJP7PG6WjepZA-EGNYj31Ht_dYJPCqmcmQW1cloNRMBZ-4a9oaXnT9HzOgFMx97-_18YzAXa1y5KIJNU3_Gzr9r9t7gl4N7WDYqb_hCvme57pW5wfPRjItBF8a-u_z41&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="/PT61Premium/ScriptResource.axd?d=W9zM4WJwqYL3uNWrYYeQ-T1oG3thGuNbdThwP_M9xNwCtzyICDjv2rri59v-3Mn9R1VelRXanuM2BCTEZLxMlHZuIbESpkwpki4TK0J3U-LbpreDF4CaeVksy57gqYGft9XlxqkQKTmA14bel-Qn8GRQR4I1&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="/PT61Premium/ScriptResource.axd?d=pPRODd46Ry4ZMK9CyTV0_V3iYHlQwtGedbKYJauBOc_tlrNg2ovvuQxvNP2kEFOOzb6BwxRY250A-k-aDbgTI6VeWKxzy_WQinrF3uSrVULC0Wwl9pYQGulDSvEjGmNCAVsJFw2&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="/PT61Premium/ScriptResource.axd?d=PeUhjj_c3zLmdc8Dl8yW0Ny8H1LPPzN-qmvaXNFLYads1kOWcS2GKL4-UQOPWRL9vuDrZTjthlSOEwfO_xRa5P_6kODCEXopSBV_hWi0pJz4_iBf2QEwJ90f6rj6_exuWmv5gw2&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E1A6EB4A">
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="50BPMyvm_7QpsOUd5345sTPKJ-V3nAjG44SiXqZF9c_dqEuokYnIXqJQthqDFfUkz3RczzRcZ0Dnoif67KVILvmSHaYHAI8sL53lKj1Lltl67mdy0">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="us/Yg9ioNA2lwBH6nBX0mG2AnCOVRuY6OHAyxNom/GGm3/LEVCoRyKtsr3yeAPTd4bwpjSiyc+A6X6qZkAtpYN3UhXI5J2ZevMxq+Tl8PptFvUgn+KRnkrdzv38Zk4TZgJGB7wW4pTfmyEqx0wHSvDeK0zjbQI1OyqcDpD52Jm+ZOqEbvUXp8xs4yyBKkzb2ePLGCQA7mcELMIcIJyuWHSw1MpLNq+Xy5lpulIeqMrmQlPRZOUt3IRoHucCU/ymh+m5pum365UOOf2wK">
+</div> <!-- Border is a firefox fix, without it pushed the talbe offscreen right -->
+	<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		   <tbody><tr>
+				<td></td>
+				<td id="page-content">
+<div align="center">
+<div style="margin: 10px 0 15px 0;">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tbody><tr>
+		<td width="100%" align="left" class="BreakCrumbTitleCell"><span class="BreadCrumbTitle">Premium Search</span>&nbsp;&nbsp;&nbsp;<a id="BodyContent_lnkSearch" class="BreadCrumbMainLink" href="/">Search</a> &gt; <a id="BodyContent_lnkPT61Index" class="BreadCrumbMainLink" href="/pt61/">PT-61 Index</a> &gt; <a id="BodyContent_lnkMapSearch" class="BreadCrumbLastLink" href="MapSearch.aspx">Map Search</a></td>
+	</tr>
+</tbody></table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td align="left" valign="top" width="70%">
+            Please enter your search criteria below.
+            <br><br>
+            <table cellspacing="0" class="OuterSearchBox">
+                <tbody><tr><td class="TitleBar">Map Search</td></tr>
+                <tr>
+                    <td style="padding-left:20px;padding-right:20px;padding-top:20px;">
+                        <table class="InnerSearchBoxTop">
+                            <tbody><tr>
+                                <td style="white-space:nowrap;">
+                                    <div style="margin-bottom:10px;margin-top:10px;">
+                                        <b>Street Address:</b> <i>(example 123 Main St., Atlanta, GA 30345)</i><br>
+                                        <input name="ctl00$BodyContent$txtStreetAddress" type="text" id="BodyContent_txtStreetAddress" style="width:99%"> 
+                                        <span id="BodyContent_reqValAddress" class="ValidationAsterisk" style="display:none;">* </span>
+                                        <span id="BodyContent_regexValAddress" class="ValidationAsterisk" style="display:none;"> *</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left:20px;padding-right:20px;">
+                        <table class="InnerSearchBox">
+                            <tbody><tr>
+                                <td style="white-space:nowrap;">
+                                    <div style="margin-bottom:10px;">
+                                    Display results with sale prices (optional):
+                                    <br>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tbody><tr>
+                                            <td>
+                                                Between $ <input name="ctl00$BodyContent$txtSalePriceFrom" type="text" id="BodyContent_txtSalePriceFrom" style="width:100px;">
+                                            </td>
+                                            <td style="white-space:nowrap;">
+                                                &nbsp; 
+                                                <span id="BodyContent_compValSalePriceFrom" class="ValidationAsterisk" style="display:none;">* </span>
+                                                &nbsp;and&nbsp;&nbsp;
+                                            </td>
+                                            <td>
+                                                $ <input name="ctl00$BodyContent$txtSalePriceTo" type="text" id="BodyContent_txtSalePriceTo" style="width:100px;"> 
+                                            </td>
+                                            <td>
+                                                &nbsp;&nbsp; 
+                                                <span id="BodyContent_compValSalePriceTo" class="ValidationAsterisk" style="visibility:hidden;">* </span>
+                                                <span id="BodyContent_compValSalePrices" class="ValidationAsterisk" style="visibility:hidden;">* </span>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    Example for sale range searches: <b>100,000</b> to <b>200,000</b>.
+                                    </div>
+                                    Display results with sale dates from (optional):
+                                    <br>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tbody><tr>
+                                            <td>
+                                                <input name="ctl00$BodyContent$txtDateFrom" type="text" id="BodyContent_txtDateFrom" style="width:100px;">
+                                                
+                                            </td>
+                                            <td style="white-space:nowrap;">
+                                                &nbsp;&nbsp;(mm/dd/yyyy) 
+                                                <span id="BodyContent_compValDateFrom" class="ValidationAsterisk" style="display:none;">* </span>
+                                                &nbsp;through&nbsp;&nbsp;
+                                            </td>
+                                            <td>
+                                                <input name="ctl00$BodyContent$txtDateTo" type="text" id="BodyContent_txtDateTo" style="width:100px;"> 
+                                                
+                                            </td>
+                                            <td>
+                                                &nbsp;&nbsp;(mm/dd/yyyy) 
+                                                <span id="BodyContent_compValDateTo" class="ValidationAsterisk" style="visibility:hidden;">* </span>
+                                                <span id="BodyContent_compValDates" class="ValidationAsterisk" style="visibility:hidden;">* </span>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    Example for date range searches: <b>9/1/2004</b> to <b><span id="BodyContent_lblTodayDate">7/27/2026</span></b>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding-top:15px;padding-bottom:40px;">
+                        <input type="submit" name="ctl00$BodyContent$btnSearch" value="Begin Search" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$BodyContent$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;MapSearchResults.aspx&quot;, false, false))" id="BodyContent_btnSearch" style="width:160px;">
+                        &nbsp;&nbsp;
+                        <input type="submit" name="ctl00$BodyContent$btnResetForm" value="Reset Form" id="BodyContent_btnResetForm" style="width:160px;">
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+        <td align="left" valign="top" width="30%">
+            <div id="SearchTips">
+                <div id="BodyContent_valSummaryMapSearch" style="display:none;">
+
+</div>
+                <font class="SearchTipsHeader">Search Tips:</font>
+                <ul class="SearchTipsList">
+                    <li class="SearchTipsListIems">The Map Search only displays the most recent sale data for each Property found.</li>
+                    <li class="SearchTipsListIems">Sales price history can be found in the PT-61 information section after clicking a result for more information.</li>
+                    <li class="SearchTipsListIems">The database only contains sale prices from 9/1/2004.</li>
+                    <li class="SearchTipsListIems">Only PT-61s with valid Property information will appear in the Map Search.</li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+</tbody></table>
+</div>
+</td>
+				<td></td>
+		   </tr>
+	</tbody></table>
+	
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("BodyContent_valSummaryMapSearch"));
+var Page_Validators =  new Array(document.getElementById("BodyContent_reqValAddress"), document.getElementById("BodyContent_regexValAddress"), document.getElementById("BodyContent_compValSalePriceFrom"), document.getElementById("BodyContent_compValSalePriceTo"), document.getElementById("BodyContent_compValSalePrices"), document.getElementById("BodyContent_compValDateFrom"), document.getElementById("BodyContent_compValDateTo"), document.getElementById("BodyContent_compValDates"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var BodyContent_reqValAddress = document.all ? document.all["BodyContent_reqValAddress"] : document.getElementById("BodyContent_reqValAddress");
+BodyContent_reqValAddress.controltovalidate = "BodyContent_txtStreetAddress";
+BodyContent_reqValAddress.errormessage = "You must enter an Address.";
+BodyContent_reqValAddress.display = "Dynamic";
+BodyContent_reqValAddress.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+BodyContent_reqValAddress.initialvalue = "";
+var BodyContent_regexValAddress = document.all ? document.all["BodyContent_regexValAddress"] : document.getElementById("BodyContent_regexValAddress");
+BodyContent_regexValAddress.controltovalidate = "BodyContent_txtStreetAddress";
+BodyContent_regexValAddress.errormessage = "You must enter at least 3 characters into the Street Address field.";
+BodyContent_regexValAddress.display = "Dynamic";
+BodyContent_regexValAddress.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+BodyContent_regexValAddress.validationexpression = ".{3}.*";
+var BodyContent_compValSalePriceFrom = document.all ? document.all["BodyContent_compValSalePriceFrom"] : document.getElementById("BodyContent_compValSalePriceFrom");
+BodyContent_compValSalePriceFrom.controltovalidate = "BodyContent_txtSalePriceFrom";
+BodyContent_compValSalePriceFrom.errormessage = "Sale Price From is not a valid sales price.";
+BodyContent_compValSalePriceFrom.display = "Dynamic";
+BodyContent_compValSalePriceFrom.type = "Currency";
+BodyContent_compValSalePriceFrom.decimalchar = ".";
+BodyContent_compValSalePriceFrom.groupchar = ",";
+BodyContent_compValSalePriceFrom.digits = "2";
+BodyContent_compValSalePriceFrom.groupsize = "3";
+BodyContent_compValSalePriceFrom.evaluationfunction = "CompareValidatorEvaluateIsValid";
+BodyContent_compValSalePriceFrom.operator = "DataTypeCheck";
+var BodyContent_compValSalePriceTo = document.all ? document.all["BodyContent_compValSalePriceTo"] : document.getElementById("BodyContent_compValSalePriceTo");
+BodyContent_compValSalePriceTo.controltovalidate = "BodyContent_txtSalePriceTo";
+BodyContent_compValSalePriceTo.errormessage = "Sale Price To is not a valid sales price.";
+BodyContent_compValSalePriceTo.type = "Currency";
+BodyContent_compValSalePriceTo.decimalchar = ".";
+BodyContent_compValSalePriceTo.groupchar = ",";
+BodyContent_compValSalePriceTo.digits = "2";
+BodyContent_compValSalePriceTo.groupsize = "3";
+BodyContent_compValSalePriceTo.evaluationfunction = "CompareValidatorEvaluateIsValid";
+BodyContent_compValSalePriceTo.operator = "DataTypeCheck";
+var BodyContent_compValSalePrices = document.all ? document.all["BodyContent_compValSalePrices"] : document.getElementById("BodyContent_compValSalePrices");
+BodyContent_compValSalePrices.controltovalidate = "BodyContent_txtSalePriceTo";
+BodyContent_compValSalePrices.errormessage = "Sale Price From cannot be less than the Sale Price To";
+BodyContent_compValSalePrices.type = "Currency";
+BodyContent_compValSalePrices.decimalchar = ".";
+BodyContent_compValSalePrices.groupchar = ",";
+BodyContent_compValSalePrices.digits = "2";
+BodyContent_compValSalePrices.groupsize = "3";
+BodyContent_compValSalePrices.evaluationfunction = "CompareValidatorEvaluateIsValid";
+BodyContent_compValSalePrices.controltocompare = "BodyContent_txtSalePriceFrom";
+BodyContent_compValSalePrices.controlhookup = "BodyContent_txtSalePriceFrom";
+BodyContent_compValSalePrices.operator = "GreaterThan";
+var BodyContent_compValDateFrom = document.all ? document.all["BodyContent_compValDateFrom"] : document.getElementById("BodyContent_compValDateFrom");
+BodyContent_compValDateFrom.controltovalidate = "BodyContent_txtDateFrom";
+BodyContent_compValDateFrom.errormessage = "Date From is not a valid date.";
+BodyContent_compValDateFrom.display = "Dynamic";
+BodyContent_compValDateFrom.type = "Date";
+BodyContent_compValDateFrom.dateorder = "mdy";
+BodyContent_compValDateFrom.cutoffyear = "2029";
+BodyContent_compValDateFrom.century = "2000";
+BodyContent_compValDateFrom.evaluationfunction = "CompareValidatorEvaluateIsValid";
+BodyContent_compValDateFrom.operator = "DataTypeCheck";
+var BodyContent_compValDateTo = document.all ? document.all["BodyContent_compValDateTo"] : document.getElementById("BodyContent_compValDateTo");
+BodyContent_compValDateTo.controltovalidate = "BodyContent_txtDateTo";
+BodyContent_compValDateTo.errormessage = "Date To is not a valid date.";
+BodyContent_compValDateTo.type = "Date";
+BodyContent_compValDateTo.dateorder = "mdy";
+BodyContent_compValDateTo.cutoffyear = "2029";
+BodyContent_compValDateTo.century = "2000";
+BodyContent_compValDateTo.evaluationfunction = "CompareValidatorEvaluateIsValid";
+BodyContent_compValDateTo.operator = "DataTypeCheck";
+var BodyContent_compValDates = document.all ? document.all["BodyContent_compValDates"] : document.getElementById("BodyContent_compValDates");
+BodyContent_compValDates.controltovalidate = "BodyContent_txtDateTo";
+BodyContent_compValDates.errormessage = "Date From cannot be before Date To.";
+BodyContent_compValDates.type = "Date";
+BodyContent_compValDates.dateorder = "mdy";
+BodyContent_compValDates.cutoffyear = "2029";
+BodyContent_compValDates.century = "2000";
+BodyContent_compValDates.evaluationfunction = "CompareValidatorEvaluateIsValid";
+BodyContent_compValDates.controltocompare = "BodyContent_txtDateFrom";
+BodyContent_compValDates.controlhookup = "BodyContent_txtDateFrom";
+BodyContent_compValDates.operator = "GreaterThan";
+var BodyContent_valSummaryMapSearch = document.all ? document.all["BodyContent_valSummaryMapSearch"] : document.getElementById("BodyContent_valSummaryMapSearch");
+BodyContent_valSummaryMapSearch.headertext = "Please correct the following:";
+BodyContent_valSummaryMapSearch.showmessagebox = "True";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+(function(id) {
+    var e = document.getElementById(id);
+    if (e) {
+        e.dispose = function() {
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));
+        }
+        e = null;
+    }
+})('BodyContent_valSummaryMapSearch');
+
+document.getElementById('BodyContent_reqValAddress').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('BodyContent_reqValAddress'));
+}
+
+document.getElementById('BodyContent_regexValAddress').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('BodyContent_regexValAddress'));
+}
+
+document.getElementById('BodyContent_compValSalePriceFrom').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('BodyContent_compValSalePriceFrom'));
+}
+
+document.getElementById('BodyContent_compValSalePriceTo').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('BodyContent_compValSalePriceTo'));
+}
+
+document.getElementById('BodyContent_compValSalePrices').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('BodyContent_compValSalePrices'));
+}
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CalendarBehavior, {"format":"MM/dd/yyyy","id":"BodyContent_ajaxCalExtender1"}, null, null, $get("BodyContent_txtDateFrom"));
+});
+
+document.getElementById('BodyContent_compValDateFrom').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('BodyContent_compValDateFrom'));
+}
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CalendarBehavior, {"format":"MM/dd/yyyy","id":"BodyContent_ajaxCalExtender2"}, null, null, $get("BodyContent_txtDateTo"));
+});
+
+document.getElementById('BodyContent_compValDateTo').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('BodyContent_compValDateTo'));
+}
+
+document.getElementById('BodyContent_compValDates').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('BodyContent_compValDates'));
+}
+//]]>
+</script>
+</form>
+	<!-- ==========================  Footer	================================================== -->
+	<div id="foot">
+	<footer class="container-twelve">
+		<div class="twelve columns">
+		    <!--Overriding the width to increase 20 pixels due to FAQ link"-->			
+			<div id="fnav" class="nine columns alpha omega" style="width:720px;">
+				<a id="lnkDisclaimer" href="Disclaimer.aspx">Search Disclaimer</a>
+				<a id="lnkPremiumFAQ" href="PT61PremiumFAQ.aspx">PT-61 Premium FAQ</a>
+				<a id="lnkTerms" href="https://www.gsccca.org/terms-of-use">Terms of Use</a>
+				<a id="lnkSiteMap" href="https://www.gsccca.org/sitemap">Sitemap</a>
+				<a id="lnkGlossaryFooter" href="https://www.gsccca.org/glossary">Glossary</a>
+				<a id="lnkLoginFooter" href="https://apps.gsccca.org/logout.asp">Logout</a>
+				<a id="lnkContactFooter" href="https://www.gsccca.org/contact-us">Contact Us</a>
+			</div>
+			<div class="three columns alpha omega">
+				<p><a id="lnkSiteMainFooter" href="https://www.gsccca.org/">GSCCCA</a></p>
+				<p class="copy">Copyright © 1995 - <span id="lblCopyrightYear">2026</span><br>Georgia Superior Court Clerks' Cooperative Authority</p>
+			</div>
+		</div><!--twelve-columns-->
+	</footer>
+	</div><!--foot-->
+	<!-- ==========================  End Footer	================================================== -->
+
+
+</body></html>

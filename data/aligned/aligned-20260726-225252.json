@@ -1,0 +1,1174 @@
+{
+  "generated_at": "2026-07-26T22:52:52.428608+00:00",
+  "modes": [
+    "cash",
+    "saved"
+  ],
+  "criteria": [
+    {
+      "buyer_id": "saved-sfr-vacant-out-of-state",
+      "source": "dealdriven-saved-search",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "sfr",
+      "vacant": true,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "saved search: SFR Vacant Out of State",
+      "raw": {
+        "saved_search": {
+          "name": "SFR Vacant Out of State",
+          "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/115d0020-1bc3-4754-9b48-60520edabe04"
+        },
+        "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/115d0020-1bc3-4754-9b48-60520edabe04",
+        "rows": [
+          {
+            "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          },
+          {
+            "text": "Results - 0(None Selected)",
+            "source": "card"
+          },
+          {
+            "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          }
+        ],
+        "row_count": 3
+      }
+    },
+    {
+      "buyer_id": "saved-vacant-multi-family",
+      "source": "dealdriven-saved-search",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "multifamily",
+      "vacant": true,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "saved search: Vacant Multi Family",
+      "raw": {
+        "saved_search": {
+          "name": "Vacant Multi Family",
+          "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/1620de39-a202-4397-a49d-af08d9dc00e0"
+        },
+        "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/1620de39-a202-4397-a49d-af08d9dc00e0",
+        "rows": [
+          {
+            "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          },
+          {
+            "text": "Results - 0(None Selected)",
+            "source": "card"
+          },
+          {
+            "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          }
+        ],
+        "row_count": 3
+      }
+    },
+    {
+      "buyer_id": "saved-mf-atlanta-metro",
+      "source": "dealdriven-saved-search",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [
+          "Atlanta"
+        ],
+        "zips": []
+      },
+      "property_type": "multifamily",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "saved search: MF Atlanta Metro",
+      "raw": {
+        "saved_search": {
+          "name": "MF Atlanta Metro",
+          "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/222da914-1c6d-4133-bbc4-cc7bbb8423b1"
+        },
+        "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/222da914-1c6d-4133-bbc4-cc7bbb8423b1",
+        "rows": [
+          {
+            "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          },
+          {
+            "text": "Results - 0(None Selected)",
+            "source": "card"
+          },
+          {
+            "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          }
+        ],
+        "row_count": 3
+      }
+    },
+    {
+      "buyer_id": "saved-30310-multi",
+      "source": "dealdriven-saved-search",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": [
+          "30310"
+        ]
+      },
+      "property_type": "unknown",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "saved search: 30310 Multi",
+      "raw": {
+        "saved_search": {
+          "name": "30310 Multi",
+          "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/398370ac-a40f-4f5c-8a90-837848722d12"
+        },
+        "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/398370ac-a40f-4f5c-8a90-837848722d12",
+        "rows": [
+          {
+            "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          },
+          {
+            "text": "Results - 0(None Selected)",
+            "source": "card"
+          },
+          {
+            "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          }
+        ],
+        "row_count": 3
+      }
+    },
+    {
+      "buyer_id": "saved-multifamily-30318",
+      "source": "dealdriven-saved-search",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": [
+          "30318"
+        ]
+      },
+      "property_type": "multifamily",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "saved search: Multifamily 30318",
+      "raw": {
+        "saved_search": {
+          "name": "Multifamily 30318",
+          "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/4302d1df-aa99-4f73-aa29-f02324eaf96e"
+        },
+        "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/4302d1df-aa99-4f73-aa29-f02324eaf96e",
+        "rows": [
+          {
+            "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          },
+          {
+            "text": "Results - 0(None Selected)",
+            "source": "card"
+          },
+          {
+            "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          }
+        ],
+        "row_count": 3
+      }
+    },
+    {
+      "buyer_id": "saved-vacant-noo",
+      "source": "dealdriven-saved-search",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "unknown",
+      "vacant": true,
+      "noo": true,
+      "price_min": null,
+      "price_max": null,
+      "notes": "saved search: Vacant_NOO",
+      "raw": {
+        "saved_search": {
+          "name": "Vacant_NOO",
+          "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/4e1171cf-2a48-4237-8af2-1a7ceb5865ca"
+        },
+        "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/4e1171cf-2a48-4237-8af2-1a7ceb5865ca",
+        "rows": [
+          {
+            "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          },
+          {
+            "text": "Results - 0(None Selected)",
+            "source": "card"
+          },
+          {
+            "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          }
+        ],
+        "row_count": 3
+      }
+    },
+    {
+      "buyer_id": "cash-fulton-county-ga-sfr",
+      "source": "dealdriven-cash-buyer",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "sfr",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "cash buyer search sfr @ Fulton County, GA",
+      "raw": {
+        "cash_buyer": {
+          "query": "Fulton County, GA",
+          "property_type": "sfr",
+          "filter_applied": false,
+          "rows": [],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    },
+    {
+      "buyer_id": "cash-fulton-county-ga-multifamily",
+      "source": "dealdriven-cash-buyer",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "multifamily",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "cash buyer search multifamily @ Fulton County, GA",
+      "raw": {
+        "cash_buyer": {
+          "query": "Fulton County, GA",
+          "property_type": "multifamily",
+          "filter_applied": false,
+          "rows": [],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    },
+    {
+      "buyer_id": "cash-atlanta-ga-sfr",
+      "source": "dealdriven-cash-buyer",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [
+          "Atlanta"
+        ],
+        "zips": []
+      },
+      "property_type": "sfr",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "cash buyer search sfr @ Atlanta, GA",
+      "raw": {
+        "cash_buyer": {
+          "query": "Atlanta, GA",
+          "property_type": "sfr",
+          "filter_applied": false,
+          "rows": [],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    },
+    {
+      "buyer_id": "cash-atlanta-ga-multifamily",
+      "source": "dealdriven-cash-buyer",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [
+          "Atlanta"
+        ],
+        "zips": []
+      },
+      "property_type": "multifamily",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "cash buyer search multifamily @ Atlanta, GA",
+      "raw": {
+        "cash_buyer": {
+          "query": "Atlanta, GA",
+          "property_type": "multifamily",
+          "filter_applied": false,
+          "rows": [],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    },
+    {
+      "buyer_id": "cash-30318-sfr",
+      "source": "dealdriven-cash-buyer",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": [
+          "30318"
+        ]
+      },
+      "property_type": "sfr",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "cash buyer search sfr @ 30318",
+      "raw": {
+        "cash_buyer": {
+          "query": "30318",
+          "property_type": "sfr",
+          "filter_applied": false,
+          "rows": [],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    },
+    {
+      "buyer_id": "cash-30318-multifamily",
+      "source": "dealdriven-cash-buyer",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": [
+          "30318"
+        ]
+      },
+      "property_type": "multifamily",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "cash buyer search multifamily @ 30318",
+      "raw": {
+        "cash_buyer": {
+          "query": "30318",
+          "property_type": "multifamily",
+          "filter_applied": false,
+          "rows": [],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    },
+    {
+      "buyer_id": "cash-30310-sfr",
+      "source": "dealdriven-cash-buyer",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": [
+          "30310"
+        ]
+      },
+      "property_type": "sfr",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "cash buyer search sfr @ 30310",
+      "raw": {
+        "cash_buyer": {
+          "query": "30310",
+          "property_type": "sfr",
+          "filter_applied": false,
+          "rows": [],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    },
+    {
+      "buyer_id": "cash-30310-multifamily",
+      "source": "dealdriven-cash-buyer",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": [
+          "30310"
+        ]
+      },
+      "property_type": "multifamily",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "cash buyer search multifamily @ 30310",
+      "raw": {
+        "cash_buyer": {
+          "query": "30310",
+          "property_type": "multifamily",
+          "filter_applied": false,
+          "rows": [],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    }
+  ],
+  "comps": [
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "Fulton County",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "saved-sfr-vacant-out-of-state",
+        "property_type": "sfr",
+        "gsccca": {
+          "query": "Fulton County",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n20 search results for Fulton County\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nImage_File_Specs\nhttps://www.gsccca.org/docs/deed-lien-plat-documents/image_file_specs.pdf?sfvrsn=871027e2_2\nimages from all county Superior Courts in the State of Georgia into a central computer to create, to in this document as image files and are described below. Creation of these files may be from the county, by the county o",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Fulton+County"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "Fulton County",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "saved-vacant-multi-family",
+        "property_type": "multifamily",
+        "gsccca": {
+          "query": "Fulton County",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n20 search results for Fulton County\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nImage_File_Specs\nhttps://www.gsccca.org/docs/deed-lien-plat-documents/image_file_specs.pdf?sfvrsn=871027e2_2\nimages from all county Superior Courts in the State of Georgia into a central computer to create, to in this document as image files and are described below. Creation of these files may be from the county, by the county o",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Fulton+County"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "Atlanta, GA",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "saved-mf-atlanta-metro",
+        "property_type": "multifamily",
+        "gsccca": {
+          "query": "Atlanta, GA",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n128 search results for Atlanta\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nInclement Weather\nhttps://www.gsccca.org/learn/inclement-weather\nDue to inclement weather in the Atlanta area, the Clerks' Authority office will be closed on Wednesday, January 22, 2025. We apologize for any inconvenience this may cause and if you need assistance please visit our Contact Us page. Inclement Weather\nMarch05_news\nhttps://www.gsccca.org/docs/ne",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Atlanta"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "30310",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "saved-30310-multi",
+        "property_type": "unknown",
+        "gsccca": {
+          "query": "30310",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30310\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30310"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "30318",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "saved-multifamily-30318",
+        "property_type": "multifamily",
+        "gsccca": {
+          "query": "30318",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30318\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30318"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "Fulton County",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "saved-vacant-noo",
+        "property_type": "unknown",
+        "gsccca": {
+          "query": "Fulton County",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n20 search results for Fulton County\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nImage_File_Specs\nhttps://www.gsccca.org/docs/deed-lien-plat-documents/image_file_specs.pdf?sfvrsn=871027e2_2\nimages from all county Superior Courts in the State of Georgia into a central computer to create, to in this document as image files and are described below. Creation of these files may be from the county, by the county o",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Fulton+County"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "Fulton County",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "cash-fulton-county-ga-sfr",
+        "property_type": "sfr",
+        "gsccca": {
+          "query": "Fulton County",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n20 search results for Fulton County\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nImage_File_Specs\nhttps://www.gsccca.org/docs/deed-lien-plat-documents/image_file_specs.pdf?sfvrsn=871027e2_2\nimages from all county Superior Courts in the State of Georgia into a central computer to create, to in this document as image files and are described below. Creation of these files may be from the county, by the county o",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Fulton+County"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "Fulton County",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "cash-fulton-county-ga-multifamily",
+        "property_type": "multifamily",
+        "gsccca": {
+          "query": "Fulton County",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n20 search results for Fulton County\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nImage_File_Specs\nhttps://www.gsccca.org/docs/deed-lien-plat-documents/image_file_specs.pdf?sfvrsn=871027e2_2\nimages from all county Superior Courts in the State of Georgia into a central computer to create, to in this document as image files and are described below. Creation of these files may be from the county, by the county o",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Fulton+County"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "Atlanta, GA",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "cash-atlanta-ga-sfr",
+        "property_type": "sfr",
+        "gsccca": {
+          "query": "Atlanta, GA",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n128 search results for Atlanta\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nInclement Weather\nhttps://www.gsccca.org/learn/inclement-weather\nDue to inclement weather in the Atlanta area, the Clerks' Authority office will be closed on Wednesday, January 22, 2025. We apologize for any inconvenience this may cause and if you need assistance please visit our Contact Us page. Inclement Weather\nMarch05_news\nhttps://www.gsccca.org/docs/ne",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Atlanta"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "Atlanta, GA",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "cash-atlanta-ga-multifamily",
+        "property_type": "multifamily",
+        "gsccca": {
+          "query": "Atlanta, GA",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n128 search results for Atlanta\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nInclement Weather\nhttps://www.gsccca.org/learn/inclement-weather\nDue to inclement weather in the Atlanta area, the Clerks' Authority office will be closed on Wednesday, January 22, 2025. We apologize for any inconvenience this may cause and if you need assistance please visit our Contact Us page. Inclement Weather\nMarch05_news\nhttps://www.gsccca.org/docs/ne",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Atlanta"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "30318",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "cash-30318-sfr",
+        "property_type": "sfr",
+        "gsccca": {
+          "query": "30318",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30318\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30318"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "30318",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "cash-30318-multifamily",
+        "property_type": "multifamily",
+        "gsccca": {
+          "query": "30318",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30318\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30318"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "30310",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "cash-30310-sfr",
+        "property_type": "sfr",
+        "gsccca": {
+          "query": "30310",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30310\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30310"
+        },
+        "row_count": 1
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "30310",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": null,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "from_criteria": "cash-30310-multifamily",
+        "property_type": "multifamily",
+        "gsccca": {
+          "query": "30310",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30310\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+              "source": "card"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30310"
+        },
+        "row_count": 1
+      }
+    }
+  ],
+  "matches": [
+    {
+      "criteria_index": 0,
+      "comp_index": 0,
+      "score": 53,
+      "reasons": [
+        "same county",
+        "property type target sfr",
+        "vacant demand",
+        "buyer inventory present"
+      ]
+    },
+    {
+      "criteria_index": 1,
+      "comp_index": 1,
+      "score": 53,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "vacant demand",
+        "buyer inventory present"
+      ]
+    },
+    {
+      "criteria_index": 4,
+      "comp_index": 4,
+      "score": 63,
+      "reasons": [
+        "same county",
+        "zip overlap",
+        "property type target multifamily",
+        "buyer inventory present"
+      ]
+    },
+    {
+      "criteria_index": 10,
+      "comp_index": 10,
+      "score": 55,
+      "reasons": [
+        "same county",
+        "zip overlap",
+        "property type target sfr"
+      ]
+    },
+    {
+      "criteria_index": 11,
+      "comp_index": 11,
+      "score": 55,
+      "reasons": [
+        "same county",
+        "zip overlap",
+        "property type target multifamily"
+      ]
+    },
+    {
+      "criteria_index": 12,
+      "comp_index": 12,
+      "score": 55,
+      "reasons": [
+        "same county",
+        "zip overlap",
+        "property type target sfr"
+      ]
+    },
+    {
+      "criteria_index": 13,
+      "comp_index": 13,
+      "score": 55,
+      "reasons": [
+        "same county",
+        "zip overlap",
+        "property type target multifamily"
+      ]
+    }
+  ],
+  "unmatched_criteria": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "errors": [],
+  "raw_results": [
+    {
+      "buyer_id": "saved-sfr-vacant-out-of-state",
+      "property_type": "sfr",
+      "score": 53,
+      "gsccca": {
+        "query": "Fulton County",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n20 search results for Fulton County\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nImage_File_Specs\nhttps://www.gsccca.org/docs/deed-lien-plat-documents/image_file_specs.pdf?sfvrsn=871027e2_2\nimages from all county Superior Courts in the State of Georgia into a central computer to create, to in this document as image files and are described below. Creation of these files may be from the county, by the county o",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Fulton+County"
+      }
+    },
+    {
+      "buyer_id": "saved-vacant-multi-family",
+      "property_type": "multifamily",
+      "score": 53,
+      "gsccca": {
+        "query": "Fulton County",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n20 search results for Fulton County\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nImage_File_Specs\nhttps://www.gsccca.org/docs/deed-lien-plat-documents/image_file_specs.pdf?sfvrsn=871027e2_2\nimages from all county Superior Courts in the State of Georgia into a central computer to create, to in this document as image files and are described below. Creation of these files may be from the county, by the county o",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Fulton+County"
+      }
+    },
+    {
+      "buyer_id": "saved-mf-atlanta-metro",
+      "property_type": "multifamily",
+      "score": 48,
+      "gsccca": {
+        "query": "Atlanta, GA",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n128 search results for Atlanta\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nInclement Weather\nhttps://www.gsccca.org/learn/inclement-weather\nDue to inclement weather in the Atlanta area, the Clerks' Authority office will be closed on Wednesday, January 22, 2025. We apologize for any inconvenience this may cause and if you need assistance please visit our Contact Us page. Inclement Weather\nMarch05_news\nhttps://www.gsccca.org/docs/ne",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Atlanta"
+      }
+    },
+    {
+      "buyer_id": "saved-30310-multi",
+      "property_type": "unknown",
+      "score": 43,
+      "gsccca": {
+        "query": "30310",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30310\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30310"
+      }
+    },
+    {
+      "buyer_id": "saved-multifamily-30318",
+      "property_type": "multifamily",
+      "score": 63,
+      "gsccca": {
+        "query": "30318",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30318\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30318"
+      }
+    },
+    {
+      "buyer_id": "saved-vacant-noo",
+      "property_type": "unknown",
+      "score": 38,
+      "gsccca": {
+        "query": "Fulton County",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n20 search results for Fulton County\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nImage_File_Specs\nhttps://www.gsccca.org/docs/deed-lien-plat-documents/image_file_specs.pdf?sfvrsn=871027e2_2\nimages from all county Superior Courts in the State of Georgia into a central computer to create, to in this document as image files and are described below. Creation of these files may be from the county, by the county o",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Fulton+County"
+      }
+    },
+    {
+      "buyer_id": "cash-fulton-county-ga-sfr",
+      "property_type": "sfr",
+      "score": 40,
+      "gsccca": {
+        "query": "Fulton County",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n20 search results for Fulton County\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nImage_File_Specs\nhttps://www.gsccca.org/docs/deed-lien-plat-documents/image_file_specs.pdf?sfvrsn=871027e2_2\nimages from all county Superior Courts in the State of Georgia into a central computer to create, to in this document as image files and are described below. Creation of these files may be from the county, by the county o",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Fulton+County"
+      }
+    },
+    {
+      "buyer_id": "cash-fulton-county-ga-multifamily",
+      "property_type": "multifamily",
+      "score": 40,
+      "gsccca": {
+        "query": "Fulton County",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n20 search results for Fulton County\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nImage_File_Specs\nhttps://www.gsccca.org/docs/deed-lien-plat-documents/image_file_specs.pdf?sfvrsn=871027e2_2\nimages from all county Superior Courts in the State of Georgia into a central computer to create, to in this document as image files and are described below. Creation of these files may be from the county, by the county o",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Fulton+County"
+      }
+    },
+    {
+      "buyer_id": "cash-atlanta-ga-sfr",
+      "property_type": "sfr",
+      "score": 40,
+      "gsccca": {
+        "query": "Atlanta, GA",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n128 search results for Atlanta\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nInclement Weather\nhttps://www.gsccca.org/learn/inclement-weather\nDue to inclement weather in the Atlanta area, the Clerks' Authority office will be closed on Wednesday, January 22, 2025. We apologize for any inconvenience this may cause and if you need assistance please visit our Contact Us page. Inclement Weather\nMarch05_news\nhttps://www.gsccca.org/docs/ne",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Atlanta"
+      }
+    },
+    {
+      "buyer_id": "cash-atlanta-ga-multifamily",
+      "property_type": "multifamily",
+      "score": 40,
+      "gsccca": {
+        "query": "Atlanta, GA",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n128 search results for Atlanta\n\nClerks - FULTON County\nhttps://www.gsccca.org/clerks/clerk-results?cid=60\nClerks - FULTON County, Clerk Name: Che' Alexander, City: Atlanta, Chief Deputy: N/A, Office staff: For information on office contacts in the Fulton County Clerk's Office, visit: http://www.fultonclerk.org/Directory.aspx\nInclement Weather\nhttps://www.gsccca.org/learn/inclement-weather\nDue to inclement weather in the Atlanta area, the Clerks' Authority office will be closed on Wednesday, January 22, 2025. We apologize for any inconvenience this may cause and if you need assistance please visit our Contact Us page. Inclement Weather\nMarch05_news\nhttps://www.gsccca.org/docs/ne",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=Atlanta"
+      }
+    },
+    {
+      "buyer_id": "cash-30318-sfr",
+      "property_type": "sfr",
+      "score": 55,
+      "gsccca": {
+        "query": "30318",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30318\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30318"
+      }
+    },
+    {
+      "buyer_id": "cash-30318-multifamily",
+      "property_type": "multifamily",
+      "score": 55,
+      "gsccca": {
+        "query": "30318",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30318\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30318"
+      }
+    },
+    {
+      "buyer_id": "cash-30310-sfr",
+      "property_type": "sfr",
+      "score": 55,
+      "gsccca": {
+        "query": "30310",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30310\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30310"
+      }
+    },
+    {
+      "buyer_id": "cash-30310-multifamily",
+      "property_type": "multifamily",
+      "score": 55,
+      "gsccca": {
+        "query": "30310",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30310\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30310"
+      }
+    }
+  ]
+}

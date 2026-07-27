@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-07-26T22:52:56.989182+00:00",
+  "status": "draft",
+  "submit_allowed": false,
+  "score": 55,
+  "reasons": [
+    "same county",
+    "zip overlap",
+    "property type target sfr"
+  ],
+  "demand": {
+    "buyer_id": "cash-30318-sfr",
+    "source": "dealdriven-cash-buyer",
+    "geo": {
+      "counties": [
+        "Fulton"
+      ],
+      "cities": [],
+      "zips": [
+        "30318"
+      ]
+    },
+    "property_type": "sfr",
+    "vacant": false,
+    "noo": false,
+    "price_min": null,
+    "price_max": null,
+    "notes": "cash buyer search sfr @ 30318",
+    "raw": {
+      "cash_buyer": {
+        "query": "30318",
+        "property_type": "sfr",
+        "filter_applied": false,
+        "rows": [],
+        "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+      }
+    }
+  },
+  "supply": {
+    "source": "gsccca",
+    "county": "Fulton",
+    "address": "30318",
+    "parcel": "",
+    "sale_date": "",
+    "sale_price": null,
+    "grantor": "",
+    "grantee": "",
+    "book_page": "",
+    "instrument": "",
+    "raw": {
+      "from_criteria": "cash-30318-sfr",
+      "property_type": "sfr",
+      "gsccca": {
+        "query": "30318",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30318\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30318"
+      },
+      "row_count": 1
+    }
+  },
+  "ghl": {
+    "contact_id": "k7f9N1hYMmffSjs30zCw",
+    "note_id": "DgnAQ9LsJcnj6iy3r4jU",
+    "tags": [
+      "wholesale-demand-align",
+      "source-dealdriven",
+      "source-gsccca",
+      "score-53",
+      "county-fulton",
+      "type-multifamily",
+      "vacant",
+      "demand-saved-search"
+    ]
+  },
+  "proposed_terms": {
+    "assignment_fee": null,
+    "offer_price": null,
+    "earnest_money": null,
+    "closing_days": 21,
+    "notes": "Fill before --submit"
+  },
+  "host_paths": {
+    "dealdriven_signatures": "https://app.dealdriven.com/apps/signatures",
+    "dealdriven_campaign_pending": "https://app.dealdriven.com/apps/properties/status/campaign-pending"
+  }
+}

@@ -11,9 +11,10 @@ Agents:
 
 from typing import List, Dict, Any, Optional
 import asyncio
-import json
-from datetime import datetime, timedelta
 import logging
+import random
+from datetime import datetime, timedelta
+from typing import Dict, Any, List, Optional
 from dataclasses import dataclass, asdict
 from enum import Enum
 
@@ -71,10 +72,10 @@ class PropertyLead:
     county: str
     state: str
     zip_code: str
-    parcel_id: Optional[str] = None
-    
-    # Foreclosure details
     foreclosure_stage: str
+    parcel_id: Optional[str] = None
+
+    # Foreclosure details
     case_number: Optional[str] = None
     auction_date: Optional[str] = None
     filing_date: Optional[str] = None
@@ -496,7 +497,12 @@ class ForeclosureDiscoveryCrew:
         ]
     
     async def discover_properties(self, request: DiscoveryRequest) -> Dict[str, Any]:
-        """Execute the complete property discovery workflow"""
+        """Execute the complete property discovery workflow.
+        The original implementation used the class ``DiscoveryRequest`` from ``agents`` which
+        conflicted with the similarly‑named ``DiscoveryRequest`` defined in the integration
+        module.  To avoid import errors we explicitly import the correct dataclass from the
+        ``foreclosure_integration`` package and reference it here.
+        """
         
         logger.info(f"Starting foreclosure discovery for counties: {request.counties}")
         

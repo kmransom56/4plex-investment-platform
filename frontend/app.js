@@ -5,6 +5,7 @@
 
 class InvestmentPlatform {
     constructor() {
+        // Connect to real backend API
         this.apiBase = 'http://localhost:11050/api';
         this.activeJobs = new Map();
         this.properties = [];

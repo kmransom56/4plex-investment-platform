@@ -1,0 +1,99 @@
+{
+  "results": [
+    {
+      "address": "8581 Elm Way",
+      "county": "Fulton",
+      "dealdriven": [],
+      "gsccca": [],
+      "gsccca_meta": {
+        "url": "https://search.gsccca.org/PT61Premium/AddressSearchResults.aspx",
+        "error": null,
+        "query": "8581 Elm Way",
+        "no_records": true
+      }
+    },
+    {
+      "address": "670 Park Blvd",
+      "county": "Fulton",
+      "dealdriven": [],
+      "gsccca": [
+        {
+          "source": "gsccca",
+          "county": "FULTON",
+          "address": "Milton",
+          "parcel": "",
+          "sale_date": "10/15/2021",
+          "sale_price": 660000.0,
+          "grantor": "Donald J. Frawley and Marie G. Frawley",
+          "grantee": "Krueck, Anthony",
+          "book_page": "Book 64669 Page 434",
+          "instrument": "PT-61 060-2021-049243",
+          "raw": {
+            "mode": "address_dashboard",
+            "buyer_address": "4117 Stourbridge Common Circle Milton, GA 30004",
+            "seller_address": "6465 Wayzata Blvd Ste 670 St. Lois Park, MN 55426",
+            "property_address": "Milton",
+            "deed_type": "WARRANTY DEED",
+            "page_url": "https://search.gsccca.org/PT61Premium/AddressSearchResults.aspx"
+          }
+        }
+      ],
+      "gsccca_meta": {
+        "url": "https://search.gsccca.org/PT61Premium/AddressSearchResults.aspx",
+        "error": null,
+        "query": "670 Park Blvd",
+        "no_records": null
+      }
+    },
+    {
+      "address": "4634 Elm Way",
+      "county": "Fulton",
+      "dealdriven": [],
+      "gsccca": [],
+      "gsccca_meta": {
+        "url": "https://search.gsccca.org/PT61Premium/AddressSearchResults.aspx",
+        "error": null,
+        "query": "4634 Elm Way",
+        "no_records": true
+      }
+    },
+    {
+      "address": "2798 Main St",
+      "county": "Fulton",
+      "dealdriven": [],
+      "gsccca": [],
+      "gsccca_meta": {
+        "url": "https://search.gsccca.org/PT61Premium/AddressSearchResults.aspx",
+        "error": null,
+        "query": "2798 Main St",
+        "no_records": true
+      }
+    },
+    {
+      "address": "5445 Elm Way",
+      "county": "Fulton",
+      "dealdriven": [],
+      "gsccca": [],
+      "gsccca_meta": {
+        "url": "https://search.gsccca.org/PT61Premium/AddressSearchResults.aspx",
+        "error": null,
+        "query": "5445 Elm Way",
+        "no_records": true
+      }
+    }
+  ],
+  "shopping_list": {
+    "test.user@example.com": [
+      {
+        "address": "670 Park Blvd",
+        "county": "Fulton",
+        "sale_price": 660000.0,
+        "sale_date": "10/15/2021",
+        "grantor": "Donald J. Frawley and Marie G. Frawley",
+        "grantee": "Krueck, Anthony",
+        "source_address": "670 Park Blvd",
+        "source_county": "Fulton"
+      }
+    ]
+  }
+}

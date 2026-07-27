@@ -1,0 +1,292 @@
+{
+  "generated_at": "2026-07-27T11:33:44.683909+00:00",
+  "status": "draft",
+  "submit_allowed": false,
+  "subject": {
+    "address": "8581 Elm Way",
+    "county": "Fulton",
+    "lat": 33.7644142,
+    "lng": -84.4088528
+  },
+  "comps": [
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "640 Jones AVE NW Atlanta",
+      "parcel": "",
+      "sale_date": "3/2/2022",
+      "sale_price": 410000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2022-008899",
+      "raw": {
+        "filing_id": 9039142,
+        "lat": 33.7641194,
+        "lng": -84.4083,
+        "map_price": "410K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        },
+        "distance_miles": 0.038
+      },
+      "distance_miles": 0.038
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "385 Elm ST NW Atlanta",
+      "parcel": "",
+      "sale_date": "7/29/2021",
+      "sale_price": 364000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2021-038444",
+      "raw": {
+        "filing_id": 8707459,
+        "lat": 33.7652164,
+        "lng": -84.4085052,
+        "map_price": "364K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        },
+        "distance_miles": 0.059
+      },
+      "distance_miles": 0.059
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "395 ELM ST ATLANTA",
+      "parcel": "",
+      "sale_date": "9/19/2023",
+      "sale_price": 0.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2023-031592",
+      "raw": {
+        "filing_id": 9841912,
+        "lat": 33.7654153,
+        "lng": -84.4085316,
+        "map_price": "0K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        },
+        "distance_miles": 0.072
+      },
+      "distance_miles": 0.072
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "402 Elm ST NW",
+      "parcel": "",
+      "sale_date": "2/9/2024",
+      "sale_price": 396000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2024-004402",
+      "raw": {
+        "filing_id": 10006195,
+        "lat": 33.7655117,
+        "lng": -84.408974,
+        "map_price": "396K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        },
+        "distance_miles": 0.076
+      },
+      "distance_miles": 0.076
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "402 Elm ST",
+      "parcel": "",
+      "sale_date": "5/13/2022",
+      "sale_price": 105000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2022-021350",
+      "raw": {
+        "filing_id": 9170763,
+        "lat": 33.7655413,
+        "lng": -84.4089566,
+        "map_price": "105K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        },
+        "distance_miles": 0.078
+      },
+      "distance_miles": 0.078
+    }
+  ],
+  "comp_filter": {
+    "max_comps": 5,
+    "max_radius_miles": 1.0,
+    "candidates": 100,
+    "with_coords": 92,
+    "within_radius": 92,
+    "selected": 5,
+    "subject_lat": 33.7644142,
+    "subject_lng": -84.4088528
+  },
+  "demand": {
+    "buyer_id": "disc-8581-elm-way",
+    "source": "discovery-csv",
+    "geo": {
+      "counties": [
+        "Fulton"
+      ],
+      "cities": [],
+      "zips": []
+    },
+    "property_type": "unknown",
+    "vacant": false,
+    "noo": false,
+    "price_min": null,
+    "price_max": null,
+    "notes": "discovery seed 8581 Elm Way",
+    "raw": {
+      "discovery": {
+        "address": "8581 Elm Way",
+        "county": "Fulton",
+        "foreclosure_stage": "",
+        "investment_score": "90.6",
+        "equity_potential": "136264",
+        "risk_level": "Low"
+      }
+    }
+  },
+  "supply": {
+    "source": "discovery",
+    "county": "Fulton",
+    "address": "8581 Elm Way",
+    "parcel": "",
+    "sale_date": "",
+    "sale_price": 136264,
+    "grantor": "",
+    "grantee": "",
+    "book_page": "",
+    "instrument": "",
+    "raw": {
+      "discovery": {
+        "address": "8581 Elm Way",
+        "county": "Fulton",
+        "foreclosure_stage": "",
+        "investment_score": "90.6",
+        "equity_potential": "136264",
+        "risk_level": "Low"
+      },
+      "dealdriven": {
+        "rows_scraped": 0,
+        "subject_property_id": "8ac3ef396c3259c9e2ec075fce3337d7",
+        "subject_property_url": "https://app.dealdriven.com/apps/properties/search?propertyId=8ac3ef396c3259c9e2ec075fce3337d7",
+        "comp_property_ids": [
+          "f644c3ca0acb57ffeddc1cb569993641",
+          "155b008211c343224863cd73c5723f1a",
+          "90136ae607012af8adc7697a1c5378d9",
+          "c72ce652fbfa62a90b8dea6130af272c",
+          "c72ce652fbfa62a90b8dea6130af272c"
+        ],
+        "comp_property_urls": [
+          "https://app.dealdriven.com/apps/properties/search?propertyId=f644c3ca0acb57ffeddc1cb569993641",
+          "https://app.dealdriven.com/apps/properties/search?propertyId=155b008211c343224863cd73c5723f1a",
+          "https://app.dealdriven.com/apps/properties/search?propertyId=90136ae607012af8adc7697a1c5378d9",
+          "https://app.dealdriven.com/apps/properties/search?propertyId=c72ce652fbfa62a90b8dea6130af272c",
+          "https://app.dealdriven.com/apps/properties/search?propertyId=c72ce652fbfa62a90b8dea6130af272c"
+        ],
+        "search_url": "https://app.dealdriven.com/apps/properties/search?q=8581%20Elm%20Way%2C%20Fulton%2C%20GA",
+        "sync_ok": true,
+        "sync_detail": "resolved",
+        "note": "Subject: 8581 Elm Way\nCounty: Fulton\nComps: 5 within 1.0 mi\n\nAddress | Miles | Sale Price | Sale Date | Grantor | Grantee\n------- | ----- | ---------- | --------- | ------- | -------\n640 Jones AVE NW Atlanta | 0.038 | $410,000 | 3/2/2022 |  | \n385 Elm ST NW Atlanta | 0.059 | $364,000 | 7/29/2021 |  | \n395 ELM ST ATLANTA | 0.072 |  | 9/19/2023 |  | \n402 Elm ST NW | 0.076 | $396,000 | 2/9/2024 |  | \n402 Elm ST | 0.078 | $105,000 | 5/13/2022 |  | "
+      }
+    }
+  },
+  "ghl": {
+    "contact_id": "gDpS5oHTnGoQITpwvpAb",
+    "note_id": "2PbAfqv2ORbsoM7Cw28r",
+    "tags": [
+      "wholesale-demand-align",
+      "source-gsccca",
+      "subject-property",
+      "comps-5",
+      "county-fulton",
+      "type-multifamily",
+      "source-dealdriven"
+    ]
+  },
+  "proposed_terms": {
+    "assignment_fee": null,
+    "offer_price": 136264,
+    "earnest_money": null,
+    "closing_days": 21,
+    "notes": "Fill before --submit"
+  },
+  "host_paths": {
+    "partnerdriven_enrollments": "https://partnerdriven.thinkific.com/enrollments",
+    "partnerdriven_video_walkthrough": "https://partnerdriven.thinkific.com/courses/take/deal-portal/lessons/54832305-new-video-walk-through-of-automated-request-a-contract",
+    "partnerdriven_request_lesson": "https://partnerdriven.thinkific.com/courses/take/deal-portal/multimedia/47673171-request-a-contract",
+    "partnerdriven_submit_lesson": "https://partnerdriven.thinkific.com/courses/take/deal-portal/multimedia/47673172-submit-a-signed-property-contract",
+    "request_typeform": "https://csquaredsystems.typeform.com/to/k5qo1JxL"
+  }
+}

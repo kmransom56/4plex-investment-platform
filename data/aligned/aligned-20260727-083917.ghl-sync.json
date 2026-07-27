@@ -1,0 +1,383 @@
+{
+  "file": "/home/keith/real_estate/4plex-investment-platform/data/aligned/aligned-20260727-083917.json",
+  "matches": 25,
+  "stored_ok": 25,
+  "errors": [],
+  "results": [
+    {
+      "ok": true,
+      "contact_id": "40xDObCp6O2jB7Hxu8Yq",
+      "created": true,
+      "note_id": "fjcuaEHXZskfQyItGwKb",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "W17Jc909jwqcBZUeewKB",
+      "created": true,
+      "note_id": "3fYZDooNVXKpPCo8mAi4",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "fJOY5zOtRiZWPzXxzDnr",
+      "created": true,
+      "note_id": "n5xY27V8TdYrJJGjCn57",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "4wxIStk4NB1vl1rmy5SY",
+      "created": true,
+      "note_id": "bgnJ8Q1SDcKS2R9PuMPC",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "1YSnhmYBzFBzAuMNI2po",
+      "created": true,
+      "note_id": "cUgedU9xzilLfEJi1jyL",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "MfTjMNL0gRobw6ub2rWk",
+      "created": true,
+      "note_id": "9mnHCb18U5HN9iFmgZnK",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "KzHr2qdb7bC7iMsSto0y",
+      "created": true,
+      "note_id": "0Tz7NAkuS03X5yleXlCt",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "jPbU7IjbYLu8IPTEtNfB",
+      "created": true,
+      "note_id": "M3f8szKjB88KBDeYMSI6",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "KzHr2qdb7bC7iMsSto0y",
+      "created": false,
+      "note_id": "HP8QQozPvQWlPpigcY2j",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "Czus5mRAalqOBTVyvHE8",
+      "created": true,
+      "note_id": "jq2OYe363ZkSEVxjrDzc",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "4Uk1aftcM8XdaiCcNuU2",
+      "created": true,
+      "note_id": "dNDf1vVedD7yEApnkVO6",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "YG3SzQptP6OeHFSeNfio",
+      "created": true,
+      "note_id": "ZFMJV2jNq1VAyof63RQd",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "J8Aacu2vffZHjTd9MVv5",
+      "created": true,
+      "note_id": "N6jzmXPfiXkTe8Kspzmc",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "9mSnS2HTmKbq74LxLeVM",
+      "created": true,
+      "note_id": "RrXNj0wF0zlxSbwrUUrp",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "vlPGOePpBZJ4Wvve0fSZ",
+      "created": true,
+      "note_id": "XG9TCE2PtMuNr83Q6MbH",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "IUdFELUTTouMXC0XLqCE",
+      "created": true,
+      "note_id": "qUcdUF7dN3b4LTmOaOgg",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "fC110PqhpCbLe8bg84e6",
+      "created": true,
+      "note_id": "V3O5kpyoXBQMJHwoWNdf",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "kbKwId61YOWFZznTR4UI",
+      "created": true,
+      "note_id": "WP7OLB1bsc8eudNs3gz8",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "vmzLbUlhhAtZQ8YEKRrB",
+      "created": true,
+      "note_id": "F1tyJRaK8FjEIAksEcwA",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "q3EHih8U4fXBSvpYRuIx",
+      "created": true,
+      "note_id": "VsFLMlTiGpsFJgjxcZUZ",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "wsncc2x9N5qXw4v8AQIR",
+      "created": true,
+      "note_id": "O5h6BrGW6G2AgIAsDqdl",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "zMwdaG80hxobM2fUupLk",
+      "created": true,
+      "note_id": "Xy2SFIPcUh7IfX3vItJt",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "crJDDTnysyluPqg17KNz",
+      "created": true,
+      "note_id": "Q5Fsw2KhS5U9f1F8wwvh",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "ojaiJ5pEJ6L0TiYdSd2F",
+      "created": true,
+      "note_id": "Bkx7k3KLigZXlLBn9Dak",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "shjIjDyVa3tFMCAFfCPU",
+      "created": true,
+      "note_id": "rnnCLCpJOHFqkOOtlfcY",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-50",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    }
+  ]
+}

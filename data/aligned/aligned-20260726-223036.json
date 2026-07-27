@@ -1,0 +1,1767 @@
+{
+  "generated_at": "2026-07-26T22:30:36.114132+00:00",
+  "criteria": [
+    {
+      "buyer_id": "disc-8581-elm-way",
+      "source": "dealdriven",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "2-4",
+      "price_min": null,
+      "price_max": null,
+      "notes": "shopping list from discovery 8581 Elm Way",
+      "raw": {
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        },
+        "dealdriven": {
+          "query": "8581 Elm Way, Fulton",
+          "property_search_rows": [
+            {
+              "cells": [
+                "\u2190",
+                "Move left"
+              ]
+            },
+            {
+              "cells": [
+                "\u2192",
+                "Move right"
+              ]
+            },
+            {
+              "cells": [
+                "\u2191",
+                "Move up"
+              ]
+            },
+            {
+              "cells": [
+                "\u2193",
+                "Move down"
+              ]
+            },
+            {
+              "cells": [
+                "+",
+                "Zoom in"
+              ]
+            },
+            {
+              "cells": [
+                "-",
+                "Zoom out"
+              ]
+            },
+            {
+              "cells": [
+                "Home",
+                "Jump left by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "End",
+                "Jump right by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Up",
+                "Jump up by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Down",
+                "Jump down by 75%"
+              ]
+            }
+          ],
+          "cash_buyer_rows": [
+            {
+              "cells": [
+                "\u2190",
+                "Move left"
+              ]
+            },
+            {
+              "cells": [
+                "\u2192",
+                "Move right"
+              ]
+            },
+            {
+              "cells": [
+                "\u2191",
+                "Move up"
+              ]
+            },
+            {
+              "cells": [
+                "\u2193",
+                "Move down"
+              ]
+            },
+            {
+              "cells": [
+                "+",
+                "Zoom in"
+              ]
+            },
+            {
+              "cells": [
+                "-",
+                "Zoom out"
+              ]
+            },
+            {
+              "cells": [
+                "Home",
+                "Jump left by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "End",
+                "Jump right by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Up",
+                "Jump up by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Down",
+                "Jump down by 75%"
+              ]
+            }
+          ],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    },
+    {
+      "buyer_id": "disc-670-park-blvd",
+      "source": "dealdriven",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "2-4",
+      "price_min": null,
+      "price_max": null,
+      "notes": "shopping list from discovery 670 Park Blvd",
+      "raw": {
+        "discovery": {
+          "address": "670 Park Blvd",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "85.1",
+          "equity_potential": "110798",
+          "risk_level": "Low"
+        },
+        "dealdriven": {
+          "query": "670 Park Blvd, Fulton",
+          "property_search_rows": [
+            {
+              "cells": [
+                "\u2190",
+                "Move left"
+              ]
+            },
+            {
+              "cells": [
+                "\u2192",
+                "Move right"
+              ]
+            },
+            {
+              "cells": [
+                "\u2191",
+                "Move up"
+              ]
+            },
+            {
+              "cells": [
+                "\u2193",
+                "Move down"
+              ]
+            },
+            {
+              "cells": [
+                "+",
+                "Zoom in"
+              ]
+            },
+            {
+              "cells": [
+                "-",
+                "Zoom out"
+              ]
+            },
+            {
+              "cells": [
+                "Home",
+                "Jump left by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "End",
+                "Jump right by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Up",
+                "Jump up by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Down",
+                "Jump down by 75%"
+              ]
+            }
+          ],
+          "cash_buyer_rows": [
+            {
+              "cells": [
+                "\u2190",
+                "Move left"
+              ]
+            },
+            {
+              "cells": [
+                "\u2192",
+                "Move right"
+              ]
+            },
+            {
+              "cells": [
+                "\u2191",
+                "Move up"
+              ]
+            },
+            {
+              "cells": [
+                "\u2193",
+                "Move down"
+              ]
+            },
+            {
+              "cells": [
+                "+",
+                "Zoom in"
+              ]
+            },
+            {
+              "cells": [
+                "-",
+                "Zoom out"
+              ]
+            },
+            {
+              "cells": [
+                "Home",
+                "Jump left by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "End",
+                "Jump right by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Up",
+                "Jump up by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Down",
+                "Jump down by 75%"
+              ]
+            }
+          ],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    },
+    {
+      "buyer_id": "disc-4634-elm-way",
+      "source": "dealdriven",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "2-4",
+      "price_min": null,
+      "price_max": null,
+      "notes": "shopping list from discovery 4634 Elm Way",
+      "raw": {
+        "discovery": {
+          "address": "4634 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "79.6",
+          "equity_potential": "46250",
+          "risk_level": "Low"
+        },
+        "dealdriven": {
+          "query": "4634 Elm Way, Fulton",
+          "property_search_rows": [
+            {
+              "cells": [
+                "\u2190",
+                "Move left"
+              ]
+            },
+            {
+              "cells": [
+                "\u2192",
+                "Move right"
+              ]
+            },
+            {
+              "cells": [
+                "\u2191",
+                "Move up"
+              ]
+            },
+            {
+              "cells": [
+                "\u2193",
+                "Move down"
+              ]
+            },
+            {
+              "cells": [
+                "+",
+                "Zoom in"
+              ]
+            },
+            {
+              "cells": [
+                "-",
+                "Zoom out"
+              ]
+            },
+            {
+              "cells": [
+                "Home",
+                "Jump left by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "End",
+                "Jump right by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Up",
+                "Jump up by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Down",
+                "Jump down by 75%"
+              ]
+            }
+          ],
+          "cash_buyer_rows": [
+            {
+              "cells": [
+                "\u2190",
+                "Move left"
+              ]
+            },
+            {
+              "cells": [
+                "\u2192",
+                "Move right"
+              ]
+            },
+            {
+              "cells": [
+                "\u2191",
+                "Move up"
+              ]
+            },
+            {
+              "cells": [
+                "\u2193",
+                "Move down"
+              ]
+            },
+            {
+              "cells": [
+                "+",
+                "Zoom in"
+              ]
+            },
+            {
+              "cells": [
+                "-",
+                "Zoom out"
+              ]
+            },
+            {
+              "cells": [
+                "Home",
+                "Jump left by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "End",
+                "Jump right by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Up",
+                "Jump up by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Down",
+                "Jump down by 75%"
+              ]
+            }
+          ],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    },
+    {
+      "buyer_id": "disc-2798-main-st",
+      "source": "dealdriven",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "2-4",
+      "price_min": null,
+      "price_max": null,
+      "notes": "shopping list from discovery 2798 Main St",
+      "raw": {
+        "discovery": {
+          "address": "2798 Main St",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "73.4",
+          "equity_potential": "0",
+          "risk_level": "Low"
+        },
+        "dealdriven": {
+          "query": "2798 Main St, Fulton",
+          "property_search_rows": [
+            {
+              "cells": [
+                "\u2190",
+                "Move left"
+              ]
+            },
+            {
+              "cells": [
+                "\u2192",
+                "Move right"
+              ]
+            },
+            {
+              "cells": [
+                "\u2191",
+                "Move up"
+              ]
+            },
+            {
+              "cells": [
+                "\u2193",
+                "Move down"
+              ]
+            },
+            {
+              "cells": [
+                "+",
+                "Zoom in"
+              ]
+            },
+            {
+              "cells": [
+                "-",
+                "Zoom out"
+              ]
+            },
+            {
+              "cells": [
+                "Home",
+                "Jump left by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "End",
+                "Jump right by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Up",
+                "Jump up by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Down",
+                "Jump down by 75%"
+              ]
+            }
+          ],
+          "cash_buyer_rows": [
+            {
+              "cells": [
+                "\u2190",
+                "Move left"
+              ]
+            },
+            {
+              "cells": [
+                "\u2192",
+                "Move right"
+              ]
+            },
+            {
+              "cells": [
+                "\u2191",
+                "Move up"
+              ]
+            },
+            {
+              "cells": [
+                "\u2193",
+                "Move down"
+              ]
+            },
+            {
+              "cells": [
+                "+",
+                "Zoom in"
+              ]
+            },
+            {
+              "cells": [
+                "-",
+                "Zoom out"
+              ]
+            },
+            {
+              "cells": [
+                "Home",
+                "Jump left by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "End",
+                "Jump right by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Up",
+                "Jump up by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Down",
+                "Jump down by 75%"
+              ]
+            }
+          ],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    },
+    {
+      "buyer_id": "disc-5445-elm-way",
+      "source": "dealdriven",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "2-4",
+      "price_min": null,
+      "price_max": null,
+      "notes": "shopping list from discovery 5445 Elm Way",
+      "raw": {
+        "discovery": {
+          "address": "5445 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "69.8",
+          "equity_potential": "68297",
+          "risk_level": "Medium"
+        },
+        "dealdriven": {
+          "query": "5445 Elm Way, Fulton",
+          "property_search_rows": [
+            {
+              "cells": [
+                "\u2190",
+                "Move left"
+              ]
+            },
+            {
+              "cells": [
+                "\u2192",
+                "Move right"
+              ]
+            },
+            {
+              "cells": [
+                "\u2191",
+                "Move up"
+              ]
+            },
+            {
+              "cells": [
+                "\u2193",
+                "Move down"
+              ]
+            },
+            {
+              "cells": [
+                "+",
+                "Zoom in"
+              ]
+            },
+            {
+              "cells": [
+                "-",
+                "Zoom out"
+              ]
+            },
+            {
+              "cells": [
+                "Home",
+                "Jump left by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "End",
+                "Jump right by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Up",
+                "Jump up by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Down",
+                "Jump down by 75%"
+              ]
+            }
+          ],
+          "cash_buyer_rows": [
+            {
+              "cells": [
+                "\u2190",
+                "Move left"
+              ]
+            },
+            {
+              "cells": [
+                "\u2192",
+                "Move right"
+              ]
+            },
+            {
+              "cells": [
+                "\u2191",
+                "Move up"
+              ]
+            },
+            {
+              "cells": [
+                "\u2193",
+                "Move down"
+              ]
+            },
+            {
+              "cells": [
+                "+",
+                "Zoom in"
+              ]
+            },
+            {
+              "cells": [
+                "-",
+                "Zoom out"
+              ]
+            },
+            {
+              "cells": [
+                "Home",
+                "Jump left by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "End",
+                "Jump right by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Up",
+                "Jump up by 75%"
+              ]
+            },
+            {
+              "cells": [
+                "Page Down",
+                "Jump down by 75%"
+              ]
+            }
+          ],
+          "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+        }
+      }
+    }
+  ],
+  "comps": [
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "8581 Elm Way",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": 136264,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        },
+        "gsccca": {
+          "query": "8581 Elm Way",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 8581 Elm Way\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice"
+            },
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary"
+            },
+            {
+              "text": "SEARCH RESULTS\n\n0 search results for 8581 Elm Way\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=8581+Elm+Way"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "670 Park Blvd",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": 110798,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "discovery": {
+          "address": "670 Park Blvd",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "85.1",
+          "equity_potential": "110798",
+          "risk_level": "Low"
+        },
+        "gsccca": {
+          "query": "670 Park Blvd",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 670 Park Blvd\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice"
+            },
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary"
+            },
+            {
+              "text": "SEARCH RESULTS\n\n0 search results for 670 Park Blvd\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=670+Park+Blvd"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "4634 Elm Way",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": 46250,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "discovery": {
+          "address": "4634 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "79.6",
+          "equity_potential": "46250",
+          "risk_level": "Low"
+        },
+        "gsccca": {
+          "query": "4634 Elm Way",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 4634 Elm Way\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice"
+            },
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary"
+            },
+            {
+              "text": "SEARCH RESULTS\n\n0 search results for 4634 Elm Way\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=4634+Elm+Way"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "2798 Main St",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": 0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "discovery": {
+          "address": "2798 Main St",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "73.4",
+          "equity_potential": "0",
+          "risk_level": "Low"
+        },
+        "gsccca": {
+          "query": "2798 Main St",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 2798 Main St\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice"
+            },
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary"
+            },
+            {
+              "text": "SEARCH RESULTS\n\n0 search results for 2798 Main St\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=2798+Main+St"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "5445 Elm Way",
+      "parcel": "",
+      "sale_date": "",
+      "sale_price": 68297,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "",
+      "raw": {
+        "discovery": {
+          "address": "5445 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "69.8",
+          "equity_potential": "68297",
+          "risk_level": "Medium"
+        },
+        "gsccca": {
+          "query": "5445 Elm Way",
+          "county": "Fulton",
+          "rows": [
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 5445 Elm Way\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice"
+            },
+            {
+              "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary"
+            },
+            {
+              "text": "SEARCH RESULTS\n\n0 search results for 5445 Elm Way\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES"
+            }
+          ],
+          "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=5445+Elm+Way"
+        }
+      }
+    }
+  ],
+  "matches": [
+    {
+      "criteria_index": 0,
+      "comp_index": 0,
+      "score": 90,
+      "reasons": [
+        "same county",
+        "property type target 2-4",
+        "discovery address seed",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 1,
+      "comp_index": 1,
+      "score": 90,
+      "reasons": [
+        "same county",
+        "property type target 2-4",
+        "discovery address seed",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 2,
+      "comp_index": 2,
+      "score": 90,
+      "reasons": [
+        "same county",
+        "property type target 2-4",
+        "discovery address seed",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 3,
+      "comp_index": 3,
+      "score": 90,
+      "reasons": [
+        "same county",
+        "property type target 2-4",
+        "discovery address seed",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 4,
+      "comp_index": 4,
+      "score": 80,
+      "reasons": [
+        "same county",
+        "property type target 2-4",
+        "discovery address seed"
+      ]
+    }
+  ],
+  "unmatched_criteria": [],
+  "errors": [],
+  "raw_results": [
+    {
+      "address": "8581 Elm Way",
+      "county": "Fulton",
+      "dealdriven": {
+        "query": "8581 Elm Way, Fulton",
+        "property_search_rows": [
+          {
+            "cells": [
+              "\u2190",
+              "Move left"
+            ]
+          },
+          {
+            "cells": [
+              "\u2192",
+              "Move right"
+            ]
+          },
+          {
+            "cells": [
+              "\u2191",
+              "Move up"
+            ]
+          },
+          {
+            "cells": [
+              "\u2193",
+              "Move down"
+            ]
+          },
+          {
+            "cells": [
+              "+",
+              "Zoom in"
+            ]
+          },
+          {
+            "cells": [
+              "-",
+              "Zoom out"
+            ]
+          },
+          {
+            "cells": [
+              "Home",
+              "Jump left by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "End",
+              "Jump right by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Up",
+              "Jump up by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Down",
+              "Jump down by 75%"
+            ]
+          }
+        ],
+        "cash_buyer_rows": [
+          {
+            "cells": [
+              "\u2190",
+              "Move left"
+            ]
+          },
+          {
+            "cells": [
+              "\u2192",
+              "Move right"
+            ]
+          },
+          {
+            "cells": [
+              "\u2191",
+              "Move up"
+            ]
+          },
+          {
+            "cells": [
+              "\u2193",
+              "Move down"
+            ]
+          },
+          {
+            "cells": [
+              "+",
+              "Zoom in"
+            ]
+          },
+          {
+            "cells": [
+              "-",
+              "Zoom out"
+            ]
+          },
+          {
+            "cells": [
+              "Home",
+              "Jump left by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "End",
+              "Jump right by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Up",
+              "Jump up by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Down",
+              "Jump down by 75%"
+            ]
+          }
+        ],
+        "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+      },
+      "gsccca": {
+        "query": "8581 Elm Way",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 8581 Elm Way\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice"
+          },
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary"
+          },
+          {
+            "text": "SEARCH RESULTS\n\n0 search results for 8581 Elm Way\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=8581+Elm+Way"
+      },
+      "score": 90
+    },
+    {
+      "address": "670 Park Blvd",
+      "county": "Fulton",
+      "dealdriven": {
+        "query": "670 Park Blvd, Fulton",
+        "property_search_rows": [
+          {
+            "cells": [
+              "\u2190",
+              "Move left"
+            ]
+          },
+          {
+            "cells": [
+              "\u2192",
+              "Move right"
+            ]
+          },
+          {
+            "cells": [
+              "\u2191",
+              "Move up"
+            ]
+          },
+          {
+            "cells": [
+              "\u2193",
+              "Move down"
+            ]
+          },
+          {
+            "cells": [
+              "+",
+              "Zoom in"
+            ]
+          },
+          {
+            "cells": [
+              "-",
+              "Zoom out"
+            ]
+          },
+          {
+            "cells": [
+              "Home",
+              "Jump left by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "End",
+              "Jump right by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Up",
+              "Jump up by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Down",
+              "Jump down by 75%"
+            ]
+          }
+        ],
+        "cash_buyer_rows": [
+          {
+            "cells": [
+              "\u2190",
+              "Move left"
+            ]
+          },
+          {
+            "cells": [
+              "\u2192",
+              "Move right"
+            ]
+          },
+          {
+            "cells": [
+              "\u2191",
+              "Move up"
+            ]
+          },
+          {
+            "cells": [
+              "\u2193",
+              "Move down"
+            ]
+          },
+          {
+            "cells": [
+              "+",
+              "Zoom in"
+            ]
+          },
+          {
+            "cells": [
+              "-",
+              "Zoom out"
+            ]
+          },
+          {
+            "cells": [
+              "Home",
+              "Jump left by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "End",
+              "Jump right by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Up",
+              "Jump up by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Down",
+              "Jump down by 75%"
+            ]
+          }
+        ],
+        "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+      },
+      "gsccca": {
+        "query": "670 Park Blvd",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 670 Park Blvd\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice"
+          },
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary"
+          },
+          {
+            "text": "SEARCH RESULTS\n\n0 search results for 670 Park Blvd\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=670+Park+Blvd"
+      },
+      "score": 90
+    },
+    {
+      "address": "4634 Elm Way",
+      "county": "Fulton",
+      "dealdriven": {
+        "query": "4634 Elm Way, Fulton",
+        "property_search_rows": [
+          {
+            "cells": [
+              "\u2190",
+              "Move left"
+            ]
+          },
+          {
+            "cells": [
+              "\u2192",
+              "Move right"
+            ]
+          },
+          {
+            "cells": [
+              "\u2191",
+              "Move up"
+            ]
+          },
+          {
+            "cells": [
+              "\u2193",
+              "Move down"
+            ]
+          },
+          {
+            "cells": [
+              "+",
+              "Zoom in"
+            ]
+          },
+          {
+            "cells": [
+              "-",
+              "Zoom out"
+            ]
+          },
+          {
+            "cells": [
+              "Home",
+              "Jump left by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "End",
+              "Jump right by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Up",
+              "Jump up by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Down",
+              "Jump down by 75%"
+            ]
+          }
+        ],
+        "cash_buyer_rows": [
+          {
+            "cells": [
+              "\u2190",
+              "Move left"
+            ]
+          },
+          {
+            "cells": [
+              "\u2192",
+              "Move right"
+            ]
+          },
+          {
+            "cells": [
+              "\u2191",
+              "Move up"
+            ]
+          },
+          {
+            "cells": [
+              "\u2193",
+              "Move down"
+            ]
+          },
+          {
+            "cells": [
+              "+",
+              "Zoom in"
+            ]
+          },
+          {
+            "cells": [
+              "-",
+              "Zoom out"
+            ]
+          },
+          {
+            "cells": [
+              "Home",
+              "Jump left by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "End",
+              "Jump right by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Up",
+              "Jump up by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Down",
+              "Jump down by 75%"
+            ]
+          }
+        ],
+        "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+      },
+      "gsccca": {
+        "query": "4634 Elm Way",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 4634 Elm Way\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice"
+          },
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary"
+          },
+          {
+            "text": "SEARCH RESULTS\n\n0 search results for 4634 Elm Way\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=4634+Elm+Way"
+      },
+      "score": 90
+    },
+    {
+      "address": "2798 Main St",
+      "county": "Fulton",
+      "dealdriven": {
+        "query": "2798 Main St, Fulton",
+        "property_search_rows": [
+          {
+            "cells": [
+              "\u2190",
+              "Move left"
+            ]
+          },
+          {
+            "cells": [
+              "\u2192",
+              "Move right"
+            ]
+          },
+          {
+            "cells": [
+              "\u2191",
+              "Move up"
+            ]
+          },
+          {
+            "cells": [
+              "\u2193",
+              "Move down"
+            ]
+          },
+          {
+            "cells": [
+              "+",
+              "Zoom in"
+            ]
+          },
+          {
+            "cells": [
+              "-",
+              "Zoom out"
+            ]
+          },
+          {
+            "cells": [
+              "Home",
+              "Jump left by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "End",
+              "Jump right by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Up",
+              "Jump up by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Down",
+              "Jump down by 75%"
+            ]
+          }
+        ],
+        "cash_buyer_rows": [
+          {
+            "cells": [
+              "\u2190",
+              "Move left"
+            ]
+          },
+          {
+            "cells": [
+              "\u2192",
+              "Move right"
+            ]
+          },
+          {
+            "cells": [
+              "\u2191",
+              "Move up"
+            ]
+          },
+          {
+            "cells": [
+              "\u2193",
+              "Move down"
+            ]
+          },
+          {
+            "cells": [
+              "+",
+              "Zoom in"
+            ]
+          },
+          {
+            "cells": [
+              "-",
+              "Zoom out"
+            ]
+          },
+          {
+            "cells": [
+              "Home",
+              "Jump left by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "End",
+              "Jump right by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Up",
+              "Jump up by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Down",
+              "Jump down by 75%"
+            ]
+          }
+        ],
+        "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+      },
+      "gsccca": {
+        "query": "2798 Main St",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 2798 Main St\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice"
+          },
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary"
+          },
+          {
+            "text": "SEARCH RESULTS\n\n0 search results for 2798 Main St\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=2798+Main+St"
+      },
+      "score": 90
+    },
+    {
+      "address": "5445 Elm Way",
+      "county": "Fulton",
+      "dealdriven": {
+        "query": "5445 Elm Way, Fulton",
+        "property_search_rows": [
+          {
+            "cells": [
+              "\u2190",
+              "Move left"
+            ]
+          },
+          {
+            "cells": [
+              "\u2192",
+              "Move right"
+            ]
+          },
+          {
+            "cells": [
+              "\u2191",
+              "Move up"
+            ]
+          },
+          {
+            "cells": [
+              "\u2193",
+              "Move down"
+            ]
+          },
+          {
+            "cells": [
+              "+",
+              "Zoom in"
+            ]
+          },
+          {
+            "cells": [
+              "-",
+              "Zoom out"
+            ]
+          },
+          {
+            "cells": [
+              "Home",
+              "Jump left by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "End",
+              "Jump right by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Up",
+              "Jump up by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Down",
+              "Jump down by 75%"
+            ]
+          }
+        ],
+        "cash_buyer_rows": [
+          {
+            "cells": [
+              "\u2190",
+              "Move left"
+            ]
+          },
+          {
+            "cells": [
+              "\u2192",
+              "Move right"
+            ]
+          },
+          {
+            "cells": [
+              "\u2191",
+              "Move up"
+            ]
+          },
+          {
+            "cells": [
+              "\u2193",
+              "Move down"
+            ]
+          },
+          {
+            "cells": [
+              "+",
+              "Zoom in"
+            ]
+          },
+          {
+            "cells": [
+              "-",
+              "Zoom out"
+            ]
+          },
+          {
+            "cells": [
+              "Home",
+              "Jump left by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "End",
+              "Jump right by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Up",
+              "Jump up by 75%"
+            ]
+          },
+          {
+            "cells": [
+              "Page Down",
+              "Jump down by 75%"
+            ]
+          }
+        ],
+        "url": "https://app.dealdriven.com/apps/cash-buyer-search"
+      },
+      "gsccca": {
+        "query": "5445 Elm Way",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 5445 Elm Way\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice"
+          },
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary"
+          },
+          {
+            "text": "SEARCH RESULTS\n\n0 search results for 5445 Elm Way\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=5445+Elm+Way"
+      },
+      "score": 80
+    }
+  ]
+}

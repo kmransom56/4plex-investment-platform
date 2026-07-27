@@ -1,0 +1,124 @@
+{
+  "generated_at": "2026-07-26T23:39:09.934328+00:00",
+  "status": "review",
+  "submit_allowed": false,
+  "coaches_corner_cleared": false,
+  "score": 90,
+  "reasons": [
+    "e2e real discovery address",
+    "county Fulton"
+  ],
+  "demand": {
+    "buyer_id": "e2e-8581-elm-way",
+    "source": "discovery-csv",
+    "geo": {
+      "counties": [
+        "Fulton"
+      ],
+      "cities": [
+        "Atlanta"
+      ],
+      "zips": []
+    },
+    "property_type": "multifamily",
+    "notes": "e2e contract request from discovery seed",
+    "raw": {
+      "discovery": {
+        "address": "1245 BREUER MEWS NW",
+        "county": "Fulton",
+        "foreclosure_stage": "",
+        "investment_score": "90.6",
+        "equity_potential": "136264",
+        "risk_level": "Low"
+      }
+    }
+  },
+  "supply": {
+    "source": "gsccca",
+    "county": "Fulton",
+    "address": "1245 BREUER MEWS NW, ATLANTA GA 30318",
+    "sale_price": 136264,
+    "grantor": "",
+    "grantee": ""
+  },
+  "ghl": {},
+  "proposed_terms": {
+    "find_source": "Driving for Dollars",
+    "requester_name": "Keith Ransom",
+    "requester_email": "kmransom52@gmail.com",
+    "requester_phone": "4045550100",
+    "legal_address": "1245 BREUER MEWS NW, ATLANTA GA 30318",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30318",
+    "offer_price": 150000,
+    "assignment_fee": 10000,
+    "owner_count": "1",
+    "owner_first": "TBD",
+    "owner_last": "Owner",
+    "owner_phone": "",
+    "owner_email": "",
+    "speaking_to_owner": true,
+    "send_to_seller": false,
+    "talking_to": "Other",
+    "circumstances": "E2E automation test from wholesale-demand-align \u2014 DO NOT treat as live unless submit_allowed=true",
+    "closing_days": 21,
+    "notes": "Driving for Dollars path avoids Coaches Corner wholesaler/MLS gate"
+  },
+  "host_paths": {
+    "request_typeform": "https://csquaredsystems.typeform.com/to/k5qo1JxL",
+    "mls_typeform": "https://csquaredsystems.typeform.com/to/Exqw20Dk",
+    "partnerdriven_video_walkthrough": "https://partnerdriven.thinkific.com/courses/take/deal-portal/lessons/54832305-new-video-walk-through-of-automated-request-a-contract",
+    "partnerdriven_enrollments": "https://partnerdriven.thinkific.com/enrollments",
+    "partnerdriven_request_lesson": "https://partnerdriven.thinkific.com/courses/take/deal-portal/multimedia/47673171-request-a-contract",
+    "partnerdriven_submit_lesson": "https://partnerdriven.thinkific.com/courses/take/deal-portal/multimedia/47673172-submit-a-signed-property-contract",
+    "submit_contract_url": "https://deal.partnerdriven.com/contract"
+  },
+  "last_request": {
+    "ok": true,
+    "detail": "stopped at review (no --submit)",
+    "mode": "request",
+    "form_url": "https://csquaredsystems.typeform.com/to/k5qo1JxL",
+    "filled": [
+      "find_source=ok",
+      "name=ok",
+      "email=ok",
+      "phone=ok",
+      "address=ok",
+      "purchase_price=ok",
+      "owner_count=ok",
+      "owner_info=ok",
+      "speaking=ok",
+      "send_seller=ok",
+      "circumstances=ok"
+    ],
+    "submitted": false,
+    "find_source": "Driving for Dollars",
+    "coaches_corner_required": false,
+    "values": {
+      "find_source": "Driving for Dollars",
+      "name": "Keith Ransom",
+      "email": "kmransom52@gmail.com",
+      "phone": "4045550100",
+      "address": "1245 BREUER MEWS NW, ATLANTA GA 30318",
+      "address2": "",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30318",
+      "county": "Fulton",
+      "purchase_price": "150000",
+      "owner_count": "1",
+      "owner_first": "TBD",
+      "owner_last": "Owner",
+      "owner_phone": "",
+      "owner_email": "",
+      "owner_company": "",
+      "speaking_to_owner": true,
+      "send_to_seller": false,
+      "talking_to": "Other",
+      "circumstances": "E2E automation test from wholesale-demand-align \u2014 DO NOT treat as live unless submit_allowed=true"
+    },
+    "next": "Review screenshot /tmp/dd_contract_probe/review_stop.png. Set packet.submit_allowed=true and re-run with --submit."
+  },
+  "coaches_corner_required": false
+}

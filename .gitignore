@@ -54,3 +54,6 @@ certificates/
 *.backup
 *.bak
 *.tmp
+.specs/scratchpad/*.md
+.specs/analysis/*.md
+.specs/reports/*.md

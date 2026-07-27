@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-07-26T22:52:56.989021+00:00",
+  "status": "review",
+  "submit_allowed": false,
+  "score": 63,
+  "reasons": [
+    "same county",
+    "zip overlap",
+    "property type target multifamily",
+    "buyer inventory present"
+  ],
+  "demand": {
+    "buyer_id": "saved-multifamily-30318",
+    "source": "dealdriven-saved-search",
+    "geo": {
+      "counties": [
+        "Fulton"
+      ],
+      "cities": [],
+      "zips": [
+        "30318"
+      ]
+    },
+    "property_type": "multifamily",
+    "vacant": false,
+    "noo": false,
+    "price_min": null,
+    "price_max": null,
+    "notes": "saved search: Multifamily 30318",
+    "raw": {
+      "saved_search": {
+        "name": "Multifamily 30318",
+        "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/4302d1df-aa99-4f73-aa29-f02324eaf96e"
+      },
+      "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/4302d1df-aa99-4f73-aa29-f02324eaf96e",
+      "rows": [
+        {
+          "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+          "source": "card"
+        },
+        {
+          "text": "Results - 0(None Selected)",
+          "source": "card"
+        },
+        {
+          "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+          "source": "card"
+        }
+      ],
+      "row_count": 3
+    }
+  },
+  "supply": {
+    "source": "gsccca",
+    "county": "Fulton",
+    "address": "30318",
+    "parcel": "",
+    "sale_date": "",
+    "sale_price": null,
+    "grantor": "",
+    "grantee": "",
+    "book_page": "",
+    "instrument": "",
+    "raw": {
+      "from_criteria": "saved-multifamily-30318",
+      "property_type": "multifamily",
+      "gsccca": {
+        "query": "30318",
+        "county": "Fulton",
+        "rows": [
+          {
+            "text": "the clerks authority\nGeorgia Superior Court Clerks' Cooperative Authority\n\ncontact\nlogin\nglossary\nSEARCH RESULTS\n\n0 search results for 30318\n\nFILE\nSEARCH\nLEARN\nMANAGE\nFINES & FEES\nCLERKS\nNOTARY & APOSTILLES\n\nX\n\nTerms of Use\nSitemap\nGlossary\nContact\n\nGSCCCA\n\nCopyright \u00a9 1995 - 2026\nGeorgia Superior Court Clerks' Cooperative Authority\n\nState Required Human Trafficking Notice",
+            "source": "card"
+          }
+        ],
+        "url": "https://www.gsccca.org/search-results?indexCatalogue=site-search&wordsMode=0&searchQuery=30318"
+      },
+      "row_count": 1
+    }
+  },
+  "ghl": {
+    "contact_id": "TwORM2Hgx8xJwfK0Ko6t",
+    "note_id": "kKRt3yZSiw6iiFnAho3P",
+    "tags": [
+      "wholesale-demand-align",
+      "source-dealdriven",
+      "source-gsccca",
+      "score-53",
+      "county-fulton",
+      "type-sfr",
+      "vacant",
+      "demand-saved-search"
+    ]
+  },
+  "proposed_terms": {
+    "assignment_fee": null,
+    "offer_price": null,
+    "earnest_money": null,
+    "closing_days": 21,
+    "notes": "Fill before --submit"
+  },
+  "host_paths": {
+    "dealdriven_signatures": "https://app.dealdriven.com/apps/signatures",
+    "dealdriven_campaign_pending": "https://app.dealdriven.com/apps/properties/status/campaign-pending"
+  },
+  "last_request": {
+    "ok": true,
+    "detail": "stopped at review (no --submit)",
+    "clicked": "New",
+    "filled_notes": false,
+    "submitted": false,
+    "summary": "Demand: saved-multifamily-30318 type=multifamily\nSupply: 30318 county=Fulton\nScore: 63\nOffer: None fee=None\nGHL contact: TwORM2Hgx8xJwfK0Ko6t",
+    "url": "https://app.dealdriven.com/apps/properties/status/campaign-pending",
+    "next": "Re-run with --submit after setting packet.submit_allowed=true"
+  }
+}

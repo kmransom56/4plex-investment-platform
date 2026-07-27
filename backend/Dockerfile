@@ -37,5 +37,5 @@ EXPOSE 11060
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD curl -f http://localhost:11060/health || exit 1
 
-# Run the application
-CMD ["python", "-c", "print('Valuation engine placeholder - starting...'); import time; time.sleep(3600)"]
+# Run the FastAPI application
+CMD ["uvicorn", "main_api:app", "--host", "0.0.0.0", "--port", "11060"]

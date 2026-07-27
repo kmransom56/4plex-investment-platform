@@ -1,0 +1,1349 @@
+{
+  "generated_at": "2026-07-27T08:39:17.666596+00:00",
+  "modes": [
+    "saved"
+  ],
+  "criteria": [
+    {
+      "buyer_id": "saved-sfr-vacant-out-of-state",
+      "source": "dealdriven-saved-search",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "sfr",
+      "vacant": true,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "saved search: SFR Vacant Out of State",
+      "raw": {
+        "saved_search": {
+          "name": "SFR Vacant Out of State",
+          "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/115d0020-1bc3-4754-9b48-60520edabe04"
+        },
+        "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/115d0020-1bc3-4754-9b48-60520edabe04",
+        "rows": [
+          {
+            "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          },
+          {
+            "text": "Results - 0(None Selected)",
+            "source": "card"
+          },
+          {
+            "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          }
+        ],
+        "row_count": 3
+      }
+    },
+    {
+      "buyer_id": "saved-vacant-multi-family",
+      "source": "dealdriven-saved-search",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "multifamily",
+      "vacant": true,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "saved search: Vacant Multi Family",
+      "raw": {
+        "saved_search": {
+          "name": "Vacant Multi Family",
+          "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/1620de39-a202-4397-a49d-af08d9dc00e0"
+        },
+        "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/1620de39-a202-4397-a49d-af08d9dc00e0",
+        "rows": [
+          {
+            "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          },
+          {
+            "text": "Results - 0(None Selected)",
+            "source": "card"
+          },
+          {
+            "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          }
+        ],
+        "row_count": 3
+      }
+    },
+    {
+      "buyer_id": "saved-mf-atlanta-metro",
+      "source": "dealdriven-saved-search",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [
+          "Atlanta"
+        ],
+        "zips": []
+      },
+      "property_type": "multifamily",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "saved search: MF Atlanta Metro",
+      "raw": {
+        "saved_search": {
+          "name": "MF Atlanta Metro",
+          "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/222da914-1c6d-4133-bbc4-cc7bbb8423b1"
+        },
+        "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/222da914-1c6d-4133-bbc4-cc7bbb8423b1",
+        "rows": [
+          {
+            "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          },
+          {
+            "text": "Results - 0(None Selected)",
+            "source": "card"
+          },
+          {
+            "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          }
+        ],
+        "row_count": 3
+      }
+    },
+    {
+      "buyer_id": "saved-30310-multi",
+      "source": "dealdriven-saved-search",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": [
+          "30310"
+        ]
+      },
+      "property_type": "multifamily",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "saved search: 30310 Multi",
+      "raw": {
+        "saved_search": {
+          "name": "30310 Multi",
+          "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/398370ac-a40f-4f5c-8a90-837848722d12"
+        },
+        "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/398370ac-a40f-4f5c-8a90-837848722d12",
+        "rows": [
+          {
+            "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          },
+          {
+            "text": "Results - 0(None Selected)",
+            "source": "card"
+          },
+          {
+            "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          }
+        ],
+        "row_count": 3
+      }
+    },
+    {
+      "buyer_id": "saved-multifamily-30318",
+      "source": "dealdriven-saved-search",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": [
+          "30318"
+        ]
+      },
+      "property_type": "multifamily",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "saved search: Multifamily 30318",
+      "raw": {
+        "saved_search": {
+          "name": "Multifamily 30318",
+          "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/4302d1df-aa99-4f73-aa29-f02324eaf96e"
+        },
+        "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/4302d1df-aa99-4f73-aa29-f02324eaf96e",
+        "rows": [
+          {
+            "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          },
+          {
+            "text": "Results - 0(None Selected)",
+            "source": "card"
+          },
+          {
+            "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          }
+        ],
+        "row_count": 3
+      }
+    },
+    {
+      "buyer_id": "saved-vacant-noo",
+      "source": "dealdriven-saved-search",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "unknown",
+      "vacant": true,
+      "noo": true,
+      "price_min": null,
+      "price_max": null,
+      "notes": "saved search: Vacant_NOO",
+      "raw": {
+        "saved_search": {
+          "name": "Vacant_NOO",
+          "href": "/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/4e1171cf-2a48-4237-8af2-1a7ceb5865ca"
+        },
+        "url": "https://app.dealdriven.com/apps/properties/advanced-search/8f3f84a9-949e-46e9-998f-a350d84b0ed7/4e1171cf-2a48-4237-8af2-1a7ceb5865ca",
+        "rows": [
+          {
+            "text": "Results - 0(None Selected)\nEnter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          },
+          {
+            "text": "Results - 0(None Selected)",
+            "source": "card"
+          },
+          {
+            "text": "Enter an Address, City, County or Zip to focus the center point of your search on a general area.\nSelect one or more Lead Types (Vacant, etc).\nRefine your filters as needed.\nSelect some or all of your results and Add to a List.\nZoom the map in and out either by using your fingers on a mobile device or by clicking the +/- buttons at the bottom right.",
+            "source": "card"
+          }
+        ],
+        "row_count": 3
+      }
+    },
+    {
+      "buyer_id": "disc-8581-elm-way",
+      "source": "discovery-csv",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [],
+        "zips": []
+      },
+      "property_type": "multifamily",
+      "vacant": false,
+      "noo": false,
+      "price_min": null,
+      "price_max": null,
+      "notes": "discovery seed 8581 Elm Way",
+      "raw": {
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        },
+        "dealdriven_rows": []
+      }
+    }
+  ],
+  "comps": [
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "640 Jones AVE NW Atlanta",
+      "parcel": "",
+      "sale_date": "3/2/2022",
+      "sale_price": 410000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2022-008899",
+      "raw": {
+        "filing_id": 9039142,
+        "lat": 33.7641194,
+        "lng": -84.4083,
+        "map_price": "410K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "385 Elm ST NW Atlanta",
+      "parcel": "",
+      "sale_date": "7/29/2021",
+      "sale_price": 364000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2021-038444",
+      "raw": {
+        "filing_id": 8707459,
+        "lat": 33.7652164,
+        "lng": -84.4085052,
+        "map_price": "364K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "395 ELM ST ATLANTA",
+      "parcel": "",
+      "sale_date": "9/19/2023",
+      "sale_price": 0.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2023-031592",
+      "raw": {
+        "filing_id": 9841912,
+        "lat": 33.7654153,
+        "lng": -84.4085316,
+        "map_price": "0K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "402 Elm ST NW",
+      "parcel": "",
+      "sale_date": "2/9/2024",
+      "sale_price": 396000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2024-004402",
+      "raw": {
+        "filing_id": 10006195,
+        "lat": 33.7655117,
+        "lng": -84.408974,
+        "map_price": "396K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "402 Elm ST",
+      "parcel": "",
+      "sale_date": "5/13/2022",
+      "sale_price": 105000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2022-021350",
+      "raw": {
+        "filing_id": 9170763,
+        "lat": 33.7655413,
+        "lng": -84.4089566,
+        "map_price": "105K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "391 Sunset AVE NW Atlanta",
+      "parcel": "",
+      "sale_date": "6/9/2025",
+      "sale_price": 260000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2025-019156",
+      "raw": {
+        "filing_id": 10617950,
+        "lat": 33.7652981,
+        "lng": -84.4097538,
+        "map_price": "260K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "Atlanta",
+      "parcel": "",
+      "sale_date": "4/22/2022",
+      "sale_price": 320000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2022-017300",
+      "raw": {
+        "filing_id": 9127363,
+        "lat": 33.7655421,
+        "lng": -84.4080127,
+        "map_price": "320K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "411 Sunset AVE NW Atlanta",
+      "parcel": "",
+      "sale_date": "5/5/2025",
+      "sale_price": 350000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2025-014917",
+      "raw": {
+        "filing_id": 10575840,
+        "lat": 33.7657599,
+        "lng": -84.4096901,
+        "map_price": "350K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "ATLANTA",
+      "parcel": "",
+      "sale_date": "4/10/2026",
+      "sale_price": 195000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2026-010844",
+      "raw": {
+        "filing_id": 10999485,
+        "lat": 33.7658836,
+        "lng": -84.4094864,
+        "map_price": "195K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "415 Sunset AVE NW Atlanta",
+      "parcel": "",
+      "sale_date": "5/23/2025",
+      "sale_price": 320000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2025-016682",
+      "raw": {
+        "filing_id": 10593763,
+        "lat": 33.765949,
+        "lng": -84.409728,
+        "map_price": "320K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "406 Sunset AVE NW Atlanta",
+      "parcel": "",
+      "sale_date": "1/28/2022",
+      "sale_price": 350000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2022-003991",
+      "raw": {
+        "filing_id": 8989558,
+        "lat": 33.7656749,
+        "lng": -84.4103067,
+        "map_price": "350K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "426 Elm ST NW",
+      "parcel": "",
+      "sale_date": "3/14/2023",
+      "sale_price": 134152.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2023-016165",
+      "raw": {
+        "filing_id": 9685669,
+        "lat": 33.7662333,
+        "lng": -84.409049,
+        "map_price": "134K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "410 Sunset AVE NW Atlanta",
+      "parcel": "",
+      "sale_date": "1/31/2022",
+      "sale_price": 355200.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2022-004265",
+      "raw": {
+        "filing_id": 8992454,
+        "lat": 33.765852,
+        "lng": -84.410287,
+        "map_price": "355K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "304 Sunset Avenue NW",
+      "parcel": "",
+      "sale_date": "10/28/2025",
+      "sale_price": 230000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2025-036848",
+      "raw": {
+        "filing_id": 10801936,
+        "lat": 33.7629017,
+        "lng": -84.4102886,
+        "map_price": "230K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "412 Sunset AVE NW Atlanta",
+      "parcel": "",
+      "sale_date": "3/4/2022",
+      "sale_price": 0.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2022-009817",
+      "raw": {
+        "filing_id": 9048965,
+        "lat": 33.7659868,
+        "lng": -84.4102839,
+        "map_price": "0K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "432 Elm ST NW Atlanta",
+      "parcel": "",
+      "sale_date": "9/20/2021",
+      "sale_price": 137258.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2022-000025",
+      "raw": {
+        "filing_id": 8950072,
+        "lat": 33.7664277,
+        "lng": -84.4090697,
+        "map_price": "137K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "436 Elm ST NW Atlanta",
+      "parcel": "",
+      "sale_date": "2/2/2024",
+      "sale_price": 303990.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2024-003836",
+      "raw": {
+        "filing_id": 9999604,
+        "lat": 33.7665476,
+        "lng": -84.4090798,
+        "map_price": "304K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "440 Elm ST NW",
+      "parcel": "",
+      "sale_date": "8/26/2021",
+      "sale_price": 171300.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2021-040465",
+      "raw": {
+        "filing_id": 8728803,
+        "lat": 33.7666468,
+        "lng": -84.4091105,
+        "map_price": "171K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "437 SUNSET AVE ATLANTA",
+      "parcel": "",
+      "sale_date": "9/29/2021",
+      "sale_price": 0.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2021-046539",
+      "raw": {
+        "filing_id": 8790722,
+        "lat": 33.7665338,
+        "lng": -84.4097364,
+        "map_price": "0K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "700 Neal ST NW Atlanta",
+      "parcel": "",
+      "sale_date": "4/13/2022",
+      "sale_price": 1305400.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2022-018739",
+      "raw": {
+        "filing_id": 9143187,
+        "lat": 33.766221,
+        "lng": -84.4105161,
+        "map_price": "1,305K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "569 Jones AVE NW",
+      "parcel": "",
+      "sale_date": "7/8/2020",
+      "sale_price": 158620.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2020-023465",
+      "raw": {
+        "filing_id": 8044830,
+        "lat": 33.7644088,
+        "lng": -84.4060428,
+        "map_price": "159K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "441 Sunset AVE NW Atlanta",
+      "parcel": "",
+      "sale_date": "11/20/2024",
+      "sale_price": 290000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2024-040071",
+      "raw": {
+        "filing_id": 10367722,
+        "lat": 33.7666624,
+        "lng": -84.4096953,
+        "map_price": "290K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "741 Jones AVE NW",
+      "parcel": "",
+      "sale_date": "6/29/2023",
+      "sale_price": 299000.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2023-020976",
+      "raw": {
+        "filing_id": 9735202,
+        "lat": 33.7644667,
+        "lng": -84.4117166,
+        "map_price": "299K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "563 Joseph E Boone BLVD",
+      "parcel": "",
+      "sale_date": "7/29/2021",
+      "sale_price": 0.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2021-039224",
+      "raw": {
+        "filing_id": 8716086,
+        "lat": 33.7636927,
+        "lng": -84.4058934,
+        "map_price": "0K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    },
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "559 Joseph E Boone BLVD Atlanta",
+      "parcel": "",
+      "sale_date": "3/5/2021",
+      "sale_price": 108500.0,
+      "grantor": "",
+      "grantee": "",
+      "book_page": "",
+      "instrument": "060-2021-012501",
+      "raw": {
+        "filing_id": 8450557,
+        "lat": 33.7636138,
+        "lng": -84.4057664,
+        "map_price": "108K",
+        "mode": "map_json",
+        "gsccca_query": {
+          "query": "8581 Elm Way, Fulton County, GA",
+          "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+          "error": null
+        },
+        "discovery": {
+          "address": "8581 Elm Way",
+          "county": "Fulton",
+          "foreclosure_stage": "",
+          "investment_score": "90.6",
+          "equity_potential": "136264",
+          "risk_level": "Low"
+        }
+      }
+    }
+  ],
+  "matches": [
+    {
+      "criteria_index": 6,
+      "comp_index": 0,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 1,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 2,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 3,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 4,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 5,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 6,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 7,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 8,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 9,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 10,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 11,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 12,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 13,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 14,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 15,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 16,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 17,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 18,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 19,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 20,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 21,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 22,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 23,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    },
+    {
+      "criteria_index": 6,
+      "comp_index": 24,
+      "score": 50,
+      "reasons": [
+        "same county",
+        "property type target multifamily",
+        "high investment score"
+      ]
+    }
+  ],
+  "unmatched_criteria": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "errors": [],
+  "raw_results": [
+    {
+      "address": "8581 Elm Way",
+      "score": 50,
+      "dd_rows": 0,
+      "gs_rows": 101,
+      "gsccca_url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+      "gsccca_error": null
+    }
+  ]
+}

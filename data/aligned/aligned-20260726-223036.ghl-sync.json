@@ -1,0 +1,78 @@
+{
+  "file": "4plex-investment-platform/data/aligned/aligned-20260726-223036.json",
+  "matches": 5,
+  "stored_ok": 5,
+  "errors": [],
+  "results": [
+    {
+      "ok": true,
+      "contact_id": "3I58VAx8tk8wYI6LiEgC",
+      "created": true,
+      "note_id": "pPEOhW6aaaOTSgWfFQYm",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-90",
+        "county-fulton"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "cldB8lLH5s5e9QWnif56",
+      "created": true,
+      "note_id": "1bCp1RZuIFsiotdAyYVO",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-90",
+        "county-fulton"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "boRPvar7OoYN8GC8fvy7",
+      "created": true,
+      "note_id": "qeYBexEgzOUKLly7BaYz",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-90",
+        "county-fulton"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "oCqQJ3ZouLVh8e5Nepbj",
+      "created": true,
+      "note_id": "vd8rS01cT1ITwn5azPb0",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-90",
+        "county-fulton"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "ERQ4NcwtNzZwgkocDCMD",
+      "created": true,
+      "note_id": "Hu5dTZuJW5U3b8XS3rkA",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-80",
+        "county-fulton"
+      ]
+    }
+  ]
+}

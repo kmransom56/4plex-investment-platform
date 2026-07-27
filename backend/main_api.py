@@ -1,13 +1,13 @@
 """
-4-Plex Investment Platform - Main API with Real Functionality
-Integrates foreclosure discovery, financial analysis, and multifamily valuation
+4-Plex Investment Platform - Unified API
+Deep Integration: Foreclosure Research + Investment Valuation + Portfolio Management
 
 Features:
-- Real property discovery using CrewAI agents
-- Complete financial analysis with multifamily calculations  
+- Unified foreclosure discovery and investment analysis
+- AI-powered multi-agent system for property research
+- Real financial analysis with multifamily calculations
 - Property management and portfolio tracking
-- Document processing and AI analysis
-- Multi-format reporting and exports
+- Integrated data pipeline from discovery through valuation
 """
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks, Depends, UploadFile, File
@@ -27,12 +27,22 @@ import shutil
 
 # Import our custom modules
 from models import (
-    Property, PropertyAnalysis, ProcessingJob, DiscoveryJob, 
-    User, ActivityLog, InvestmentReport, PropertyType, PropertyStatus, 
+    Property, PropertyAnalysis, ProcessingJob, DiscoveryJob,
+    User, ActivityLog, InvestmentReport, PropertyType, PropertyStatus,
     ForeclosureStage, InvestmentGrade, FinancialMetrics, FinancialProjection
 )
 from financial_engine import FinancialEngine, FinancialInputs, CalculationResults, quick_analysis, format_currency, format_percentage
-from agents.foreclosure_discovery_crew import ForeclosureDiscoveryCrew, DiscoveryRequest, discover_foreclosure_opportunities
+
+# Import foreclosure integration modules (deep integration)
+try:
+    from foreclosure_integration.unified_models import UnifiedProperty, IntegratedAnalysis
+    from foreclosure_integration.workflow_orchestrator import WorkflowOrchestrator
+    from foreclosure_integration.data_sync import DataSynchronizer
+    FORECLOSURE_INTEGRATION_AVAILABLE = True
+except ImportError:
+    FORECLOSURE_INTEGRATION_AVAILABLE = False
+    logger = logging.getLogger(__name__)
+    logger.warning("Foreclosure integration modules not available - using fallback")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -66,6 +76,10 @@ investment_reports: Dict[str, InvestmentReport] = {}
 
 # Initialize services
 financial_engine = FinancialEngine()
+# Import and instantiate the foreclosure discovery crew (used by the discovery endpoint)
+from agents.foreclosure_discovery_crew import ForeclosureDiscoveryCrew, DiscoveryRequest
+
+# Create a single crew instance that the endpoint can reuse
 discovery_crew = ForeclosureDiscoveryCrew()
 
 # Request/Response Models
@@ -436,14 +450,142 @@ async def quick_property_analysis(
         }
     }
 
+# UNIFIED FORECLOSURE & INVESTMENT DISCOVERY ENDPOINTS
+@app.post("/api/foreclosure/search")
+async def search_foreclosures(request: dict, background_tasks: BackgroundTasks):
+    """
+    Unified search for foreclosure opportunities using integrated multi-agent system.
+    Combines foreclosure research with investment analysis.
+    """
+    counties = request.get('counties', ['Fulton', 'DeKalb', 'Gwinnett'])
+    property_types = request.get('property_types', ['4plex'])
+    max_price = request.get('max_price', 1000000)
+    min_score = request.get('min_investment_score', 60)
+
+    # Create a discovery job
+    job_id = str(uuid.uuid4())
+    discovery_job = DiscoveryJob(
+        id=job_id,
+        status="running",
+        counties=counties,
+        property_types=property_types,
+        created_at=datetime.now(),
+        updated_at=datetime.now()
+    )
+    active_jobs[job_id] = discovery_job
+
+    # If unified integration available, use real agents
+    if FORECLOSURE_INTEGRATION_AVAILABLE:
+        async def run_integrated_discovery():
+            try:
+                orchestrator = WorkflowOrchestrator(settings=None)
+                # Run foreclosure discovery through orchestrator
+                results = await orchestrator.discover_and_analyze(
+                    counties=counties,
+                    property_types=property_types,
+                    max_price=max_price,
+                    min_score=min_score
+                )
+                discovery_job.status = "completed"
+                discovery_job.results = results
+            except Exception as e:
+                logger.error(f"Foreclosure discovery failed: {e}")
+                discovery_job.status = "failed"
+                discovery_job.error = str(e)
+
+        background_tasks.add_task(run_integrated_discovery)
+    else:
+        # Fallback: Use demo data
+        def run_demo_discovery():
+            demo_properties = [
+                {
+                    "id": "fc_001",
+                    "address": "123 Main St",
+                    "city": "Atlanta",
+                    "county": counties[0] if counties else "Fulton",
+                    "state": "GA",
+                    "price": 850000,
+                    "units": 4,
+                    "investment_score": 82.5,
+                    "equity_potential": 150000,
+                    "cap_rate": 7.8
+                },
+                {
+                    "id": "fc_002",
+                    "address": "456 Oak Ave",
+                    "city": "Decatur",
+                    "county": counties[1] if len(counties) > 1 else "DeKalb",
+                    "state": "GA",
+                    "price": 750000,
+                    "units": 4,
+                    "investment_score": 88.2,
+                    "equity_potential": 200000,
+                    "cap_rate": 8.5
+                }
+            ]
+            filtered = [p for p in demo_properties if p['price'] <= max_price and p['investment_score'] >= min_score]
+            discovery_job.status = "completed"
+            discovery_job.results = {"properties": filtered, "total": len(filtered)}
+
+        background_tasks.add_task(run_demo_discovery)
+
+    return {
+        "job_id": job_id,
+        "status": "queued",
+        "message": "Foreclosure discovery started - results will be available shortly",
+        "search_params": {
+            "counties": counties,
+            "property_types": property_types,
+            "max_price": max_price,
+            "min_score": min_score
+        }
+    }
+
+@app.get("/api/foreclosure/status")
+async def get_foreclosure_search_status():
+    """Get status of active and historical foreclosure searches"""
+    completed = [j for j in active_jobs.values() if j.status == "completed"]
+    running = [j for j in active_jobs.values() if j.status == "running"]
+
+    return {
+        "system": "Unified Foreclosure & Investment Discovery",
+        "active_searches": len(running),
+        "completed_searches": len(completed),
+        "integration_mode": "unified" if FORECLOSURE_INTEGRATION_AVAILABLE else "fallback",
+        "agents_active": [
+            "ForeclosureDataAgent",
+            "CodeViolationAgent",
+            "TaxLienAgent",
+            "PropertyCharacteristicsAgent",
+            "MarketAnalysisAgent",
+            "InvestmentScoringAgent"
+        ],
+        "last_scan": datetime.now().isoformat()
+    }
+
+@app.get("/api/foreclosure/results/{job_id}")
+async def get_foreclosure_results(job_id: str):
+    """Get results from a specific foreclosure discovery job"""
+    if job_id not in active_jobs:
+        raise HTTPException(status_code=404, detail="Job not found")
+
+    job = active_jobs[job_id]
+    return {
+        "job_id": job_id,
+        "status": job.status,
+        "results": job.results if hasattr(job, 'results') else None,
+        "error": job.error if hasattr(job, 'error') else None,
+        "created_at": job.created_at.isoformat()
+    }
+
 # Recent activity endpoint
 @app.get("/api/activity")
 async def get_recent_activity(limit: int = 10):
     """Get recent platform activity"""
-    
+
     # Sort by timestamp, most recent first
     recent_activities = sorted(activity_logs, key=lambda x: x.timestamp, reverse=True)[:limit]
-    
+
     return {
         "activities": [activity.dict() for activity in recent_activities],
         "total_activities": len(activity_logs)
@@ -510,7 +652,9 @@ async def run_property_discovery(job_id: str, request: PropertyDiscoveryRequest)
                 property_type=PropertyType.FOURPLEX,
                 units=prop_data.get("units", 4),
                 status=PropertyStatus.DISCOVERED,
-                foreclosure_stage=ForeclosureStage(prop_data.get("foreclosure_stage", "pre-foreclosure").lower().replace(" ", "_").replace("-", "_")),
+                # The mock agent returns values like "Pre-foreclosure". The enum expects hyphens, not underscores.
+                # Convert to lowercase and replace spaces only; keep hyphens intact.
+                foreclosure_stage=ForeclosureStage(prop_data.get("foreclosure_stage", "pre-foreclosure").lower().replace(" ", "_")),
                 outstanding_debt=prop_data.get("outstanding_debt"),
                 estimated_value=prop_data.get("estimated_market_value"),
                 investment_score=prop_data.get("investment_analysis", {}).get("investment_score"),
@@ -770,4 +914,4 @@ async def run_report_generation(job_id: str, request: ReportGenerationRequest):
 # Development server startup
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=11050, reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=11050, reload=False, log_level="info")

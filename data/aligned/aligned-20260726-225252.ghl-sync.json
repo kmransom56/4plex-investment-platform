@@ -1,0 +1,122 @@
+{
+  "file": "/home/keith/real_estate/4plex-investment-platform/data/aligned/aligned-20260726-225252.json",
+  "matches": 7,
+  "stored_ok": 7,
+  "errors": [],
+  "results": [
+    {
+      "ok": true,
+      "contact_id": "TwORM2Hgx8xJwfK0Ko6t",
+      "created": true,
+      "note_id": "kKRt3yZSiw6iiFnAho3P",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-53",
+        "county-fulton",
+        "type-sfr",
+        "vacant",
+        "demand-saved-search"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "k7f9N1hYMmffSjs30zCw",
+      "created": true,
+      "note_id": "DgnAQ9LsJcnj6iy3r4jU",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-53",
+        "county-fulton",
+        "type-multifamily",
+        "vacant",
+        "demand-saved-search"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "SM7Tq3uvk9YV5vWrjFk0",
+      "created": true,
+      "note_id": "NodT93de9VjvdY5GAGqI",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-63",
+        "county-fulton",
+        "type-multifamily",
+        "demand-saved-search"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "lL8c9jBBfWpISlmdB8pB",
+      "created": true,
+      "note_id": "gmx2PrTWmWhcRUJQzdsn",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-55",
+        "county-fulton",
+        "type-sfr",
+        "demand-cash-buyer"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "WxwLU2rxfUD7Ngdci4Pq",
+      "created": true,
+      "note_id": "AZ3txD5eQLC2t6Q48oAi",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-55",
+        "county-fulton",
+        "type-multifamily",
+        "demand-cash-buyer"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "74MVKx3KZgxKlO4l4obd",
+      "created": true,
+      "note_id": "db4FqOgZN1Yt3XWlQNOz",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-55",
+        "county-fulton",
+        "type-sfr",
+        "demand-cash-buyer"
+      ]
+    },
+    {
+      "ok": true,
+      "contact_id": "d8813RSjMYjpKDwAhGra",
+      "created": true,
+      "note_id": "18hE2knUEigKpuUQGhhq",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-55",
+        "county-fulton",
+        "type-multifamily",
+        "demand-cash-buyer"
+      ]
+    }
+  ]
+}

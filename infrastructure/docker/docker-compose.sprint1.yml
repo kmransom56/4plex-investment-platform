@@ -1,0 +1,78 @@
+version: "3.8"
+services:
+  foreclosure_research:
+    build:
+      # The backend folder containing the FastAPI service lives two levels up from this file.
+      context: ../../backend
+      dockerfile: Dockerfile
+    container_name: foreclosure_research_system
+    environment:
+      - DATABASE_URL=postgresql://unified_user:unified_pass@postgres:5432/unified_db
+      - NEO4J_URL=bolt://neo4j:7687
+      - REDIS_URL=redis://:unified_redis_pass@redis:6379/0
+    ports:
+      - "11060:11060"
+    depends_on:
+      - postgres
+      - neo4j
+      - redis
+    networks:
+      - integrated_network
+    restart: unless-stopped
+  redis:
+    image: redis:7-alpine
+    container_name: unified_redis_cache
+    command: redis-server --appendonly yes --requirepass unified_redis_pass
+    volumes:
+      - redis_unified_data:/data
+    ports:
+      - "6380:6379"
+    networks:
+      - integrated_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+  postgres:
+    image: postgres:15-alpine
+    container_name: unified_postgres_db
+    environment:
+      POSTGRES_DB: unified_db
+      POSTGRES_USER: unified_user
+      POSTGRES_PASSWORD: unified_pass
+    ports:
+      - "5433:5432"
+    networks:
+      - integrated_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U unified_user -d unified_db"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+  neo4j:
+    image: neo4j:5.15-community
+    container_name: unified_neo4j_db
+    environment:
+      NEO4J_AUTH: neo4j/unified_neo4j_pass
+      NEO4J_PLUGINS: '["apoc"]'
+    ports:
+      - "7475:7474"
+      - "7688:7687"
+    networks:
+      - integrated_network
+    healthcheck:
+      test: ["CMD", "cypher-shell", "-u", "neo4j", "-p", "unified_neo4j_pass", "RETURN 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+volumes:
+  redis_unified_data:
+  postgres_unified_data:
+  neo4j_unified_data:
+networks:
+  integrated_network:
+    driver: bridge

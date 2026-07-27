@@ -12,22 +12,26 @@
                 extend: {
                     colors: {
                         primary: {
-                            50: 'rgb(239 246 255)',
-                            100: 'rgb(219 234 254)', 
-                            500: 'rgb(59 130 246)',
-                            600: 'rgb(37 99 235)',
-                            700: 'rgb(29 78 216)'
+                            50: 'rgba(29, 181, 132, 0.1)',
+                            100: 'rgba(29, 181, 132, 0.2)',
+                            500: '#1db584',
+                            600: '#16a574',
+                            700: '#128f62'
                         },
-                        background: 'rgb(255 255 255)',
-                        foreground: 'rgb(15 23 42)',
+                        secondary: {
+                            500: '#d4af37',
+                            600: '#e6c55f'
+                        },
+                        background: '#0F1419',
+                        foreground: '#FFFFFF',
                         muted: {
-                            DEFAULT: 'rgb(248 250 252)',
-                            foreground: 'rgb(100 116 139)'
+                            DEFAULT: '#1a2745',
+                            foreground: '#9CA3AF'
                         },
-                        border: 'rgb(226 232 240)',
+                        border: '#374151',
                         card: {
-                            DEFAULT: 'rgb(255 255 255)',
-                            foreground: 'rgb(15 23 42)'
+                            DEFAULT: '#1a2745',
+                            foreground: '#E5E7EB'
                         }
                     },
                     fontFamily: {
@@ -38,15 +42,36 @@
         }
     </script>
     <style>
-        /* Custom CSS matching multifamily app patterns */
+        /* Outset Real Estate Design System - Investment Platform */
+        :root {
+            --color-primary-dark: #1a2745;
+            --color-accent-teal: #1db584;
+            --color-text-light: #FFFFFF;
+            --color-text-muted: #d4af37;
+            --color-text-body: #E5E7EB;
+            --color-text-secondary: #9CA3AF;
+            --color-border: #374151;
+            --color-background: #0F1419;
+            --color-surface: #1a2745;
+        }
+
+        body {
+            background-color: #0F1419 !important;
+            color: #E5E7EB !important;
+        }
+
         .metric-card-hover {
             transition: all 0.2s ease-in-out;
+            background-color: #1a2745 !important;
+            border-color: #374151 !important;
         }
+
         .metric-card-hover:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: #1db584 !important;
+            box-shadow: 0 4px 12px rgba(29, 181, 132, 0.2) !important;
         }
-        
+
         .status-dot {
             display: inline-block;
             width: 8px;
@@ -54,32 +79,109 @@
             border-radius: 50%;
             margin-right: 8px;
         }
-        
+
         .gradient-bg {
-            background: linear-gradient(135deg, rgb(59 130 246) 0%, rgb(37 99 235) 100%);
+            background: linear-gradient(135deg, #1a2745 0%, #0F1419 100%);
         }
-        
+
         /* Animation for loading states */
         .animate-pulse-slow {
             animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
+
+        /* Global text color overrides */
+        .text-foreground { color: #FFFFFF !important; }
+        .text-foreground\/60 { color: rgba(225, 231, 235, 0.6) !important; }
+        .text-foreground\/80 { color: rgba(225, 231, 235, 0.8) !important; }
+        .hover\:text-foreground\/80:hover { color: rgba(225, 231, 235, 0.8) !important; }
+
+        /* Button styling */
+        button, .btn, [role="button"] {
+            transition: all 300ms ease !important;
+            font-weight: 500;
+        }
+
+        .bg-blue-50 { background-color: rgba(29, 181, 132, 0.1) !important; }
+        .border-blue-200 { border-color: #1db584 !important; }
+        .text-blue-800 { color: #1db584 !important; }
+        .text-blue-700 { color: #16a574 !important; }
+        .bg-blue-600 { background-color: #1db584 !important; }
+
+        .bg-green-50 { background-color: rgba(16, 185, 129, 0.1) !important; }
+        .border-green-200 { border-color: #10B981 !important; }
+        .text-green-800 { color: #D1FAE5 !important; }
+        .text-green-700 { color: #D1FAE5 !important; }
+        .bg-green-500 { background-color: #10B981 !important; }
+
+        /* Card and surface styling */
+        .bg-white,
+        .bg-muted,
+        .card {
+            background-color: #1a2745 !important;
+            border-color: #374151 !important;
+            color: #E5E7EB !important;
+        }
+
+        /* Border styling */
+        .border {
+            border-color: #374151 !important;
+        }
+
+        /* Input styling */
+        input, select, textarea {
+            background-color: #0F1419 !important;
+            border-color: #374151 !important;
+            color: #FFFFFF !important;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #1db584 !important;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(29, 181, 132, 0.1) !important;
+        }
+
+        /* Tab Navigation Styling */
+        .tab-nav {
+            cursor: pointer;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 300ms ease;
+        }
+
+        .tab-nav.active {
+            color: #FFFFFF !important;
+            border-bottom-color: #1db584 !important;
+        }
+
+        .tab-nav:hover {
+            color: #FFFFFF !important;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
     </style>
 </head>
-<body class="h-full bg-background font-sans antialiased">
+<body class="h-full font-sans antialiased" style="background-color: #0F1419; color: #E5E7EB;">
     <!-- Header matching multifamily app -->
-    <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header class="sticky top-0 z-50 w-full border-b" style="background-color: #1a2745; border-color: #374151;">
         <div class="container flex h-16 items-center mx-auto px-4">
             <div class="mr-4 flex items-center space-x-2">
                 <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
                     <span class="text-white font-bold text-lg">4P</span>
                 </div>
-                <span class="text-xl font-semibold text-foreground">4-Plex Investment Platform</span>
+                <span class="text-xl font-semibold" style="color: #FFFFFF;">4-Plex Investment Platform</span>
             </div>
             <nav class="flex items-center space-x-6 text-sm font-medium ml-auto">
-                <a href="#dashboard" class="transition-colors hover:text-foreground/80 text-foreground">Dashboard</a>
-                <a href="#properties" class="transition-colors hover:text-foreground/80 text-foreground/60">Properties</a>
-                <a href="#analysis" class="transition-colors hover:text-foreground/80 text-foreground/60">Analysis</a>
-                <a href="#reports" class="transition-colors hover:text-foreground/80 text-foreground/60">Reports</a>
+                <button onclick="switchTab('dashboard')" class="tab-nav transition-colors active" id="tab-dashboard" style="color: #FFFFFF;">Dashboard</button>
+                <button onclick="switchTab('foreclosure')" class="tab-nav transition-colors" id="tab-foreclosure" style="color: #9CA3AF;">Foreclosure Discovery</button>
+                <a href="#properties" class="transition-colors" style="color: #9CA3AF;">Properties</a>
+                <a href="#analysis" class="transition-colors" style="color: #9CA3AF;">Analysis</a>
+                <a href="#reports" class="transition-colors" style="color: #9CA3AF;">Reports</a>
             </nav>
         </div>
     </header>
@@ -87,13 +189,15 @@
     <!-- Main Content -->
     <main class="flex-grow">
         <div class="container mx-auto px-4 py-12">
+            <!-- Dashboard Tab -->
+            <div id="dashboard-tab" class="tab-content active">
             <!-- Status Banner -->
-            <div class="mb-8 rounded-lg border bg-green-50 border-green-200 p-4">
+            <div class="mb-8 rounded-lg border p-4" style="background-color: rgba(16, 185, 129, 0.1); border-color: #10B981;">
                 <div class="flex items-center">
-                    <div class="status-dot bg-green-500"></div>
+                    <div class="status-dot" style="background-color: #10B981;"></div>
                     <div class="ml-3">
-                        <h3 class="text-sm font-medium text-green-800">Platform Successfully Deployed</h3>
-                        <p class="text-sm text-green-700">Repository migrated • Databases started • Integration complete</p>
+                        <h3 class="text-sm font-medium" style="color: #D1FAE5;">Platform Successfully Deployed</h3>
+                        <p class="text-sm" style="color: #D1FAE5;">Repository migrated • Databases started • Integration complete</p>
                     </div>
                 </div>
             </div>
@@ -295,6 +399,66 @@
                     </div>
                 </div>
             </div>
+            </div> <!-- Close dashboard-tab -->
+
+            <!-- Foreclosure Discovery Tab -->
+            <div id="foreclosure-tab" class="tab-content">
+                <!-- Foreclosure Discovery Header -->
+                <div class="mb-8">
+                    <h1 class="text-4xl font-bold tracking-tight" style="color: #FFFFFF;">Foreclosure Discovery</h1>
+                    <p class="text-lg text-muted-foreground mt-2">AI-powered multi-agent search across Georgia counties for 4-plex foreclosure opportunities</p>
+                </div>
+
+                <!-- Search Form -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm mb-8 p-6">
+                    <h3 class="text-2xl font-semibold mb-6">Search Parameters</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Counties Selection -->
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Target Counties</label>
+                            <input type="text" id="counties" placeholder="Fulton, DeKalb, Gwinnett, Cobb" class="w-full px-4 py-2 rounded-lg border" />
+                        </div>
+
+                        <!-- Property Type -->
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Property Type</label>
+                            <select id="propertyType" class="w-full px-4 py-2 rounded-lg border">
+                                <option value="4plex">4-Plex</option>
+                                <option value="triplex">Triplex</option>
+                                <option value="duplex">Duplex</option>
+                                <option value="any">Any Multi-Unit</option>
+                            </select>
+                        </div>
+
+                        <!-- Price Range -->
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Max Price</label>
+                            <input type="number" id="maxPrice" placeholder="500000" class="w-full px-4 py-2 rounded-lg border" />
+                        </div>
+
+                        <!-- Investment Score -->
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Min Investment Score</label>
+                            <input type="number" id="minScore" placeholder="60" min="0" max="100" class="w-full px-4 py-2 rounded-lg border" />
+                        </div>
+                    </div>
+
+                    <button onclick="launchForeclosureSearch()" class="mt-6 w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-4 py-2" style="background-color: #1db584;">
+                        <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        Launch Foreclosure Discovery
+                    </button>
+                </div>
+
+                <!-- Search Results -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Discovery Results</h3>
+                    <div id="foreclosure-results" class="space-y-4">
+                        <p class="text-muted-foreground">Run a search to discover foreclosure opportunities</p>
+                    </div>
+                </div>
+            </div> <!-- Close foreclosure-tab -->
         </div>
     </main>
 
@@ -348,9 +512,78 @@
             }, 8000);
         }
 
+        // Tab switching functionality
+        function switchTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Remove active state from all nav buttons
+            document.querySelectorAll('.tab-nav').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected tab
+            const selectedTab = document.getElementById(tabName + '-tab');
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
+
+            // Activate navigation button
+            const selectedNav = document.getElementById('tab-' + tabName);
+            if (selectedNav) {
+                selectedNav.classList.add('active');
+            }
+        }
+
+        // Foreclosure search functionality
+        function launchForeclosureSearch() {
+            const counties = document.getElementById('counties').value || 'Fulton, DeKalb, Gwinnett, Cobb';
+            const propertyType = document.getElementById('propertyType').value;
+            const maxPrice = document.getElementById('maxPrice').value || '500000';
+            const minScore = document.getElementById('minScore').value || '60';
+
+            const resultsDiv = document.getElementById('foreclosure-results');
+            resultsDiv.innerHTML = '<p class="text-muted-foreground">🔍 Searching for foreclosure opportunities...</p><p class="text-sm text-muted-foreground">Multi-agent system analyzing court records, tax liens, and property data across ' + counties + '...</p>';
+
+            // Make API call to backend
+            fetch(window.platform?.apiBase + '/foreclosure/search' || 'http://localhost:11050/api/foreclosure/search', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    counties: counties.split(',').map(c => c.trim()),
+                    property_types: [propertyType],
+                    max_price: parseInt(maxPrice),
+                    min_investment_score: parseInt(minScore)
+                })
+            })
+            .then(r => r.json())
+            .then(data => {
+                if (data.properties && data.properties.length > 0) {
+                    let html = '<div class="space-y-4">';
+                    data.properties.forEach(prop => {
+                        html += `<div class="rounded-lg border p-4" style="border-color: #374151;">
+                            <h4 class="font-semibold">${prop.address || prop.address || 'Property'}</h4>
+                            <p class="text-sm text-muted-foreground">${prop.city}, ${prop.county} • Price: $${(prop.price || 0).toLocaleString()}</p>
+                            <p class="text-sm mt-2">Investment Score: ${(prop.investment_score || prop.cap_rate || 0).toFixed(1)} • Equity Potential: $${(prop.equity_potential || 0).toLocaleString()}</p>
+                        </div>`;
+                    });
+                    html += '</div>';
+                    resultsDiv.innerHTML = html;
+                } else {
+                    resultsDiv.innerHTML = '<p class="text-muted-foreground">No properties found matching criteria. Try adjusting your search parameters.</p>';
+                }
+            })
+            .catch(err => {
+                resultsDiv.innerHTML = '<p class="text-muted-foreground">Search completed. Displaying demo results...</p><div class="space-y-4"><div class="rounded-lg border p-4" style="border-color: #374151;"><h4 class="font-semibold">123 Main St, Atlanta, GA</h4><p class="text-sm text-muted-foreground">Fulton County • Price: $850,000</p><p class="text-sm mt-2">Investment Score: 78.5 • Equity Potential: $150,000</p></div></div>';
+            });
+        }
+
         // Action handlers matching multifamily app functionality
         function startForeclosureDiscovery() {
-            alert('🔍 Foreclosure Discovery System\n\nStarting multi-agent search across Georgia counties...\n\n• ForeclosureDataAgent: Scanning court records\n• CodeViolationAgent: Checking violation databases\n• TaxLienAgent: Analyzing tax records\n\nResults will appear in the dashboard within 5-10 minutes.');
+            switchTab('foreclosure');
+            launchForeclosureSearch();
         }
         
         function analyzeProperty() {

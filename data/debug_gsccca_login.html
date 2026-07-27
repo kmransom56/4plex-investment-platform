@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="en"><!--<![endif]--><!--The session.asp include file must be the same as the Session.asp in the main Includes directory for the login to work across applications.--><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+		<title>GSCCCA.org - Login</title>
+
+		<script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/A7KpaEASfhDcK0nXxgQEyyYv/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-DMJucfgjcmtc4a8x9gFfPgwoWXK+1qozk7K/wTFGVtduYs3wg2BI8Z5lrJXZV+iE"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" language="javascript">
+			//keep from being displayed in frames.
+			if (self != top)
+			{
+			    if (document.images)
+			        top.location.replace(window.location.href);
+			    else
+			        top.location.href = window.location.href;
+			}
+		</script>
+
+		<script type="text/javascript" language="javascript">
+			isamap = new Object();
+			isamap[0] = "_df"
+			isamap[1] = "_ov"
+
+			function isimgact(id, act)
+			{
+				if(document.images) document.images[id].src = eval( "isimages." + id + isamap[act] + ".src");
+			}
+
+			if (document.images) { // ensure browser can do JavaScript rollovers.
+			isimages = new Object();
+
+			isimages.home_df = new Image();
+			isimages.home_df.src = "images/nav_globalhome.gif";
+
+			isimages.home_ov = new Image();
+			isimages.home_ov.src = "images/nav_globalhome-over.gif";
+
+			isimages.logon_df = new Image();
+			isimages.logon_df.src = "images/btn_redlogon.gif";
+
+			isimages.logon_ov = new Image();
+			isimages.logon_ov.src = "images/btn_redlogon-over.gif";
+
+			isimages.clear_df = new Image();
+			isimages.clear_df.src = "images/btn_redclear.gif";
+
+			isimages.clear_ov = new Image();
+			isimages.clear_ov.src = "images/btn_redclear-over.gif";
+
+			isimages.creditcards_df = new Image();
+			isimages.creditcards_df.src = "images/nav_creditcards.gif";
+
+			isimages.creditcards_ov = new Image();
+			isimages.creditcards_ov.src = "images/nav_creditcards-over.gif";
+			}
+
+			function submitForm()
+			{
+				document.frmLogin.submit();
+			}
+
+			if (document.layers)
+				document.captureEvents(Event.KEYDOWN);
+				document.onkeydown =
+					function (evt)
+					{
+						var keyCode = evt ? (evt.which ? evt.which : evt.keyCode) : event.keyCode;
+
+						//Added the password code to prevent the form submitting before the user has filled in the password.
+						//Allows the user to hit enter after inputting thwie user name and have the focus put to the password field.
+						//If both the userid and password fields are filled in, the user can submit the form.
+						if ((keyCode == 13) && (document.frmLogin.txtPassword.value.length > 0))
+						{
+							submitForm();
+							return false;
+						}
+
+						if ((keyCode == 13) && (document.frmLogin.txtPassword.value.length == 0) && (document.frmLogin.txtUserID.value.length > 0))
+						{
+							document.frmLogin.txtPassword.focus();
+							return false;
+						}
+						else
+							return true;
+					};
+		</script>
+		<link rel="StyleSheet" href="gsccca.css" type="text/css" media="screen">
+		
+		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
+		<script type="text/javascript">
+			var showGoogleCaptcha = false;
+			var googleCaptchaSiteKey = '6LdXjq8UAAAAAKNl81f-rBZWBWEGz4jcqBDapeMK';
+			var onloadCallback = function() {
+                if (showGoogleCaptcha) {
+                    headerCaptchaID = grecaptcha.render('captchaLoginPage', {
+                        'sitekey': googleCaptchaSiteKey
+                    });
+                }
+			};
+		</script>
+		
+		
+		<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="/stylesheets/base.css">
+	<link rel="stylesheet" href="/stylesheets/skeleton.css">
+	<link rel="stylesheet" href="/stylesheets/layout.css">
+	
+	<style type="text/css">
+		.icon {
+			width: 30px;
+			height: 30px;
+			position: relative;
+		}
+
+		.txt {
+			color: #F1B78F;
+			background-color: #7F1518;
+			font-size: xx-small;
+			position: absolute;
+			padding: 2px;
+			top: -3px;
+			left: 14px;
+			border-radius: 25px;
+			line-height: 10px;
+		}
+	</style>
+
+	<!-- Downloaded from http://html5shim.googlecode.com/svn/trunk/html5.js -->
+	<!--[if lt IE 9]>
+		<script src="/js/html5.js"></script>
+	<![endif]-->
+
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="/images/sitefinity/favicon.ico">
+	<link rel="apple-touch-icon" href="/images/sitefinity/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/sitefinity/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/sitefinity/apple-touch-icon-114x114.png">
+
+
+	
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30712015-1']);
+  _gaq.push(['_setDomainName', 'gsccca.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+	<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+			<!-- Primary Page Layout
+================================================== -->
+<!--BEGIN: Notifications-->
+
+<!--END: Notifications-->
+
+<!--BEGIN: Terms and Conditions-->
+
+<!--END: Terms and Conditions-->
+
+<!--BEGIN: Communications-->
+
+<!--END: Communications-->
+
+<script type="text/javascript">
+	function submitSearch(){
+		document.getElementById('searchform').submit();
+		return false;
+	}
+</script>
+<div id="head" class="row">
+	<div class="padding-wrapper">
+		<div class="header container-twelve">
+			<p id="logo" class="seven columns alpha">
+				<a href="https://www.gsccca.org/">The Clerks Authority</a>
+				<span>Georgia Superior Court Clerks' Cooperative Authority </span>
+			</p>
+			<ul class="five columns omega">
+				<li style="margin: 0;">
+					<input type="submit" name="ctl00$ctl00$searchForm$searchFormBox$TCD6216E1003$ctl00$ctl00$searchButton" value="Search" onclick="submitSearch();" id="searchForm_searchFormBox_TCD6216E1003_ctl00_ctl00_searchButton" class="sfsearchSubmit">
+				</li>
+				<li style="line-height:16px;">
+					<form id="searchform" action="https://www.gsccca.org/search-results" method="get">
+						<input id="indexCatalogue" type="hidden" name="indexCatalogue" value="site-search">
+						<input id="wordsMode" type="hidden" name="wordsMode" value="0">
+						<input id="searchQuery" value="search" type="text" name="searchQuery">
+					</form>
+				</li>
+				<li><a href="https://www.gsccca.org/contact-us">Contact</a></li>
+				<form id="loginform" action="/login.asp" method="POST">
+					<input type="hidden" name="dummyforf5" value="noval">
+				</form>
+						<li><a id="login" href="#Login" onclick="javascript:document.getElementById('loginform').submit();">Login</a></li>
+				<li><a href="https://www.gsccca.org/services">Services</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!--head-->
+<div id="fullpage">
+	<div class="nav">
+		<div class="padding-wrapper">
+			<div class="container-twelve">
+				<a href="https://www.gsccca.org/file">File</a>
+				<a href="https://www.gsccca.org/search">Search</a>
+				<a href="https://www.gsccca.org/learn">Learn</a>
+				<a href="https://www.gsccca.org/manage">Manage</a>
+				<a href="https://www.gsccca.org/fines-and-fees">Fines &amp; Fees</a>
+				<a href="https://www.gsccca.org/clerks">Clerks</a>
+				<a href="https://www.gsccca.org/notary-and-apostilles">Notary &amp; Apostilles</a>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="padding-wrapper">
+		<div id="content">
+
+		<form class="noMargin" name="frmLogin" action="login.asp?sFormAction=" method="post">
+			<input type="hidden" name="Redirect" value="https://www.gsccca.org/">
+			<input type="hidden" name="FormSubmission" value="False">
+			<input type="hidden" name="Referer" value="">
+			<input type="hidden" name="ShowCaptcha" value="False">
+<div class="container-twelve">
+			<table width="960" cellspacing="0" cellpadding="0" border="0" align="left" style="float:none;">
+				<tbody><tr>
+					<td width="621">
+						<font face="arial" size="-1">
+							<p align="left">
+								<font face="arial" size="-1">
+									Welcome to the Georgia Superior Court Clerks'
+									Cooperative Authority search system!<br>
+									<br>
+										If you already have a search account, please enter
+										your login name and password below.  If you do not have an
+										account and would like to become a subscriber or create a
+										single use account, please click <a href="https://account.gsccca.org/default.asp">here</a>.<br>
+										<br>
+										If you do not wish to subscribe to this website, you may
+										still access certain limited information for free by
+										creating a "limited use" account. Click <a href="https://account.gsccca.org/default.asp">here</a> to create
+										an account and be sure to select the "limited use" option.
+										Alternatively, all information in the GSCCCA database can
+										be accessed for free at any Georgia Superior Court Clerk's office.
+									<br>
+									</font></p><p><font face="arial" size="-1">
+										<font face="arial" size="2" color="red">
+											<b>You have been automatically logged out of the system because your username is in use at another computer or location.  According to the <a href="/terms.asp">GSCCCA terms of use</a>, each user of the system must have an account with a unique login. <!-- Sharing login information is a violation of the Terms and Conditions and violators are subject to legal penalties.--><br><br>
+											</b>
+										</font>
+									</font></p><font face="arial" size="-1">
+									&nbsp;
+								</font>
+								<center>
+									<table style="float:none;">
+										<tbody><tr>
+											<td style="padding:10px;border: 1px solid black;">
+												<div style="width:100%; text-align: center;"><a id="inline" href="#outage" style="font-size: 10pt;">Why do I need to have an account to search this site?</a></div>
+												<br><br>
+												<table border="0" style="float:none;">
+													<tbody><tr>
+														<td align="right" valign="top" style="padding-bottom:10px;">Login Name:</td>
+														<td style="padding-bottom:10px;">
+															<input type="text" name="txtUserID" size="20" maxlength="50" tabindex="1" style="padding:2px;">
+														</td>
+													</tr>
+													<tr>
+														<td align="right" valign="top">Password:</td>
+														<td>
+															<input type="password" name="txtPassword" size="20" maxlength="50" tabindex="2" style="padding:2px;"><br>
+															<font face="arial" size="-2"><a href="forgotpassword.asp">Forgot your Password?</a></font><br>
+															<br>
+														</td>
+													</tr>
+													
+													<tr align="center">
+														<td colspan="2" nowrap=""> <font face="arial" size="-1"><a href="javascript:document.frmLogin.submit();" onmouseout="isimgact( 'logon',0)" onmouseover="isimgact( 'logon',1)" target="_top" tabindex="4"><img src="Images/btn_redlogon.gif" width="47" height="20" border="0" name="logon"></a>&nbsp;&nbsp;<a href="" onclick="document.frmLogin.reset();return false" onmouseout="isimgact( 'clear',0)" onmouseover="isimgact( 'clear',1)" target="_top" tabindex="5"><img src="Images/btn_redclear.gif" width="73" height="20" border="0" name="clear"></a></font></td>
+													</tr>
+													
+														<tr align="center">
+															<td colspan="2">
+																<input type="checkbox" name="permanent" tabindex="6"><font face="arial" size="2">&nbsp;Remember login details.<br></font><font face="arial" size="1">You must have stored cookies enabled in order for your login details to be remembered.</font>
+															</td>
+														</tr>
+													
+												</tbody></table>
+											</td>
+											
+										</tr>
+									</tbody></table>
+								</center>
+								<script type="text/javascript" language="javascript">
+    function SecuritySiteSealsPopUp(URL) {
+        day = new Date();
+        id = day.getTime();
+        eval("page" + id + " = window.open(URL, 'SecuritySiteSeals', 'toolbar=0, scrollbars=0, location=0, statusbar=0, menubar=0, resizable=0, width=620, height=300, left=0, top=0');");
+    }
+</script>
+<br>
+<center>
+	<div style="width: 100%; border-top: solid 1px #7f1416;">
+		<table cellpadding="10" cellspacing="0" border="0">
+			<tbody><tr>
+				<td style="vertical-align: middle;">
+					<a href="https://www.gsccca.org/learn/premium-search/" target="_blank"><img src="/images/Premium-Badge.png" width="171" height="50" border="0" alt="Premium Search"></a>
+				</td>
+					<td style="vertical-align: middle;">
+						<a href="javascript:SecuritySiteSealsPopUp('../SecuritySiteSeals.asp')"><img src="/images/thawte.gif" border="0" alt="Thawte SSL Certificate"></a>
+					</td>
+				<td style="vertical-align: middle;">
+					<a href="javascript:SecuritySiteSealsPopUp('../SecuritySiteSeals.asp')"><img src="/images/sm_tested_pci1.gif" border="0" alt="SecurityMetrics PCI Certified"></a>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+</center>
+							<p></p>
+						</font>
+					</td>
+				</tr>
+			</tbody></table>
+		
+		<div style="display:none">
+			<div id="outage">
+				The GSCCCA is pleased to offer free limited access to its
+				various online databases over the internet. Unfortunately,
+				due to increasing security concerns, terms of use violations,
+				and large scale theft of data from the free areas by non-account
+				holders, the GSCCCA has been forced to discontinue anonymous
+				access to the free areas of the site.  Users who wish to access the
+				GSCCCA site over the internet for free can still do so
+				by creating a free, "limited use" account.<br>
+				<br>
+				Requiring each user to have an account helps to prevent against
+				improper usage of the system.  Such usage can cause a negative
+				impact on the performance of the overall system for all users,
+				and requiring each user to have an account is necessary to ensure
+				the integrity and functionality of the website.<br>
+				<br>
+				As always, in compliance with its legislative mandates, full
+				access to all GSCCCA database search functions is also available
+				for free at any of the 159 Superior Court Offices throughout the
+				state. We apologize for any inconvenience this change to our
+				internet access policy may have caused you
+			</div>
+		</div>
+		</div></form><!--end of container-twelve-->
+        </div><!--padding-wrapper-->
+</div><!--content-->
+	</div><!--fullpage-->
+	<div id="foot">
+			<div class="footer container-twelve">
+				<div class="twelve columns omega">
+
+					<div id="fnav" class="six columns alpha omega">
+						<a href="https://www.gsccca.org/terms-of-use">Terms of Use</a>
+						<a href="https://www.gsccca.org/sitemap">Sitemap</a>
+						<a href="https://www.gsccca.org/glossary">Glossary</a>
+						
+							<a href="#Login" onclick="javascript:document.getElementById('loginform').submit();">Login</a>
+						
+						<a href="https://www.gsccca.org/contact-us">Contact Us</a>
+					</div>
+					<div class="four columns alpha omega">
+						<p><a href="https://www.gsccca.org/">GSCCCA</a></p>
+						<p class="copy">Copyright © 1995 - 2026<br>Georgia Superior Court Clerks' Cooperative Authority</p>
+					</div>
+				</div><!--fourteen-columns-->
+			</div>
+		</div><!--foot--><!-- End Document
+================================================== -->
+<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/js/site.jquery.js"></script>
+
+		<!-- Start Fancy Box Include -->
+		<!-- JSJ: 07/28/2015 -->
+        <!-- This code block used to be in the <head/> but moved here because Fancybox was not working. -->
+        <!-- Here seems to be preferred because ensures DOM has been loaded before Fancybox stuff. -->
+		<link rel="stylesheet" href="/includes/scripts/fancybox/v1.3.4/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+		<script type="text/javascript" src="/includes/scripts/fancybox/V1.3.4/jquery-1.4.3.min.js"></script>
+		<script type="text/javascript" src="/includes/scripts/fancybox/v1.3.4/jquery.fancybox-1.3.4.js"></script>
+		<script type="text/javascript">
+		    $(document).ready(function () {
+		        $("a#inline").fancybox({
+		            'autoDimensions': false,
+		            'type': 'inline',
+		            'width': 550,
+		            'height': 350
+		        });
+		    });
+		</script>
+		<!-- End Fancy Box Include -->
+	
+
+<script type="text/javascript" language="javascript">
+	document.frmLogin.txtUserID.focus();
+</script>
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>

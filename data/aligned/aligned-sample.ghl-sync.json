@@ -1,0 +1,22 @@
+{
+  "file": "/home/keith/real_estate/4plex-investment-platform/data/aligned/aligned-sample.json",
+  "matches": 1,
+  "stored_ok": 1,
+  "errors": [],
+  "results": [
+    {
+      "ok": true,
+      "contact_id": "RiYl6ZJXKE9FWlmndCoR",
+      "created": true,
+      "note_id": "x6CLzzJ8vWBn7Bxp9lbo",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-dealdriven",
+        "source-gsccca",
+        "score-70",
+        "county-fulton"
+      ]
+    }
+  ]
+}

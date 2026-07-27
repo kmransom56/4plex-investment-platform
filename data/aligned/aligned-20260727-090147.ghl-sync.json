@@ -1,0 +1,23 @@
+{
+  "file": "/home/keith/real_estate/4plex-investment-platform/data/aligned/aligned-20260727-090147.json",
+  "subjects": 1,
+  "stored_ok": 1,
+  "errors": [],
+  "results": [
+    {
+      "ok": true,
+      "contact_id": "gDpS5oHTnGoQITpwvpAb",
+      "created": true,
+      "note_id": "y6PRe1LomBbXaaXwUS8F",
+      "detail": "stored",
+      "tags": [
+        "wholesale-demand-align",
+        "source-gsccca",
+        "subject-property",
+        "comps-5",
+        "county-fulton",
+        "type-multifamily"
+      ]
+    }
+  ]
+}

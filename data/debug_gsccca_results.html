@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><title>
+	GSCCCA.org - PT-61 Premium Search
+</title>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    
+    <script type="text/javascript" src="Scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/site.jquery.js"></script>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/FavIcons/favicon.ico"><link rel="apple-touch-icon" href="images/FavIcons/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="72x72" href="images/FavIcons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="images/FavIcons/apple-touch-icon-114x114.png">
+    <link href="Scripts/fancybox/v3.1.20/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Scripts/fancybox/v3.1.20/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+        function resetDotNetScrollPosition() {
+            var scrollX = document.getElementById('__SCROLLPOSITIONX');
+            var scrollY = document.getElementById('__SCROLLPOSITIONY');
+
+            if (scrollX != null && scrollY != null) {
+                scrollX.value = 0;
+                scrollY.value = 0;
+            }
+        }
+
+        function DisplayMsg(sMsg) {
+            alert(sMsg);
+        }
+
+
+        function display(pAppID, pInstID) {
+            var sURL = 'QuickView/QuickView.aspx?APPID=' + pAppID + '&ID=' + pInstID;
+
+            if (jQuery.trim(pInstID) != '') {
+                $.fancybox.open({
+                    src: sURL,
+                    type: 'iframe',
+                    opts: {
+                        toolbar: true,
+                        iframe: {
+                            preload: false,
+                            css: {
+                                height: '80%',
+                                'max-width': '661px',
+                                'margin-bottom': '10px'
+                            }
+                        }
+                    }
+                });                
+            }
+            else {
+                alert('Instrument does not exist in GSCCCA Indexes');
+            }
+        }
+
+        function displayReport() {
+            //Build URL and pass parameter in querystring
+            var searchType = 1; //based on .NET enum
+            var sURL = 'Reporting/AddressSearchPrintOptions.aspx';
+            sURL += '?st=' + searchType;
+            sURL += '&dt=' + encodeURIComponent($("#txtDisplayType").val());
+            sURL += '&ad=' + encodeURIComponent($("#txtAddress").val());
+            sURL += '&fi=' + encodeURIComponent($("#txtFilter").val());
+            sURL += '&ob=' + encodeURIComponent($("#txtOrderBy").val());
+            sURL += '&if=' + encodeURIComponent($("#txtIncludeIDs").val());
+            sURL += '&ef=' + encodeURIComponent($("#txtRemoveIDs").val());
+            sURL += '&es=' + encodeURIComponent($("#txtExactSearch").val());
+            sURL += '&cp=' + encodeURIComponent($("#txtCurrentPage").val());
+            sURL += '&ps=' + encodeURIComponent($("#txtRecordsPerPage").val());
+            sURL += '&er=' + encodeURIComponent($("#txtExpandResults").val());
+
+
+            $.fancybox.open({
+                src: sURL,
+                type: 'iframe',
+                opts: {
+                    toolbar: true,
+                    iframe: {
+                        preload: false,
+                        css: {
+                            height: '80%',
+                            'max-width': '661px',
+                            'margin-bottom': '10px'
+                        }
+                    }
+                }
+            });
+        }
+
+            function ViewCombinedImages(sURL) {
+                var myWin = open(sURL, "displayWindowCombined", "width=900,height=700,status=no,toolbar=no,menubar=no,resizable=yes");
+                return false;
+            }
+    </script>
+<link href="App_Themes/MainCMSTheme/Common.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/DailyGridView.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/DashboardView.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/Final.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/Header.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/MapSearch.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/QuickView.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/SalesGridView.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/SearchPages.css" type="text/css" rel="stylesheet"><link href="App_Themes/MainCMSTheme/skeleton.css" type="text/css" rel="stylesheet"></head>
+<body>
+	<!-- ==========================  Header	================================================== -->
+	<div id="head" class="row">
+		<header class="container-twelve">
+			<p id="logo" class="six columns alpha"><a id="lnkSiteMainHeader" href="https://www.gsccca.org/">The Clerks Authority</a></p>
+			<ul class="six columns omega">
+				<li><a id="lnkAlert" href="https://account.gsccca.org/Alerts.asp?Reset" style="display:inline-block; border:none; background:none; cursor:pointer;"><div id="alertBell" class="icon hide-element" style="display: inline-block;">
+						<img src="/images/notification_icon.png" height="22" width="22" alt="Alerts">
+						<div id="alert_count" class="txt" style="display: inline-block;">4</div>
+					</div></a></li>
+				<li><button id="searchbtn" name="search">Search</button></li>
+				<li>
+					<form action="#search" method="post">
+						<input id="search" placeholder="search" type="text" name="search">
+					</form>
+				</li>
+				<li><a id="lnkContactHeader" href="https://www.gsccca.org/contact-us">contact</a></li>
+				<li><a id="lnkLogin" href="https://apps.gsccca.org/logout.asp">logout</a></li>
+				<li><a id="lnkServicesHeader" href="https://www.gsccca.org/services">services</a></li>
+			</ul>	    
+		</header>
+		
+	</div><!--head-->
+	<div id="fullpage">
+		<center>
+		<nav>
+			<div class="container-twelve">
+				<a id="lnkMenuFile" href="https://www.gsccca.org/file">File</a>
+				<a id="lnkMenuSearch" href="https://www.gsccca.org/search">Search</a>
+				<a id="lnkMenuLearn" href="https://www.gsccca.org/learn">Learn</a>
+				<a id="lnkMenuManage" href="https://www.gsccca.org/manage">Manage</a>
+				<a id="lnkMenuFinesFees" href="https://www.gsccca.org/fines-and-fees">Fines &amp; Fees</a>
+				<a id="lnkMenuClerks" href="https://www.gsccca.org/clerks">Clerks</a>
+				<a id="lnkMenuNotary" href="https://www.gsccca.org/notary-and-apostilles">Notary &amp; Apostilles</a>
+			</div>
+		</nav>
+		<ul id="subnav">
+			<div class="container-twelve">
+				<li class="firstLevel"><a href="/CarbonRegistry/default.asp">Carbon Registry Index<span class="arrow-down"></span></a>
+					
+					<ul>
+						<li><a href="/CarbonRegistry/countysearch.asp">County Search</a></li>
+					</ul>
+				</li>
+				<li class="firstLevel"><a href="/Lien/lienindex.asp">Lien Index<span class="arrow-down"></span></a>
+					
+					<ul>
+						<li><a href="/Lien/namesearch.asp">Name Search</a></li>
+						<li><a href="/Lien/bookpagesearch.asp">Book Page Search</a></li>
+						<li class="TwoLine"><a href="/liensearch/StateTaxLienSearch.aspx">State Revenue Dept.<br>Pending Lien Search</a></li>
+					</ul>
+				</li>
+				
+				<li class="firstLevel"><a href="/notary/">Notary Index<span class="arrow-down"></span></a>
+					
+					<ul>
+						<li><a href="/notary/search.asp">Notary Index Search</a></li>
+					</ul>
+				</li>
+				
+				
+				<li class="firstLevel"><a href="/plat/platindex.asp">Plat Index<span class="arrow-down"></span></a>
+					<ul>
+						<li><a href="/plat/namesearch.asp">Name Search</a></li>
+						<li><a href="/plat/bookpagesearch.asp">Book Page Search</a></li>
+					</ul>
+				</li>
+				<li class="firstLevel"><a href="/pt61/default.asp">PT-61 Index<span class="arrow-down"></span></a>
+				
+					<ul>
+						<li><a href="/pt61/namesearch.asp">Name Search</a></li>
+						<li><a href="/pt61/docnumsearch.asp">Document Search</a></li>
+						<li class="premium"><a id="lnkMenuAddressSearch" href="AddressSearch.aspx"><span>PREMIUM</span><br>Address Search</a></li>
+						<li class="premium"><a id="lnkMenuDailySearch" href="DailySearch.aspx"><span>PREMIUM</span><br>Daily Search</a></li>
+						<li class="premium"><a id="lnkMenuMapSearch" href="MapSearch.aspx"><span>PREMIUM</span><br>Map Search</a></li>
+					</ul>
+				</li>
+				<li class="firstLevel"><a href="/RealEstate/deedindex.asp">Real Estate Index<span class="arrow-down"></span></a>
+					<ul>
+						<li><a href="/RealEstate/namesearch.asp">Name Search</a></li>
+						<li><a href="/RealEstate/bookpagesearch.asp">Book Page Search</a></li>
+						<li><a href="/RealEstate/propertysearch.asp">Property Search</a></li>
+						<li class="premium"><a href="/RealEstatePremium/InstrumentTypeSearch.aspx"><span>PREMIUM</span><br>Instrument Type Search</a></li>
+					</ul>
+				</li>
+				<li class="firstLevel"><a href="/UCC_Search/default.asp">UCC Index<span class="arrow-down"></span></a>
+					<ul>
+						<li><a href="/UCC_Search/search.asp?searchtype=Article9">Basic Name Search</a></li>
+						<li><a href="/UCC_Search/search.asp?searchtype=FileNumber">File Number Search</a></li>
+						<li><a href="/UCC_Search/search.asp?searchtype=Daily">Daily Search</a></li>
+						<li><a href="/UCC_Search/search.asp?searchtype=SecuredParty">Secured Party Search</a></li>
+						<li><a href="/UCC_Search/certified.asp?Searchtype=Certified">Certified Search</a></li>
+					</ul>
+				</li>
+			</div>
+		</ul>
+	</center></div>
+	<!-- ==========================  End Header	================================================== -->
+	<form method="post" action="./AddressSearchResults.aspx" id="form1" style="border:1px solid white;">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/PT61Premium/WebResource.axd?d=EkmsCw97duRXxdGrHYhmvaVgA6FHrCry1QrEcBSbxSHu1s99c35YTi36J_zXKvuZdgFQjfuQs3xg_xAPenyy3YVtn_w1&amp;t=638901397900000000" type="text/javascript"></script>
+
+
+<script src="/PT61Premium/ScriptResource.axd?d=rU_h4zbveiOKzwwMdJrYAljEdr19S3NvLKfJGZ55ZzhlRKGkvUbi7kvQBTofghBFEM2Rqsv30ndhA2YmZHzT-ijd6bx-MJbmavduT3nkAnP2vQCVXBNs1aQYl9lO1qaFHX7CtA2&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/PT61Premium/ScriptResource.axd?d=gXpxd5Lbyj5OeeWrqlbDQ1o_ZTsCLQxZA7Lt_mmzWaHQf8pgA9zoE0lVGPq2LUdv-gFJjfmqSZnrm0s45BkLLl1QcdHIGo6Qhwmi14jJa9AzFST5_y2BwQlWXT8T8vc3TdyK4A2&amp;t=7c776dc1" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="910B0B7B">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="G0+08cC3Anel4Rjz7m/DRRKojpcTpao1ZN3kcF2ya0JnX9UnRahB58A2cYwO+gs1pB1r7Il+l09LRxsCAG80sevZs8Mhx+q2DBV4hL9+sIXxhB5cYozvKKdepNNfVfv8IAMvKAAoKWtdiuW6SS3e80yJztB5cLq5M0ycs1hD5Iczo3Xx0Il4x/o0U1qjqJTuVO+o3b1RRU13Jax4HRjGgo7D7m36vYV/8aA8XqYA3hocsmfdbxrHt03w1EP0ASJ9vZkV97blCPZJUyGo56MpWBRjWz0qPr2XdJOgr/dwtNualKoakT9z+Cn56O66h0nzxj8oEvGwkta9J1uheoxDHHNqcU2xGzTZq16Zg2QSCLKuG25/eC5+3cKkTFRTSvrbupPMZgr6aGmzRHceDnAm7bq4/vUGGY+iqxeymQFXr7zuVnGSmClBYqhz0hJR28cu42Igt0F3eMvBrnsPc1bXuLd+abw=">
+</div> <!-- Border is a firefox fix, without it pushed the talbe offscreen right -->
+	<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		   <tbody><tr>
+				<td></td>
+				<td id="page-content">
+    <input type="hidden" name="ctl00$BodyContent$txtCountyID" id="txtCountyID" value="60">
+    <input type="hidden" name="ctl00$BodyContent$txtCountyName" id="txtCountyName" value="FULTON">
+    <input type="hidden" name="ctl00$BodyContent$txtExactSearch" id="txtExactSearch" value="FALSE">
+    <input type="hidden" name="ctl00$BodyContent$txtAddress" id="txtAddress" value="5445 Elm Way">
+    <input type="hidden" name="ctl00$BodyContent$txtDateFrom" id="txtDateFrom" value="01/01/2020">
+    <input type="hidden" name="ctl00$BodyContent$txtDateTo" id="txtDateTo" value="07/27/2026">
+    <input type="hidden" name="ctl00$BodyContent$txtRecordsPerPage" id="txtRecordsPerPage" value="10">
+    <input type="hidden" name="ctl00$BodyContent$txtRecordsOnPage" id="txtRecordsOnPage">
+    <input type="hidden" name="ctl00$BodyContent$txtDisplayType" id="txtDisplayType" value="1">
+    <input type="hidden" name="ctl00$BodyContent$txtRemoveIDs" id="txtRemoveIDs">
+    <input type="hidden" name="ctl00$BodyContent$txtIncludeIDs" id="txtIncludeIDs">
+    <input type="hidden" name="ctl00$BodyContent$txtExpandResults" id="txtExpandResults" value="FALSE">
+    <input type="hidden" name="ctl00$BodyContent$txtCurrentPage" id="txtCurrentPage" value="1">
+    <input type="hidden" name="ctl00$BodyContent$txtTotalPages" id="txtTotalPages">
+    <input type="hidden" name="ctl00$BodyContent$txtOrderBy" id="txtOrderBy" value="CountyName, PropertyDisplayAddress, DocNum">
+    <input type="hidden" name="ctl00$BodyContent$txtOrderByDirection" id="txtOrderByDirection" value="0">
+    <input type="hidden" name="ctl00$BodyContent$txtFilter" id="txtFilter" value="CountyID=60 AND SaleDate &gt;= '01/01/2020' AND SaleDate &lt; '07/28/2026'">
+    <div id="BodyContent_pnlNoResults">
+	
+        <div align="center">
+        <table>
+            <tbody><tr>
+                <td>
+                    <div style="margin: 10px 0 15px 0;">
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+	                    <tbody><tr>
+		                    <td width="100%" align="left" class="BreakCrumbTitleCell"><span class="BreadCrumbTitle">Premium Search</span>&nbsp;&nbsp;&nbsp;<a id="BodyContent_HyperLink7" class="BreadCrumbMainLink" href="/">Search</a> &gt; <a id="BodyContent_HyperLink8" class="BreadCrumbMainLink" href="/pt61/">PT-61 Index</a> &gt; <a id="BodyContent_HyperLink9" class="BreadCrumbLastLink" href="AddressSearch.aspx">Address Search</a></td>
+	                    </tr>
+                    </tbody></table>
+                    </div>
+                    Searched <span id="BodyContent_lblNoResultsCriteriaCounty"><b>FULTON</b> County</span> for <span id="BodyContent_lblNoResultsCriteriaAddress"><b><span class="highlight">5445</span> <span class="highlight">Elm</span> <span class="highlight">Way</span></b></span><span id="BodyContent_lblNoResultsCriteriaDate"><br>Results displayed with sale dates from <b>1/1/2020</b> through <b>7/27/2026</b></span>
+                    <br>
+                    <font style="color:#ff0000;"><br><b>No records were found matching your search criteria</b></font>
+                    <br><br>
+                    <a href="AddressSearch.aspx" class="pageLink">Click here to search using different criteria</a>
+                </td>
+            </tr>
+        </tbody></table>
+        </div>
+    
+</div>
+    
+    
+</td>
+				<td></td>
+		   </tr>
+	</tbody></table>
+	
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+	<!-- ==========================  Footer	================================================== -->
+	<div id="foot">
+	<footer class="container-twelve">
+		<div class="twelve columns">
+		    <!--Overriding the width to increase 20 pixels due to FAQ link"-->			
+			<div id="fnav" class="nine columns alpha omega" style="width:720px;">
+				<a id="lnkDisclaimer" href="Disclaimer.aspx">Search Disclaimer</a>
+				<a id="lnkPremiumFAQ" href="PT61PremiumFAQ.aspx">PT-61 Premium FAQ</a>
+				<a id="lnkTerms" href="https://www.gsccca.org/terms-of-use">Terms of Use</a>
+				<a id="lnkSiteMap" href="https://www.gsccca.org/sitemap">Sitemap</a>
+				<a id="lnkGlossaryFooter" href="https://www.gsccca.org/glossary">Glossary</a>
+				<a id="lnkLoginFooter" href="https://apps.gsccca.org/logout.asp">Logout</a>
+				<a id="lnkContactFooter" href="https://www.gsccca.org/contact-us">Contact Us</a>
+			</div>
+			<div class="three columns alpha omega">
+				<p><a id="lnkSiteMainFooter" href="https://www.gsccca.org/">GSCCCA</a></p>
+				<p class="copy">Copyright © 1995 - <span id="lblCopyrightYear">2026</span><br>Georgia Superior Court Clerks' Cooperative Authority</p>
+			</div>
+		</div><!--twelve-columns-->
+	</footer>
+	</div><!--foot-->
+	<!-- ==========================  End Footer	================================================== -->
+
+
+</body></html>

@@ -1,0 +1,489 @@
+{
+  "login": {
+    "ok": true,
+    "method": "method1_native",
+    "detail": "frmLogin.submit",
+    "url": "https://search.gsccca.org/PT61Premium/MapSearch.aspx"
+  },
+  "out": {
+    "url": "https://search.gsccca.org/PT61Premium/MapSearchResults.aspx",
+    "error": null,
+    "rows": [
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1493 Vesta Avenue",
+        "parcel": "",
+        "sale_date": "5/14/2025",
+        "sale_price": 0.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2025-015851",
+        "raw": {
+          "filing_id": 10585227,
+          "lat": 33.6669625,
+          "lng": -84.4377099,
+          "map_price": "0K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "3238 Elm ST Atlanta",
+        "parcel": "",
+        "sale_date": "11/14/2025",
+        "sale_price": 218000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2025-040125",
+        "raw": {
+          "filing_id": 10835608,
+          "lat": 33.6671517,
+          "lng": -84.4372462,
+          "map_price": "218K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "3238 ELM ST",
+        "parcel": "",
+        "sale_date": "5/25/2023",
+        "sale_price": 0.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2023-017324",
+        "raw": {
+          "filing_id": 9699103,
+          "lat": 33.6671739,
+          "lng": -84.4372261,
+          "map_price": "0K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "COLLEGE PARK",
+        "parcel": "",
+        "sale_date": "1/17/2020",
+        "sale_price": 0.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2020-002674",
+        "raw": {
+          "filing_id": 7834961,
+          "lat": 33.6669458,
+          "lng": -84.4379644,
+          "map_price": "0K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "3228 Elm ST East Point",
+        "parcel": "",
+        "sale_date": "8/5/2021",
+        "sale_price": 289900.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2021-039844",
+        "raw": {
+          "filing_id": 8722286,
+          "lat": 33.6674316,
+          "lng": -84.4371441,
+          "map_price": "290K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "3267 Elm ST",
+        "parcel": "",
+        "sale_date": "7/1/2020",
+        "sale_price": 250000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2020-022794",
+        "raw": {
+          "filing_id": 8038283,
+          "lat": 33.6665029,
+          "lng": -84.4378004,
+          "map_price": "250K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "3262 Dogwood ST College Park",
+        "parcel": "",
+        "sale_date": "1/23/2026",
+        "sale_price": 475000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2026-002554",
+        "raw": {
+          "filing_id": 10904645,
+          "lat": 33.6666672,
+          "lng": -84.4382394,
+          "map_price": "475K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1475 Vesta TER Atlanta",
+        "parcel": "",
+        "sale_date": "4/18/2022",
+        "sale_price": 375500.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2022-016856",
+        "raw": {
+          "filing_id": 9122761,
+          "lat": 33.6665893,
+          "lng": -84.4368159,
+          "map_price": "376K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1520 Vesta AVE College Park",
+        "parcel": "",
+        "sale_date": "8/8/2024",
+        "sale_price": 345000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2024-027124",
+        "raw": {
+          "filing_id": 10239033,
+          "lat": 33.6666578,
+          "lng": -84.4386579,
+          "map_price": "345K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1530 VESTA AVENUE",
+        "parcel": "",
+        "sale_date": "10/8/2020",
+        "sale_price": 264900.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2020-034665",
+        "raw": {
+          "filing_id": 8156729,
+          "lat": 33.6667122,
+          "lng": -84.4388987,
+          "map_price": "265K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1457 Vesta TER East Point",
+        "parcel": "",
+        "sale_date": "9/21/2022",
+        "sale_price": 383000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2022-040287",
+        "raw": {
+          "filing_id": 9376066,
+          "lat": 33.6659795,
+          "lng": -84.4368159,
+          "map_price": "383K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1457 Vesta TER",
+        "parcel": "",
+        "sale_date": "9/2/2021",
+        "sale_price": 243000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2021-041875",
+        "raw": {
+          "filing_id": 8742863,
+          "lat": 33.6659777,
+          "lng": -84.4367749,
+          "map_price": "243K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1437 Vesta AVE East Point",
+        "parcel": "",
+        "sale_date": "3/6/2026",
+        "sale_price": 350875.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2026-008066",
+        "raw": {
+          "filing_id": 10967998,
+          "lat": 33.6670297,
+          "lng": -84.4359996,
+          "map_price": "351K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1530 Vesta AVE College Park",
+        "parcel": "",
+        "sale_date": "3/26/2026",
+        "sale_price": 0.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2026-011938",
+        "raw": {
+          "filing_id": 11011457,
+          "lat": 33.6666609,
+          "lng": -84.438998,
+          "map_price": "0K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "3288 Dogwood ST",
+        "parcel": "",
+        "sale_date": "9/9/2025",
+        "sale_price": 275000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2025-030768",
+        "raw": {
+          "filing_id": 10740116,
+          "lat": 33.6659124,
+          "lng": -84.4383041,
+          "map_price": "275K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "Elm ST College Park",
+        "parcel": "",
+        "sale_date": "2/4/2021",
+        "sale_price": 1.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2021-004842",
+        "raw": {
+          "filing_id": 8375828,
+          "lat": 33.6656796,
+          "lng": -84.4374107,
+          "map_price": "0K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "3295 Elm ST Atlanta",
+        "parcel": "",
+        "sale_date": "8/28/2020",
+        "sale_price": 230500.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2020-031933",
+        "raw": {
+          "filing_id": 8129668,
+          "lat": 33.665698,
+          "lng": -84.4378209,
+          "map_price": "230K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1545 VESTA AVE",
+        "parcel": "",
+        "sale_date": "3/13/2024",
+        "sale_price": 424000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2024-008138",
+        "raw": {
+          "filing_id": 10046287,
+          "lat": 33.6670084,
+          "lng": -84.4393591,
+          "map_price": "424K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1540 Vesta AVE",
+        "parcel": "",
+        "sale_date": "2/18/2020",
+        "sale_price": 0.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2021-002173",
+        "raw": {
+          "filing_id": 8349678,
+          "lat": 33.6666391,
+          "lng": -84.4393796,
+          "map_price": "0K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1445 Willingham DR",
+        "parcel": "",
+        "sale_date": "3/24/2021",
+        "sale_price": 0.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2021-013719",
+        "raw": {
+          "filing_id": 8462935,
+          "lat": 33.6683173,
+          "lng": -84.436016,
+          "map_price": "0K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1423 Vesta Terrace East Point",
+        "parcel": "",
+        "sale_date": "6/21/2023",
+        "sale_price": 410000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2023-019662",
+        "raw": {
+          "filing_id": 9722562,
+          "lat": 33.6662272,
+          "lng": -84.4355443,
+          "map_price": "410K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1415 Vesta AVE",
+        "parcel": "",
+        "sale_date": "5/16/2022",
+        "sale_price": 385000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2022-022578",
+        "raw": {
+          "filing_id": 9183377,
+          "lat": 33.6670419,
+          "lng": -84.4352571,
+          "map_price": "385K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "1416 Vesta AVE Atlanta",
+        "parcel": "",
+        "sale_date": "9/15/2025",
+        "sale_price": 410000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2025-031047",
+        "raw": {
+          "filing_id": 10743486,
+          "lat": 33.6666109,
+          "lng": -84.4353231,
+          "map_price": "410K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "3288 Madison ST College Park",
+        "parcel": "",
+        "sale_date": "6/10/2024",
+        "sale_price": 485000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2024-019996",
+        "raw": {
+          "filing_id": 10168771,
+          "lat": 33.6659262,
+          "lng": -84.439305,
+          "map_price": "485K",
+          "mode": "map_json"
+        }
+      },
+      {
+        "source": "gsccca",
+        "county": "Fulton",
+        "address": "3296 MADISON ST",
+        "parcel": "",
+        "sale_date": "3/31/2022",
+        "sale_price": 675000.0,
+        "grantor": "",
+        "grantee": "",
+        "book_page": "",
+        "instrument": "060-2022-014136",
+        "raw": {
+          "filing_id": 9095145,
+          "lat": 33.665757,
+          "lng": -84.4391335,
+          "map_price": "675K",
+          "mode": "map_json"
+        }
+      }
+    ]
+  }
+}

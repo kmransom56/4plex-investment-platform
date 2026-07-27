@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-07-26T22:15:52.617910+00:00",
+  "criteria": [
+    {
+      "buyer_id": "sample-buyer-1",
+      "source": "dealdriven",
+      "geo": {
+        "counties": [
+          "Fulton"
+        ],
+        "cities": [
+          "Atlanta"
+        ],
+        "zips": [
+          "30318"
+        ]
+      },
+      "property_type": "2-4",
+      "price_min": 150000,
+      "price_max": 350000,
+      "notes": "sample shopping list",
+      "raw": {}
+    }
+  ],
+  "comps": [
+    {
+      "source": "gsccca",
+      "county": "Fulton",
+      "address": "123 Sample St NW, Atlanta, GA 30318",
+      "parcel": "SAMPLE-001",
+      "sale_date": "2026-06-01",
+      "sale_price": 275000,
+      "grantor": "Seller LLC",
+      "grantee": "Buyer LLC",
+      "book_page": "1/1",
+      "instrument": "WD",
+      "raw": {}
+    }
+  ],
+  "matches": [
+    {
+      "criteria_index": 0,
+      "comp_index": 0,
+      "score": 70,
+      "reasons": [
+        "same county",
+        "price in band",
+        "property type"
+      ]
+    }
+  ],
+  "unmatched_criteria": [],
+  "errors": []
+}
