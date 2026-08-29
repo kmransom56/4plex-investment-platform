@@ -3,7 +3,7 @@
 After manually creating the repository on GitHub.com:
 
 ```bash
-cd /home/keith/chat-copilot/4plex-investment-platform
+cd /media/keith/NVMe/real_estate_ecosystem/4plex-investment-platform/
 
 # Push to the new repository
 git push -u origin main

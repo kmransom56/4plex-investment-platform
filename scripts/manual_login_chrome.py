@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
 import logging
 import os
+import sys
 from pathlib import Path
 
-from dotenv import load_dotenv
 from playwright.sync_api import sync_playwright
 
-load_dotenv("/home/keith/real_estate/.env")
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from paths import load_env
+
+load_env()
 USERNAME = os.getenv("DEAL_DRIVEN_USERNAME") or ""
 PASSWORD = os.getenv("DEAL_DRIVEN_PASSWORD") or ""
 

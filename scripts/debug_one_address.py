@@ -1,9 +1,17 @@
 #!/usr/bin/env python3
-import sys, json
+import sys
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
-def main(address):
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from paths import HUB_DATA
+
+
+def main(address: str) -> None:
     with sync_playwright() as p:
         context = p.chromium.launch_persistent_context(temp_dir := Path('/tmp/playwright_debug'), headless=False, args=["--disable-blink-features=AutomationControlled"])
         page = context.new_page()
@@ -18,7 +26,7 @@ def main(address):
         except Exception as e:
             print('error', e)
         # Save HTML
-        out = Path('/home/keith/real_estate/4plex-investment-platform/data/debug_one.html')
+        out = HUB_DATA / "debug_one.html"
         out.write_text(page.content(), encoding='utf-8')
         print('saved', out)
         context.close()

@@ -1,10 +1,19 @@
-import os, logging, csv, json, time
+import os
+import logging
+import csv
+import json
+import sys
+import time
 from pathlib import Path
 from typing import List, Dict
 
-# Load .env – the project's environment file lives at the repository root
-from dotenv import load_dotenv
-load_dotenv("/home/keith/real_estate/.env")
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from paths import load_env
+
+load_env()
 
 # Ensure we always pass a string to the Camofox client (it expects ``str``).
 # If a variable is missing from the .env we fall back to an empty string – the

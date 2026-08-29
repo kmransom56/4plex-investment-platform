@@ -25,14 +25,19 @@ from typing import Any, Optional
 from playwright.sync_api import TimeoutError as PlaywrightTimeout
 from playwright.sync_api import sync_playwright
 
-ROOT = Path("/home/keith/real_estate")
-CSV_PATH = ROOT / "4plex-investment-platform/data/discovery/20260725.csv"
-ALIGNED_DIR = ROOT / "4plex-investment-platform/data/aligned"
-PACKETS_DIR = ROOT / "4plex-investment-platform/data/contract-packets"
-PROFILE = Path.home() / ".cache/re-browser/dealdriven"
-SKILL_SCRIPTS = ROOT / ".claude/skills/wholesale-demand-align/scripts"
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT / "scripts") not in sys.path:
+    sys.path.insert(0, str(ROOT / "scripts"))
+from paths import (  # noqa: E402
+    ALIGNED_DIR,
+    DISCOVERY_DIR,
+    PACKETS_DIR,
+    ensure_skill_on_path,
+)
 
-sys.path.insert(0, str(SKILL_SCRIPTS))
+ensure_skill_on_path()
+CSV_PATH = DISCOVERY_DIR / "20260725.csv"
+PROFILE = Path.home() / ".cache/re-browser/dealdriven"
 from dd_demand import (  # noqa: E402
     default_seed_geos,
     fill_visible_address,

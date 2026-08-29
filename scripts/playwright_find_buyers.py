@@ -16,15 +16,13 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-_SKILL_SCRIPTS = Path(
-    "/home/keith/real_estate/.claude/skills/wholesale-demand-align/scripts"
-)
-if str(_SKILL_SCRIPTS) not in sys.path:
-    sys.path.insert(0, str(_SKILL_SCRIPTS))
-# Ensure project root is on the import path so we can import local helper modules like dd_demand.
-PROJECT_ROOT = Path(__file__).parents[1]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from paths import DISCOVERY_DIR, ensure_skill_on_path
+
+ensure_skill_on_path()
 
 
 from dd_demand import (  # noqa: E402

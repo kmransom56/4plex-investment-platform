@@ -20,7 +20,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/4plex-investment-platform.git
+git clone https://github.com/kmransom56/4plex-investment-platform.git
 cd 4plex-investment-platform
 
 # Copy environment template

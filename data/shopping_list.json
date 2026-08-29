@@ -1,1 +1,14 @@
-{}
+{
+  "test.user@example.com": [
+    {
+      "address": "670 Park Blvd",
+      "county": "Fulton",
+      "sale_price": 660000.0,
+      "sale_date": "10/15/2021",
+      "grantor": "Donald J. Frawley and Marie G. Frawley",
+      "grantee": "Krueck, Anthony",
+      "source_address": "670 Park Blvd",
+      "source_county": "Fulton"
+    }
+  ]
+}
